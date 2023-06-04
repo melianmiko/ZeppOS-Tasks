@@ -1,0 +1,6 @@
+{
+	"esbuild": true,
+	"with_zeus_overrides": true,
+	"zeus_target": "gts-4",
+	"post_build_script": ""
+} 

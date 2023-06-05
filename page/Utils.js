@@ -8,11 +8,6 @@ import {
 const { messageBuilder, t } = getApp()._options.globalData
 
 export function request(data, timeout = 10000) {
-  // ZeppPlayer validation
-  // noinspection JSIncompatibleTypesComparison
-  if(hmUI.widget.IMG === "IMG")
-    return Promise.reject(new Error("ZeppPlayer can't run this app in online"))
-
   return messageBuilder.request(data, {timeout}).then((data) => {
     if(data.error) 
       throw new Error(data.error);

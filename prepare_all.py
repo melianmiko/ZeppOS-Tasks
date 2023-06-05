@@ -35,6 +35,15 @@ generic_target_big_screen = {
     "qr": "normal",
 }
 
+mi_band_config = {
+    "icon_size": 100,
+    "class": "miband7",
+    "icon_s": 24,
+    "icon_m": 48,
+    "low_ram_spinner": True,
+    "qr": "small",
+}
+
 targets = {
   "gts-4-mini": generic_target_big_screen,
   "band-7": {
@@ -45,14 +54,8 @@ targets = {
     "low_ram_spinner": True,
     "qr": "small",
   },
-  "mi-band-7": {
-    "icon_size": 100,
-    "class": "miband7",
-    "icon_s": 24,
-    "icon_m": 48,
-    "low_ram_spinner": True,
-    "qr": "small",
-  },
+  "mi-band-7": mi_band_config,
+  "mi-band-7-offline": mi_band_config,
   "t-rex-ultra": generic_target_big_screen,
   "gtr-mini": generic_target_big_screen,
   "gtr-4": generic_target_big_screen,
@@ -109,6 +112,9 @@ for target_id in targets:
     },
     **module
   }
+
+  if target_id.endswith("-offline"):
+    app_json["targets"][target_id]["module"]["page"]["pages"][0] = f"page/{data['class']}/HomeScreenOffline"
 
 with open("app.json", "w") as f:
   f.write(json.dumps(app_json, indent=2))

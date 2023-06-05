@@ -84,6 +84,69 @@
         }
       ]
     },
+    "mi-band-7-offline": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/miband7/HomeScreenOffline",
+            "page/miband7/FontSizeSetupScreen",
+            "page/miband7/ScreenBoardSetup",
+            "page/miband7/SettingsScreen",
+            "page/miband7/AboutScreen",
+            "page/miband7/NewNoteScreen",
+            "page/miband7/DonatePage"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "amazfit-band7-nfc",
+          "deviceSource": 252
+        },
+        {
+          "name": "amazfit-band7",
+          "deviceSource": 253
+        },
+        {
+          "name": "amazfit-band7-w",
+          "deviceSource": 254
+        },
+        {
+          "name": "l66",
+          "deviceSource": 260
+        },
+        {
+          "name": "l66w",
+          "deviceSource": 261
+        },
+        {
+          "name": "l66_1",
+          "deviceSource": 262
+        },
+        {
+          "name": "l66w_2",
+          "deviceSource": 263
+        },
+        {
+          "name": "l66_3",
+          "deviceSource": 264
+        },
+        {
+          "name": "l66_4",
+          "deviceSource": 265
+        },
+        {
+          "name": "l66_5",
+          "deviceSource": 266
+        }
+      ]
+    },
     "gts-4-mini": {
       "module": {
         "page": {

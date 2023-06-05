@@ -1,6 +1,6 @@
 import { ListScreen } from "../../lib/mmk/ListScreen";
 
-const { config, appId } = getApp()._options.globalData
+const { config } = getApp()._options.globalData
 
 export class ConfiguredListScreen extends ListScreen {
   constructor() {

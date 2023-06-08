@@ -1,6 +1,7 @@
 {
 	"esbuild": true,
 	"with_zeus_overrides": true,
-	"zeus_target": "mi-band-7-offline",
+	"encode_mode": "nxp",
+	"zeus_target": "gts-4-mini",
 	"post_build_script": ""
 } 

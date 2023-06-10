@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
+"X-Crowdin-Project: zepptasks\n"
+"X-Crowdin-Project-ID: 594407\n"
+"X-Crowdin-Language: ro\n"
+"X-Crowdin-File: /main/setting/i18n/en-US.po\n"
+"X-Crowdin-File-ID: 23\n"
+"Project-Id-Version: zepptasks\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Romanian\n"
+"Language: ro_RO\n"
+"PO-Revision-Date: 2023-06-10 18:53\n"
+
+msgid "workOffline"
+msgstr ""
+
+msgid "signIn"
+msgstr ""
+
+msgid "pleaseWait"
+msgstr ""
+
+msgid "howToLogin"
+msgstr ""
+
+msgid "cancel"
+msgstr ""
+
+msgid "sginInOk"
+msgstr ""
+
+msgid "logOut"
+msgstr ""
+
+msgid "signInInfo"
+msgstr ""
+
+msgid "copyToBrowserAndLogin"
+msgstr ""
+
+msgid "pasteLoginCode"
+msgstr ""
+
+msgid "waitSomeTime"
+msgstr ""
+
+msgid "continueOnWatch"
+msgstr ""
+
+msgid "privacyLink"
+msgstr ""
+

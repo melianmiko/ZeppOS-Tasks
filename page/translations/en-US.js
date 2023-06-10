@@ -1,4 +1,4 @@
-export const englishStrings = {
+export const strings = {
     "display_name": "Tasks",
     "help_index": "Help",
     "help_file_prefix": "en_",

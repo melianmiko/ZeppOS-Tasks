@@ -1,4 +1,4 @@
-export const chineseStrings = {
+export const strings = {
     "display_name": "Tasks",
     "help_index": "指南",
     "help_file_prefix": "",

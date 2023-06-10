@@ -1,8 +1,8 @@
 import { loadLocale } from "../lib/mmk/i18n";
 
-import {russianStrings} from "./translations/ru-RU";
-import {englishStrings} from "./translations/english";
-import {chineseStrings} from "./translations/zh-CN";
+import {strings as russianStrings} from "./translations/ru-RU";
+import {strings as englishStrings} from "./translations/en-US";
+import {strings as chineseStrings} from "./translations/zh-CN";
 
 /**
  * Locale contents was split into separate files and saved into

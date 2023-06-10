@@ -1,4 +1,4 @@
-export const russianStrings = {
+export const strings = {
     "display_name": "Задачи",
     "help_index": "Помощь",
     "help_file_prefix": "",

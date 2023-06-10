@@ -1,5 +1,5 @@
 files:
-  - source: /page/translations/english.js
+  - source: /page/translations/en-US.js
     translation: /page/translations/%locale%.js
   - source: /setting/i18n/en-US.po
     translation: /setting/i18n/%locale%.po

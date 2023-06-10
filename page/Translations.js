@@ -15,7 +15,7 @@ export const strings = {
   },
   help_index: {
     "en-US": "Help",
-    "zh-CN": "",
+    "zh-CN": "指南", // by Google.Translate
     "ru-RU": "Помощь",
   },
   help_file_prefix: {
@@ -26,7 +26,7 @@ export const strings = {
   },
   how_to_log_in: {
     "en-US": "How-to login?",
-    "zh-CN": "",
+    "zh-CN": "如何登录？", // by Google.Translate
     "ru-RU": "Как войти в аккаунт?",
   },
   action_create: {
@@ -116,7 +116,7 @@ export const strings = {
   },
   offline_timeout: {
     "en-US": "Work offline, connection timed out",
-    "zh-CN": "链接超时",
+    "zh-CN": "连接超时",
     "ru-RU": "Оффлайн, вышло время ожидания",
   },
   offline_login: {
@@ -136,12 +136,12 @@ export const strings = {
   },
   uninstall_complete: {
     "en-US": "Uninstall complete.\nPlease, reboot your Mi Band.",
-    "zh-CN": "卸载成功请重启你的手环",
+    "zh-CN": "卸载成功\n请重启你的手环",
     "ru-RU": "Удалено.\nПожалуйста, перезагрузите Mi Band."
   },
   donate: {
     "en-US": "Donate",
-    "zh-CN": "",
+    "zh-CN": "捐", // by Google.Translate
     "ru-RU": "Поддержать",
   },
 };

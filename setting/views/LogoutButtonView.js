@@ -8,9 +8,9 @@ export function LogoutButtonView(props) {
         style: {
           flex: 1
         }
-      }, gettext("sginInOk")),
+      }, gettext("Login success")),
       Button({
-        label: gettext("logOut"),
+        label: gettext("Log out"),
         style: {
           width: "50%",
           background: "#ddd",
@@ -25,6 +25,6 @@ export function LogoutButtonView(props) {
         }
       })
     ]),
-    View(CAPTION_VIEW, [Text({}, gettext("continueOnWatch"))]),
+    View(CAPTION_VIEW, [Text({}, gettext("Now your Google Tasks lists will be accessible from your ZeppOS device."))]),
   ]);
 }

@@ -7,9 +7,9 @@ export function LoginPendingView(props) {
       style: {
         flex: 1
       }
-    }, gettext("pleaseWait")),
+    }, gettext("Please wait...")),
     Button({
-      label: gettext("cancel"),
+      label: gettext("Cancel"),
       style: {
         width: "50%",
         boxShadow: "none"

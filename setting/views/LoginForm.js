@@ -2,7 +2,7 @@ import { gettext } from "i18n";
 import { HEADER_VIEW } from "../styles";
 
 export function LoginForm(props, withResponse) {
-  let responseView = withResponse ? LoginResponseView() : StepGuide(3, gettext("waitSomeTime"));
+  let responseView = withResponse ? LoginResponseView() : StepGuide(3, gettext("Wait for a few seconds until app will connect with Google and validate your credentials"));
 
   return View({}, [
     View(HEADER_VIEW, [
@@ -11,9 +11,9 @@ export function LoginForm(props, withResponse) {
           flex: 1
         },
         bold: true
-      }, gettext("howToLogin")),
+      }, gettext("How-to login:")),
       Button({
-        label: gettext("cancel"),
+        label: gettext("Cancel"),
         style: {
           width: "50%",
           boxShadow: "none"
@@ -25,7 +25,7 @@ export function LoginForm(props, withResponse) {
     ]),
     View({}, [
       // Text({bold: true}, ),
-      StepGuide(1, gettext("copyToBrowserAndLogin")),
+      StepGuide(1, gettext("Copy the following link, open them into your browser, and perform a log in.")),
       Text({
         style: {
           userSelect: "text",
@@ -50,7 +50,7 @@ function LoginResponseView() {
       marginTop: "16px"
     }
   }, [
-    StepGuide(2, gettext("pasteLoginCode")),
+    StepGuide(2, gettext("After that, you'll got a access token on screen. Paste them into field bellow:")),
     TextInput({
       settingsKey: "auth_token",
       label: "Google Auth code:",
@@ -70,7 +70,7 @@ function LoginResponseView() {
         overflow: "hidden",
       },
     }),
-    StepGuide(3, gettext("waitSomeTime")),
+    StepGuide(3, gettext("Wait for a few seconds until app will connect with Google and validate your credentials")),
   ])
 }
 

@@ -1,39 +1,33 @@
 
-msgid "workOffline"
-msgstr ""
-
-msgid "signIn"
-msgstr "Войти:"
-
-msgid "pleaseWait"
+msgid "Please wait..."
 msgstr "Подождите..."
 
-msgid "howToLogin"
+msgid "How-to login:"
 msgstr "Как войти в аккаунт:"
 
 msgid "cancel"
 msgstr "Отмена"
 
-msgid "sginInOk"
+msgid "Login success"
 msgstr "Вход выполнен"
 
-msgid "logOut"
+msgid "Log out"
 msgstr "Выйти"
 
-msgid "signInInfo"
+msgid "Sign in to synchronize your tasks with Google Tasks."
 msgstr "Войдите в аккаунт, чтобы синхронизировать свои задачи с Google Tasks. "
 
-msgid "copyToBrowserAndLogin"
+msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."
 
-msgid "pasteLoginCode"
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "После этого, вы получите ключ для авторизации. Вставьте его в поле ниже:"
 
-msgid "waitSomeTime"
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Подождите пару секунд, пока приложение получит информацию о входе"
 
-msgid "continueOnWatch"
+msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
 msgstr "Теперь ваши задачи из Google Tasks доступны на ваших умных часах."
 
-msgid "privacyLink"
+msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"

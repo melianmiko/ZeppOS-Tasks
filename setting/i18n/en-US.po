@@ -1,39 +1,33 @@
 
-msgid "workOffline"
-msgstr "Enforce offline mode"
-
-msgid "signIn"
-msgstr "Sign in:"
-
-msgid "pleaseWait"
+msgid "Please wait..."
 msgstr "Please, wait..."
 
-msgid "howToLogin"
+msgid "How-to login:"
 msgstr "How-to login:"
 
-msgid "cancel"
+msgid "Cancel"
 msgstr "Cancel"
 
-msgid "sginInOk"
+msgid "Login success"
 msgstr "Login success"
 
-msgid "logOut"
+msgid "Log out"
 msgstr "Log out"
 
-msgid "signInInfo"
+msgid "Sign in to synchronize your tasks with Google Tasks."
 msgstr "Sign in to synchronize your tasks with Google Tasks. "
 
-msgid "copyToBrowserAndLogin"
-msgstr "Copy the following link, open them into your browser, and prform a log in."
+msgid "Copy the following link, open them into your browser, and perform a log in."
+msgstr "Copy the following link, open them into your browser, and perform a log in."
 
-msgid "pasteLoginCode"
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "After that, you'll got a access token on screen. Paste them into field bellow:"
 
-msgid "waitSomeTime"
-msgstr "Wait for a few seconds until app will connect with Google and vaildate your credentials"
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
+msgstr "Wait for a few seconds until app will connect with Google and validate your credentials"
 
-msgid "continueOnWatch"
-msgstr "Now your Google Tasks lists will be accessable from your ZeppOS device."
+msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
+msgstr "Now your Google Tasks lists will be accessible from your ZeppOS device."
 
-msgid "privacyLink"
+msgid "Privacy Policy"
 msgstr "Privacy Policy"

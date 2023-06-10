@@ -23,10 +23,10 @@ export function LoginButtonView(props) {
       }),
     ]),
     View(CAPTION_VIEW, [
-      Text({}, gettext("signInInfo")),
+      Text({}, gettext("Sign in to synchronize your tasks with Google Tasks.")),
       Link({
         source: PRIVACY_POLICY_LINK
-      }, gettext("privacyLink"))
+      }, gettext("Privacy Policy"))
     ])
   ])
 }

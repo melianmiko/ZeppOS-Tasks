@@ -1,0 +1,39 @@
+
+msgid "workOffline"
+msgstr ""
+
+msgid "signIn"
+msgstr "Войти:"
+
+msgid "pleaseWait"
+msgstr "Подождите..."
+
+msgid "howToLogin"
+msgstr "Как войти в аккаунт:"
+
+msgid "cancel"
+msgstr "Отмена"
+
+msgid "sginInOk"
+msgstr "Вход выполнен"
+
+msgid "logOut"
+msgstr "Выйти"
+
+msgid "signInInfo"
+msgstr "Войдите в аккаунт, чтобы синхронизировать свои задачи с Google Tasks. "
+
+msgid "copyToBrowserAndLogin"
+msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."
+
+msgid "pasteLoginCode"
+msgstr "После этого, вы получите ключ для авторизации. Вставьте его в поле ниже:"
+
+msgid "waitSomeTime"
+msgstr "Подождите пару секунд, пока приложение получит информацию о входе"
+
+msgid "continueOnWatch"
+msgstr "Теперь ваши задачи из Google Tasks доступны на ваших умных часах."
+
+msgid "privacyLink"
+msgstr "Политика конфиденциальности"

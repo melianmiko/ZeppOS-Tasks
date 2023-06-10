@@ -2,9 +2,10 @@ import './lib/zeppos/device-polyfill'
 import { MessageBuilder } from './lib/zeppos/message'
 import { ConfigStorage } from "./lib/mmk/ConfigStorage";
 
-import { t, extendLocale } from "./lib/mmk/i18n";
-import { strings } from "./page/Translations";
 import {FsTools} from "./lib/mmk/Path";
+import {t} from "./lib/mmk/i18n";
+
+import "./page/Translations";
 
 // hmApp.packageInfo broken, again
 // These parameters are required for Mi Band 7, to build absolute path
@@ -20,7 +21,6 @@ FsTools.overrideAppPage = [
 const messageBuilder = new MessageBuilder({ appId });
 const config = new ConfigStorage();
 
-extendLocale(strings);
 
 App({
   globalData: {

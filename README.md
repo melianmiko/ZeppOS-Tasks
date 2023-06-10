@@ -1,6 +1,9 @@
 <div align="center">
 <img src="docs/icon_256.png" alt="" />
 <h1>ZeppTasks</h1>
+<p>
+<a title="Crowdin" target="_blank" href="https://crowdin.com/project/zepptasks"><img src="https://badges.crowdin.net/zepptasks/localized.svg"></a>
+</p>
 <p>Task list for ZeppOS. In sync with Google Tasks</p>
 </div>
 

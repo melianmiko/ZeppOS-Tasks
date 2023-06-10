@@ -6,7 +6,7 @@ Page({
   onInit(params) {
     console.log("HomePage.build()");
     hmUI.setStatusBarVisible(true);
-    hmUI.updateStatusBarTitle(t("display_name"));
+    hmUI.updateStatusBarTitle(t("Tasks"));
 
     hmApp.setScreenKeep(true);
     hmSetting.setBrightScreen(15);

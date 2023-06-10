@@ -21,7 +21,7 @@ export class SettingsScreen extends ConfiguredListScreen {
     if(this.mode !== "setup") this.buildHelpItems();
 
     // Lists picker
-    this.headline(t('section_lists'));
+    this.headline(t('Task lists:'));
     this.lists.forEach(({ id, title }) => this.row({
       text: title,
       icon: "icon_s/list.png",
@@ -30,23 +30,23 @@ export class SettingsScreen extends ConfiguredListScreen {
     if(this.mode === "setup") return;
 
     // UI settings
-    this.headline(t("section_settings_ui"));
+    this.headline(t("User interface:"));
     this.row({
-      text: t("setup_font_size"),
+      text: t("Font size..."),
       icon: "icon_s/font_size.png",
       callback: () => hmApp.gotoPage({
         url: `page/${this.pageClass}/FontSizeSetupScreen`
       })
     });
     this.row({
-      text: t("setup_keyboard"),
+      text: t("Keyboard..."),
       icon: "icon_s/keyboard.png",
       callback: () => hmApp.gotoPage({
         url: `page/${this.pageClass}/ScreenBoardSetup`
       })
     });
     this.row({
-      text: t("setup_with_complete"),
+      text: t("Show complete tasks"),
       icon:  `icon_s/cb_${config.get("withComplete", false)}.png`,
       callback: () => {
         config.set("withComplete", !config.get("withComplete", false));
@@ -55,19 +55,19 @@ export class SettingsScreen extends ConfiguredListScreen {
     })
 
     // Advanced settings
-    this.headline(t("section_advanced"));
+    this.headline(t("Advanced:"));
     if(this.mode === "offline") this.row({
-      text: t("remove_complete"),
+      text: t("Remove completed tasks"),
       icon: "icon_s/cleanup.png",
       callback: () => this.offlineRemoveComplete()
     })
     this.row({
-      text: t("wipe_app_data"),
+      text: t("Wipe ALL local data"),
       icon: "icon_s/wipe_all.png",
       callback: () => this.wipeEverything()
     });
     if(this.mode !== "offline") this.text({
-      text: t("option_above_didnt_clear_cloud"),
+      text: t("Option above didn't delete any data from your Google account."),
       fontSize: this.fontSize - 2,
       color: 0x999999
     });
@@ -88,7 +88,7 @@ export class SettingsScreen extends ConfiguredListScreen {
   wipeEverything() {
     if(this.wipeConfirm > 0) {
       this.wipeConfirm--;
-      return hmUI.showToast({text: t("tap_to_confirm")});
+      return hmUI.showToast({text: t("Tap again to confirm")});
     }
 
     config.wipe();
@@ -108,7 +108,7 @@ export class SettingsScreen extends ConfiguredListScreen {
 
   buildHelpItems() {
     this.row({
-      text: t("about_this_app"),
+      text: t("About..."),
       icon: "icon_s/about.png",
       callback: () => hmApp.gotoPage({
         url: `page/${this.pageClass}/AboutScreen`,
@@ -118,7 +118,7 @@ export class SettingsScreen extends ConfiguredListScreen {
       })
     });
     this.row({
-      text: t("help_index"),
+      text: t("Help index"),
       icon: "icon_s/help.png",
       callback: () => hmApp.gotoPage({
         url: `page/${this.pageClass}/MarkdownReader`,

@@ -181,20 +181,20 @@ export class HomeScreen extends ConfiguredListScreen {
         callback: () => this.openSettings(this.mode)
       },
       {
-        text: t("action_new_note"),
+        text: t("New..."),
         icon: "icon_s/new.png",
         callback: () => this.openNewNoteUI()
       }
     ])
 
-    this.headline(t(this.mode === "cached" ? "section_tasks_offline" : "section_tasks"));
+    this.headline(t(this.mode === "cached" ? "Offline tasks:" : "Tasks:"));
     this.taskData.items.map((data) => {
       this.taskCard(data);
     });
 
     if(this.taskData.items.length === 0) {
       this.text({
-        text: t("no_tasks_message")
+        text: t("There's no incomplete tasks in that list")
       })
     }
 
@@ -305,7 +305,7 @@ export class HomeScreen extends ConfiguredListScreen {
     });
 
     this.row({
-      text: t("how_to_log_in"),
+      text: t("How-to login?"),
       icon: "icon_s/help.png",
       callback: () => {
         hmApp.gotoPage({
@@ -315,7 +315,7 @@ export class HomeScreen extends ConfiguredListScreen {
       }
     });
     this.row({
-      text: t("enable_forever_offline"),
+      text: t("Use application without sync"),
       icon: "icon_s/mode_offline.png",
       callback: () => {
         config.update({

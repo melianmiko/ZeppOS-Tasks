@@ -5,7 +5,7 @@ const { t } = getApp()._options.globalData
 Page({
   onInit(filename) {
     hmUI.setStatusBarVisible(true);
-    hmUI.updateStatusBarTitle(t("help_index"));
+    hmUI.updateStatusBarTitle(t("Help index"));
 
     hmApp.setScreenKeep(true);
     hmSetting.setBrightScreen(15);

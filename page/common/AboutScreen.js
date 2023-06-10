@@ -12,14 +12,14 @@ export class AboutScreen extends BaseAboutScreen {
     this.appName = "Tasks";
     this.version = "v1.2";
     this.donateUrl = `page/${params.pageClass}/DonatePage`;
-    this.donateText = t("donate");
+    this.donateText = t("Donate");
 
     this.infoRows = [
       ["melianmiko", "Developer"],
     ];
 
-    this.uninstallText = t("action_uninstall");
-    this.uninstallConfirm = t("tap_to_confirm");
-    this.uninstallResult = t("uninstall_complete");
+    this.uninstallText = t("Uninstall");
+    this.uninstallConfirm = t("Tap again to confirm");
+    this.uninstallResult = t("Uninstall complete");
   }
 }

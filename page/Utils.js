@@ -45,11 +45,11 @@ export function createSpinner() {
 
 export function getOfflineInfo(err) {
   if(err.startsWith("Timed out"))
-    return t("offline_timeout");
+    return t("Work offline, connection timed out");
 
   switch(err) {
     case "login_first":
-      return t("offline_login");
+      return t("Log into your Google account via Zepp app to use all features");
     default:
       return err;
   }

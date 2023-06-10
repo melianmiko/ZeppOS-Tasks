@@ -12,6 +12,7 @@ pages = [
   "FontSizeSetupScreen",
   "ScreenBoardSetup",
   "SettingsScreen",
+  "MarkdownReader",
   "AboutScreen",
   "NewNoteScreen",
   "DonatePage"
@@ -79,8 +80,9 @@ for target_id in targets:
     shutil.rmtree(assets_dir)
   assets_dir.mkdir()
 
-  # Icon
+  # Misc files
   shutil.copy(common_assets / f"icon{data['icon_size']}.png", assets_dir / "icon.png")
+  shutil.copy(common_assets / f"qr_{data['qr']}.png", assets_dir / "donate.png")
 
   # Spinner
   if data["low_ram_spinner"]:
@@ -89,7 +91,6 @@ for target_id in targets:
     shutil.copytree(common_assets / "spinner", assets_dir / "spinner")
 
   # Donate QR
-  shutil.copy(common_assets / f"qr_{data['qr']}.png", assets_dir / "donate.png")
 
   # Icons
   for group in ["s", "m"]:

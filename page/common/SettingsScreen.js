@@ -18,16 +18,7 @@ export class SettingsScreen extends ConfiguredListScreen {
   }
 
   build() {
-    if(this.mode !== "setup") this.row({
-      text: t("about_this_app"),
-      icon: "icon_s/about.png",
-      callback: () => hmApp.gotoPage({
-        url: `page/${this.pageClass}/AboutScreen`,
-        param: JSON.stringify({
-          pageClass: this.pageClass,
-        })
-      })
-    });
+    if(this.mode !== "setup") this.buildHelpItems();
 
     // Lists picker
     this.headline(t('section_lists'));
@@ -113,5 +104,26 @@ export class SettingsScreen extends ConfiguredListScreen {
     }
     config.set("tasks", output);
     hmApp.goBack();
+  }
+
+  buildHelpItems() {
+    this.row({
+      text: t("about_this_app"),
+      icon: "icon_s/about.png",
+      callback: () => hmApp.gotoPage({
+        url: `page/${this.pageClass}/AboutScreen`,
+        param: JSON.stringify({
+          pageClass: this.pageClass,
+        })
+      })
+    });
+    this.row({
+      text: t("help_index"),
+      icon: "icon_s/help.png",
+      callback: () => hmApp.gotoPage({
+        url: `page/${this.pageClass}/MarkdownReader`,
+        param: "index.txt"
+      })
+    });
   }
 }

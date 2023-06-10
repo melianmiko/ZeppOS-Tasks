@@ -13,6 +13,22 @@ export const strings = {
     "zh-CN": "Tasks",
     "ru-RU": "Задачи",
   },
+  help_index: {
+    "en-US": "Help",
+    "zh-CN": "",
+    "ru-RU": "Помощь",
+  },
+  help_file_prefix: {
+    // Set only of all help pages in assets/help is available with provided prefix!
+    "en-US": "en_",
+    "zh-CN": "",
+    "ru-RU": "",
+  },
+  how_to_log_in: {
+    "en-US": "How-to login?",
+    "zh-CN": "",
+    "ru-RU": "Как войти в аккаунт?",
+  },
   action_create: {
     "en-US": "Create",
     "zh-CN": "保存",

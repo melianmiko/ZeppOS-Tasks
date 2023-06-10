@@ -29,6 +29,7 @@
             "page/miband7/FontSizeSetupScreen",
             "page/miband7/ScreenBoardSetup",
             "page/miband7/SettingsScreen",
+            "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
             "page/miband7/DonatePage"
@@ -92,6 +93,7 @@
             "page/miband7/FontSizeSetupScreen",
             "page/miband7/ScreenBoardSetup",
             "page/miband7/SettingsScreen",
+            "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
             "page/miband7/DonatePage"
@@ -155,6 +157,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -186,6 +189,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -231,6 +235,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -262,6 +267,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -283,6 +289,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -324,6 +331,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -355,6 +363,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -390,6 +399,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -421,6 +431,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -452,6 +463,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"
@@ -483,6 +495,7 @@
             "page/amazfit/FontSizeSetupScreen",
             "page/amazfit/ScreenBoardSetup",
             "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
             "page/amazfit/DonatePage"

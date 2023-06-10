@@ -305,6 +305,16 @@ export class HomeScreen extends ConfiguredListScreen {
     });
 
     this.row({
+      text: t("how_to_log_in"),
+      icon: "icon_s/help.png",
+      callback: () => {
+        hmApp.gotoPage({
+          url: `page/${this.pageClass}/MarkdownReader`,
+          param: "help_google.txt"
+        })
+      }
+    });
+    this.row({
       text: t("enable_forever_offline"),
       icon: "icon_s/mode_offline.png",
       callback: () => {

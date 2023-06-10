@@ -1,7 +1,7 @@
 {
 	"esbuild": true,
 	"with_zeus_overrides": true,
-	"encode_mode": "nxp",
+	"encode_mode": "dialog",
 	"zeus_target": "gts-4-mini",
 	"post_build_script": ""
 } 

@@ -6,6 +6,7 @@
 
 - [📀 Homepage & Download](https://melianmiko.ru/en/zepp/tasks/)
 - [❤️ Make a donation](https://melianmiko.ru/en/donate/)
+- [🌎 Help with localization](https://crowdin.com/project/zepptasks)
 
 ## Build instructions
 

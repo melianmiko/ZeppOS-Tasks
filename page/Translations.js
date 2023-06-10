@@ -1,7 +1,7 @@
 import { loadLocale } from "../lib/mmk/i18n";
 
 import {russianStrings} from "./translations/ru-RU";
-import {englishStrings} from "./translations/en-US";
+import {englishStrings} from "./translations/english";
 import {chineseStrings} from "./translations/zh-CN";
 
 /**

@@ -10,44 +10,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
-"PO-Revision-Date: 2023-06-10 18:54\n"
+"PO-Revision-Date: 2023-06-11 00:54\n"
 
-msgid "workOffline"
+msgid "Please wait..."
 msgstr ""
 
-msgid "signIn"
+msgid "How-to login:"
 msgstr ""
 
-msgid "pleaseWait"
+msgid "Cancel"
 msgstr ""
 
-msgid "howToLogin"
+msgid "Login success"
 msgstr ""
 
-msgid "cancel"
+msgid "Log out"
 msgstr ""
 
-msgid "sginInOk"
+msgid "Sign in to synchronize your tasks with Google Tasks."
 msgstr ""
 
-msgid "logOut"
+msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr ""
 
-msgid "signInInfo"
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr ""
 
-msgid "copyToBrowserAndLogin"
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr ""
 
-msgid "pasteLoginCode"
+msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
 msgstr ""
 
-msgid "waitSomeTime"
-msgstr ""
-
-msgid "continueOnWatch"
-msgstr ""
-
-msgid "privacyLink"
+msgid "Privacy Policy"
 msgstr ""
 

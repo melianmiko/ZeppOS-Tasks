@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-06-11 00:54\n"
+"PO-Revision-Date: 2023-06-17 08:32\n"
 
 msgid "Please wait..."
 msgstr "Подождите..."
@@ -19,7 +19,7 @@ msgid "How-to login:"
 msgstr "Как войти в аккаунт:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 msgid "Login success"
 msgstr "Вход выполнен"

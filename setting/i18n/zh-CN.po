@@ -10,38 +10,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-06-17 05:20\n"
+"PO-Revision-Date: 2023-06-17 08:32\n"
 
 msgid "Please wait..."
-msgstr "请稍后…"
+msgstr "请稍后..."
 
 msgid "How-to login:"
-msgstr "登录方式"
+msgstr "如何登录？"
 
 msgid "Cancel"
-msgstr "取消"
+msgstr "取消..."
 
 msgid "Login success"
-msgstr "登录成功"
+msgstr "登入成功"
 
 msgid "Log out"
-msgstr "注销"
+msgstr "退出账号"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr "登录以同步您的任务与谷歌任务"
+msgstr "登录以使您的任务与 Google Task 同步."
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr "复制以下链接，在浏览器中打开，然后执行登录"
+msgstr "复制下面的链接，将其打开到您的浏览器并登录。"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "然后你会在屏幕上获得一个访问令牌。请将它们粘贴到下面的字段："
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "等待几秒钟，直到应用程序连接到谷歌并验证您的凭据"
 
 msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr ""
+msgstr "现在您的 Google 任务列表将可以从您的 ZeppOS 设备访问。"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "隐私条款"
 

@@ -10,28 +10,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-06-11 00:54\n"
+"PO-Revision-Date: 2023-06-17 05:20\n"
 
 msgid "Please wait..."
-msgstr ""
+msgstr "请稍后…"
 
 msgid "How-to login:"
-msgstr ""
+msgstr "登录方式"
 
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 msgid "Login success"
-msgstr ""
+msgstr "登录成功"
 
 msgid "Log out"
-msgstr ""
+msgstr "注销"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr ""
+msgstr "登录以同步您的任务与谷歌任务"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "复制以下链接，在浏览器中打开，然后执行登录"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr ""

@@ -29,6 +29,7 @@ export class NewNoteScreen extends ConfiguredListScreen {
       text
     };
 
+    console.log(this.params.mode);
     if(this.params.mode === "offline") {
       // No sync
       let storage = config.get("tasks", []);
@@ -37,7 +38,7 @@ export class NewNoteScreen extends ConfiguredListScreen {
         title: text,
         completed: false
       });
-      config.set("offline", storage);
+      config.set("tasks", storage);
       hmApp.goBack();
     } else if(this.params.mode === "cached") {
       // Add pending request

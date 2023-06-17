@@ -7,7 +7,7 @@ Page({
       appid: 1023438,
       url: "page/miband7/HomeScreenOffline",
       param: params,
-    })
+    });
     AppGesture.init();
 
     hmApp.setScreenKeep(true);

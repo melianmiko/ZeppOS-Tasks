@@ -1,7 +1,7 @@
 export const strings = {
     'Tasks': 'Tasks',
     'Help index': '指南',
-    'help_file_prefix': 'en_',
+    'help_file_prefix': 'en',
     'How-to login?': '如何登录？',
     'Create': '保存',
     'New note:': '新计划',

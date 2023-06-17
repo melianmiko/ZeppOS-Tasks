@@ -11,9 +11,9 @@ Page({
     hmSetting.setBrightScreen(15);
 
     try {
-      const url = t("help_file_prefix") + filename;
+      const url =  + filename;
       const resolver = new ResolveFromAssets("raw/help",
-          "page/amazfit/", "help/");
+          "page/amazfit/", `help/${t("help_file_prefix")}`);
       const reader = new MarkdownRenderScreen(resolver, url);
       reader.start();
     } catch(e) {

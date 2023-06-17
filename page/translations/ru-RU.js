@@ -1,7 +1,7 @@
 export const strings = {
     'Tasks': 'Задачи',
     'Help index': 'Помощь',
-    'help_file_prefix': 'en_',
+    'help_file_prefix': 'en',
     'How-to login?': 'Как войти в аккаунт?',
     'Create': 'Создать',
     'New note:': 'Новая заметка',

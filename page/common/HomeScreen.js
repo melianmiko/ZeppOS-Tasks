@@ -310,7 +310,7 @@ export class HomeScreen extends ConfiguredListScreen {
       callback: () => {
         hmApp.gotoPage({
           url: `page/${this.pageClass}/MarkdownReader`,
-          param: "help_google.txt"
+          param: "help_google.md"
         })
       }
     });

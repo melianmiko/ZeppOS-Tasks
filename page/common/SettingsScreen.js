@@ -117,13 +117,13 @@ export class SettingsScreen extends ConfiguredListScreen {
         })
       })
     });
-    this.row({
-      text: t("Help index"),
-      icon: "icon_s/help.png",
-      callback: () => hmApp.gotoPage({
-        url: `page/${this.pageClass}/MarkdownReader`,
-        param: "index.txt"
-      })
-    });
+    // this.row({
+    //   text: t("Help index"),
+    //   icon: "icon_s/help.png",
+    //   callback: () => hmApp.gotoPage({
+    //     url: `page/${this.pageClass}/MarkdownReader`,
+    //     param: "index.md"
+    //   })
+    // });
   }
 }

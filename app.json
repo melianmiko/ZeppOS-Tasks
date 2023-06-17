@@ -5,8 +5,8 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 2,
-      "name": "1.2"
+      "code": 3,
+      "name": "1.3"
     },
     "icon": "icon.png",
     "vender": "zepp",

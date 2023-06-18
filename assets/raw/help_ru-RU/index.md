@@ -1,2 +1,2 @@
-# Initial setup
+# Первоначальная настройка
 [Как войти в аккаунт Google?](help_google.md)

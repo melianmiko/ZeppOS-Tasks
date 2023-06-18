@@ -4,4 +4,4 @@ files:
   - source: /setting/i18n/en-US.po
     translation: /setting/i18n/%locale%.po
   - source: /assets/raw/help_en/*.md
-    translation: /assets/raw/help_%two_letters_code%/%file_name%.md
+    translation: /assets/raw/help_%locale%/%file_name%.md

@@ -10,16 +10,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-06-17 08:32\n"
+"PO-Revision-Date: 2023-06-17 21:14\n"
 
 msgid "Please wait..."
-msgstr "请稍后..."
+msgstr "请稍后…"
 
 msgid "How-to login:"
 msgstr "如何登录？"
 
 msgid "Cancel"
-msgstr "取消..."
+msgstr "取消"
 
 msgid "Login success"
 msgstr "登入成功"

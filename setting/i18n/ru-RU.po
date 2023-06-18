@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-06-17 08:32\n"
+"PO-Revision-Date: 2023-06-17 15:00\n"
 
 msgid "Please wait..."
 msgstr "Подождите..."
@@ -28,7 +28,7 @@ msgid "Log out"
 msgstr "Выйти"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr "Войдите в аккаунт, чтобы синхронизировать свои задачи с Google Tasks. "
+msgstr "Войдите в аккаунт, чтобы синхронизировать свои задачи с Google Tasks."
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."

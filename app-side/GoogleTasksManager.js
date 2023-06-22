@@ -107,7 +107,7 @@ export class GoogleTasksManager {
 	}
 
 	async setComplete(listId, taskId, value) {
-		const [res, data] = await this.fetch({
+		await this.fetch({
 			method: "PATCH",
 			url: `/lists/${listId}/tasks/${taskId}`,
 			body: {
@@ -124,7 +124,7 @@ export class GoogleTasksManager {
 	}
 
 	async insertTask(listId, text) {
-		const res = await this.fetch({
+		await this.fetch({
 			method: "POST",
 			url: `/lists/${listId}/tasks`,
 			body: {

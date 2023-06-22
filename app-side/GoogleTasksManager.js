@@ -70,17 +70,25 @@ export class GoogleTasksManager {
 			url: "/users/@me/lists",
 			query: {
 				access_token: this.token,
-				fields: "items(id,title)"
+				// fields: "items(id,title)",
 			}
 		});
 
-		return data.items;
+		const out = [];
+		for(const item of data.items) {
+			out.push({
+				id: item.id,
+				title: item.title,
+			})
+		}
+
+		return out;
 	}
 
 	async getTasksIn(listId, withCompleted, pageToken = null) {
 		const query = {
 			access_token: this.token,
-			fields: "nextPageToken,items(id,title,status,position)"
+			// fields: "nextPageToken,items(id,title,status,position)"
 		};
 		if(withCompleted) {
 			query.showCompleted = true;
@@ -97,13 +105,20 @@ export class GoogleTasksManager {
 		});
 
 		data.items.sort((a, b) => a.position < b.position ? -1 : 1);
+
+		const out = [];
 		for(const item of data.items) {
-			item.completed = item.status === "completed";
-			delete item.status;
-			delete item.position;
+			out.push({
+				id: item.id,
+				title: item.title,
+				completed: item.status === "completed",
+			})
 		}
 
-		return data;
+		return {
+			nextPageToken: data.nextPageToken,
+			items: out,
+		};
 	}
 
 	async setComplete(listId, taskId, value) {

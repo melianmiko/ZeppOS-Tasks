@@ -1,4 +1,5 @@
 import { BaseAboutScreen } from "../../lib/mmk/BaseAboutScreen";
+import {VERSION} from "../../version";
 
 const { t } = getApp()._options.globalData
 
@@ -10,7 +11,7 @@ export class AboutScreen extends BaseAboutScreen {
 
     this.appId = 1023438;
     this.appName = "Tasks";
-    this.version = "v1.4-beta0";
+    this.version = VERSION;
     this.donateUrl = `page/${params.pageClass}/DonatePage`;
     this.donateText = t("Donate");
 

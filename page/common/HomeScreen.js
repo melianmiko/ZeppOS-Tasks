@@ -7,6 +7,7 @@ import {
 import { request, createSpinner, getOfflineInfo } from "../Utils";
 import { ConfiguredListScreen } from "./ConfiguredListScreen";
 import { TouchEventManager } from "../../lib/mmk/TouchEventManager";
+import {deviceName} from "../../lib/mmk/DeviceIdentifier";
 
 const { config, t } = getApp()._options.globalData
 
@@ -41,6 +42,7 @@ export class HomeScreen extends ConfiguredListScreen {
     // Load task lists
     request({
       action: "hello",
+      deviceName: deviceName,
       request_queue: config.get("request_queue", [])
     }).then((data) => {
       this.taskLists = data.taskLists;

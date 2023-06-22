@@ -158,6 +158,9 @@ export class ZeppTasksSideService {
       }
     }
 
+    // Store deviceName for later use
+    settings.settingsStorage.setItem("deviceName", request.deviceName);
+
     // Fetch tasks
     return {
       taskLists: await this.tasks.getTaskLists()

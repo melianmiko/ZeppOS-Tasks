@@ -48,6 +48,7 @@ export class GoogleTasksManager {
 		} else if((res.status < 200 || res.status >= 400) && !noCrash) {
 			let report = `Failed to fetch: ${fetchParams.method} ${fetchParams.url}`;
 			report += `\nHeaders: ${JSON.stringify(fetchParams.headers)}`;
+			report += `\nStatus code: ${res.status}`;
 
 			// Add Google-API errors, if present
 			if(data.error)

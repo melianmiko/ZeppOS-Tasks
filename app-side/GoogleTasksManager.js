@@ -1,3 +1,5 @@
+import {onError} from "./onError";
+
 const BASE_URL = "https://tasks.googleapis.com/tasks/v1";
 
 export class GoogleTasksManager {
@@ -7,10 +9,10 @@ export class GoogleTasksManager {
 
 	onTokenRenew() {}
 
-	async fetch(options) {
+	async fetch(options, noCrash = false) {
 		const fetchParams = {
 			url: BASE_URL + options.url,
-			method: options.method == "GET" ? "GET" : "POST",
+			method: options.method === "GET" ? "GET" : "POST",
 			headers: {
 				'Content-Type': 'application/json',
 				'X-HTTP-Method-Override': options.method
@@ -32,25 +34,37 @@ export class GoogleTasksManager {
 		}
 
 		// Do a fetch
-		console.log(fetchParams.method, fetchParams.url, fetchParams);
 		const res = await fetch(fetchParams);
+		const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
 
 		// Token refresh required
-		if(res.status == 401 && !options.norefresh) {
+		if(res.status === 401 && !options.norefresh) {
 			console.log("Trying to renew token...");
 			this.token = await this.onTokenRenew();
 			if(options.query && options.query.access_token)
 				options.query.access_token = this.token;
 			options.norefresh = true;
 			return await this.fetch(options);
+		} else if((res.status < 200 || res.status >= 400) && !noCrash) {
+			let report = `Failed to fetch: ${fetchParams.method} ${fetchParams.url}`;
+			report += `\nHeaders: ${JSON.stringify(fetchParams.headers)}`;
+
+			// Add Google-API errors, if present
+			if(data.error)
+				report += `\nGoogle API errors: ${JSON.stringify(data.error)}`;
+
+			// Exclude personal data
+			report = report.replaceAll(this.token, "ACCESS_TOKEN");
+
+			onError(report);
+			throw new Error(res.status + ": " + (data.error ? data.error.message : "Request failed..."));
 		}
 
-		const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
 		return [res, data];
 	}
 
 	async getTaskLists() {
-		const [res, data] = await this.fetch({
+		const [_, data] = await this.fetch({
 			method: "GET",
 			url: "/users/@me/lists",
 			query: {
@@ -59,12 +73,6 @@ export class GoogleTasksManager {
 			}
 		});
 
-		if(res.status != 200) {
-			console.error(data)
-			throw new Error(`Can't get list of tasklists`);
-		}
-
-		console.log("task lists", data);
 		return data.items;
 	}
 
@@ -81,25 +89,19 @@ export class GoogleTasksManager {
 			query.pageToken = pageToken;
 		}
 
-		const [res, data] = await this.fetch({
+		const [_, data] = await this.fetch({
 			method: "GET",
 			url: `/lists/${listId}/tasks`,
 			query
 		});
 
-		if(res.status != 200) {
-			console.error(data);
-			throw new Error(`Can't get list of tasks`);
-		}
-
 		data.items.sort((a, b) => a.position < b.position ? -1 : 1);
 		for(const item of data.items) {
-			item.completed = item.status == "completed";
+			item.completed = item.status === "completed";
 			delete item.status;
 			delete item.position;
 		}
 
-		console.log(data);
 		return data;
 	}
 
@@ -109,7 +111,7 @@ export class GoogleTasksManager {
 			url: `/lists/${listId}/tasks/${taskId}`,
 			body: {
 				status: value ? "completed" : "needsAction",
-				hidden: value ? true : false
+				hidden: !!value
 			},
 			query: {
 				access_token: this.token,
@@ -117,12 +119,6 @@ export class GoogleTasksManager {
 			}
 		});
 
-		if(res.status != 200) {
-			console.error(data);
-			throw new Error(`Can't modify task`);
-		}
-
-		console.log(data);
 		return true;
 	}
 

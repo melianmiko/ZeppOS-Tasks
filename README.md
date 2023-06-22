@@ -24,7 +24,7 @@ to obtain OAuth keys.
 3. Create & publish some page that will be able to show obtained token, use it as callback URL
 4. Configure OAuth screen, add self as test user, don't forgot to add `tasks` scope
 5. Create "OAuth 2.0 Client IDs" in credentials
-6. Paste your credentials and callback URL into `app-side/Config.js`
+6. Copy `app-side/Config.js.example` to `app-side/Config.js` and paste your credentials and callback URL into them
 
 Clone this project **recursively**:
 ```bash

@@ -10,7 +10,7 @@ export class AboutScreen extends BaseAboutScreen {
 
     this.appId = 1023438;
     this.appName = "Tasks";
-    this.version = "v1.3";
+    this.version = "v1.4-beta0";
     this.donateUrl = `page/${params.pageClass}/DonatePage`;
     this.donateText = t("Donate");
 

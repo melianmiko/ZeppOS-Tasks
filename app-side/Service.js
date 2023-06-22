@@ -1,15 +1,13 @@
 import {MessageBuilder} from "../lib/zeppos/message";
 import {GoogleTasksManager} from "./GoogleTasksManager";
-import {GoogleLocalAuth} from "./GoogleLocalAuth";
-import {ServerBasedAuth} from "./ServerBasedAuth";
-import {OAUTH_CLIENT_ID} from "./Config";
+import {GoogleAuth} from "./GoogleAuth";
 
 const messageBuilder = new MessageBuilder();
 
 export class ZeppTasksSideService {
   init() {
     // Authorizer
-    this.auth = OAUTH_CLIENT_ID ? new GoogleLocalAuth() : new ServerBasedAuth();
+    this.auth = new GoogleAuth();
     this.tasks = new GoogleTasksManager(null);
 
     this.keepOffline = settings.settingsStorage.getItem("debug_offline") === "true";

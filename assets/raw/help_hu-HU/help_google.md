@@ -10,6 +10,6 @@ A Google-fiókodba való bejelentkezéshez használd az Amazfit Zepp alkalmazás
 6. Hajtsd végre a bejelentkezést
 
 ### Ha offline módban vagy...
-On your smartwatch, open Tasks app, go to settings and select "Wipe ALL local data".
+Az okosórán nyisd meg a Feladatok alkalmazást, lépj a beállításokhoz, és válaszd az „ÖSSZES helyi adat törlése” lehetőséget.
 
-WARNING: This will delete all offline tasks. Data stored in Google account won't be deleted, only local files.
+FIGYELMEZTETÉS: Ezzel törlöd az összes offline feladatot. A Google-fiókodban tárolt adatok nem törlődnek, csak a helyi fájlok.

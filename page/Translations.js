@@ -3,6 +3,7 @@ import { loadLocale } from "../lib/mmk/i18n";
 import {strings as russianStrings} from "./translations/ru-RU";
 import {strings as englishStrings} from "./translations/en-US";
 import {strings as chineseStrings} from "./translations/zh-CN";
+import {strings as hungarianStrings} from "./translations/hu-HU";
 
 /**
  * Locale contents was split into separate files and saved into
@@ -16,3 +17,4 @@ import {strings as chineseStrings} from "./translations/zh-CN";
 loadLocale("en-US", englishStrings);
 loadLocale("ru-RU", russianStrings);
 loadLocale("zh-CN", chineseStrings);
+loadLocale("hu-HU", hungarianStrings);

@@ -1,15 +1,15 @@
-To log into your Google account, use Amazfit Zepp application on your phone.
+A Google-fiókodba való bejelentkezéshez használd az Amazfit Zepp alkalmazást a telefonodon.
 
-### Step-by-step
+### Lépésről-lépésre
 
-1. Open Zepp application
-2. Go to "Profile" tab
-3. Select your device in list
-4. Click on "More" icon
-5. Select "Tasks"
-6. Perform sign in
+1. Nyisd meg a Zepp alkalmazást
+2. Menj a "Profil" fülre
+3. Válaszd ki az eszközt a listából
+4. Kattints a "Továbbiak" ikonra
+5. Válaszd ki a "Feladatok" lehetőséget
+6. Hajtsd végre a bejelentkezést
 
-### If you're in offline mode...
-On your smartwatch, open Tasks app, go to settings and select "Wipe ALL local data".
+### Ha offline módban vagy...
+Az okosórán nyisd meg a Feladatok alkalmazást, lépj a beállításokhoz, és válaszd az „ÖSSZES helyi adat törlése” lehetőséget.
 
-WARNING: This will delete all offline tasks. Data stored in Google account won't be deleted, only local files.
+FIGYELMEZTETÉS: Ezzel törlöd az összes offline feladatot. A Google-fiókodban tárolt adatok nem törlődnek, csak a helyi fájlok.

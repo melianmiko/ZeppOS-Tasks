@@ -10,38 +10,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2023-06-11 00:54\n"
+"PO-Revision-Date: 2023-06-23 12:51\n"
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Kérlek várj..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Hogyan léphetek be:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 msgid "Login success"
-msgstr ""
+msgstr "Sikeres bejelentkezés"
 
 msgid "Log out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr ""
+msgstr "Jelentkezz be, hogy szinkronizáld a feladataidat a Google Tasks szolgáltatással."
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "Másold ki a következő linket, nyisd meg a böngészőben, és jelentkezz be."
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "Ezt követően megjelenik egy hozzáférési token a képernyőn. Illeszd be az alábbi mezőbe:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Várj néhány másodpercet, amíg az alkalmazás kapcsolatba lép a Google-lal, és ellenőrzi a hitelesítő adataidat"
 
 msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr ""
+msgstr "Mostantól Google Tasks feladatlistái elérhetőek lesznek ZeppOS-eszközödről."
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Adatvédelmi irányelvek"
 

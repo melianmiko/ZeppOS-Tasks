@@ -2,7 +2,7 @@ import {OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, CALLBACK_URL} from "./Config";
 
 const REQUIRED_SCOPE = "https://www.googleapis.com/auth/tasks";
 
-export class GoogleLocalAuth {
+export class GoogleAuth {
   async onLoginRequest(_) {
     // [url, require_response]
     return [`https://accounts.google.com/o/oauth2/v2/auth?client_id=${OAUTH_CLIENT_ID}`+

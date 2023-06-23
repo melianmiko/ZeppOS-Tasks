@@ -1,2 +1,2 @@
-# Initial setup
-[How-to login with Google?](help_google.md)
+# Kezdeti beállítás
+[Hogyan lehet bejelentkezni a Google segítségével?](help_google.md)

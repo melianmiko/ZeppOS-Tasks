@@ -1,7 +1,7 @@
 export const strings = {
     'Tasks': 'Feladatok',
     'Help index': 'Súgó',
-    'help_file_prefix': 'hu-HU',
+    'help_file_prefix': 'en',
     'How-to login?': 'Hogyan léphetek be?',
     'Create': 'Létrehozás',
     'New note:': 'Új jegyzet:',

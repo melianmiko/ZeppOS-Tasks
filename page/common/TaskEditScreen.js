@@ -7,6 +7,9 @@ const { config, t } = getApp()._options.globalData
 export class TaskEditScreen extends ListScreen {
     constructor(param, pageClass) {
         super();
+
+        this.accentColor = 0x00a2b6;
+
         this.pageClass = pageClass;
         this.isSaving = false;
 
@@ -17,17 +20,27 @@ export class TaskEditScreen extends ListScreen {
     }
 
     init() {
-        this.text({text: this.task.title});
+        this.text({
+            text: this.task.title,
+            fontSize: this.fontSize + 2
+        });
+        this.offset(16);
+        this.headline(t("Actions"));
         this.row({
             text: t("Edit"),
             icon: "icon_s/edit.png",
-            callback: () => this.board.visible = true
+            callback: () => {
+                this.board.visible = true;
+                hmApp.setLayerY(0);
+                hmUI.setLayerScrolling(false);
+            }
         });
         this.deleteRow = this.row({
             text: t("Delete"),
             icon: "icon_s/delete.png",
             callback: () => this.doDelete()
         })
+        this.offset();
 
         this.board = new ScreenBoard();
         this.board.title = "Edit task";

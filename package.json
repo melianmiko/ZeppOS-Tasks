@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "zeppos-device-types-v1": "^1.0.9"
+  },
+  "dependencies": {
+    "@zeppos/zeus-cli": "^1.3.0-beta.9"
   }
 }

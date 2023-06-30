@@ -35,7 +35,6 @@ export class GoogleTasksManager {
 
 		// Do a fetch
 		const res = await fetch(fetchParams);
-		const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
 
 		// Token refresh required
 		if(res.status === 401 && !options.norefresh) {
@@ -45,7 +44,10 @@ export class GoogleTasksManager {
 				options.query.access_token = this.token;
 			options.norefresh = true;
 			return await this.fetch(options);
+		} else if(res.status === 204) {
+			return [res, null];
 		} else if((res.status < 200 || res.status >= 400) && !noCrash) {
+			const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
 			let report = `Failed to fetch: ${fetchParams.method} ${fetchParams.url}`;
 			report += `\nHeaders: ${JSON.stringify(fetchParams.headers)}`;
 			report += `\nStatus code: ${res.status}`;
@@ -61,6 +63,7 @@ export class GoogleTasksManager {
 			throw new Error(res.status + ": " + (data.error ? data.error.message : "Request failed..."));
 		}
 
+		const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
 		return [res, data];
 	}
 
@@ -132,6 +135,34 @@ export class GoogleTasksManager {
 			query: {
 				access_token: this.token,
 				fields: "status"
+			}
+		});
+
+		return true;
+	}
+
+	async changeTitle(listId, taskId, value) {
+		await this.fetch({
+			method: "PATCH",
+			url: `/lists/${listId}/tasks/${taskId}`,
+			body: {
+				title: value
+			},
+			query: {
+				access_token: this.token,
+				fields: "status"
+			}
+		});
+
+		return true;
+	}
+
+	async deleteTask(listId, taskId) {
+		await this.fetch({
+			method: "DELETE",
+			url: `/lists/${listId}/tasks/${taskId}`,
+			query: {
+				access_token: this.token
 			}
 		});
 

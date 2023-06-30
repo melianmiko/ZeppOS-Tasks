@@ -1,4 +1,19 @@
 
+msgid "Account"
+msgstr "Account"
+
+msgid "About"
+msgstr "About"
+
+msgid "Like this application? Consider to support their development with a small donation: "
+msgstr "Like this application? Consider to support their development with a small donation: "
+
+msgid "Want to see ZeppTasks into another language? You can help us with translation: "
+msgstr "Want to see ZeppTasks into another language? You can help us with translation: "
+
+msgid "Source code available: "
+msgstr "Source code available: "
+
 msgid "Please wait..."
 msgstr "Please, wait..."
 

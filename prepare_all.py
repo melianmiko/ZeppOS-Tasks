@@ -15,6 +15,7 @@ pages = [
   "MarkdownReader",
   "AboutScreen",
   "NewNoteScreen",
+  "TaskEditScreen",
   "DonatePage"
 ]
 
@@ -48,7 +49,7 @@ mi_band_config = {
 targets = {
   "gts-4-mini": generic_target_big_screen,
   "band-7": {
-    "icon_size": 80,
+    "icon_size": 100,
     "class": "amazfit",
     "icon_s": 24,
     "icon_m": 48,
@@ -62,6 +63,8 @@ targets = {
   "gtr-4": generic_target_big_screen,
   "gts-4": generic_target_big_screen,
   "falcon": generic_target_big_screen,
+  "cheetah": generic_target_big_screen,
+  "cheetah-pro": generic_target_big_screen,
   "gtr-3-pro": generic_target_big_screen,
   "gtr-3": generic_target_big_screen,
   "gts-3": generic_target_big_screen,

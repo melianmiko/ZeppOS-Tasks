@@ -5,12 +5,23 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 3,
-      "name": "1.3"
+      "code": 4,
+      "name": "1.4"
     },
     "icon": "icon.png",
-    "vender": "zepp",
+    "vender": "MelianMiko (mmk.pw)",
     "description": "ZeppOS Tasks app"
+  },
+  "i18n": {
+    "ru-RU": {
+      "appName": "Задачи"
+    },
+    "hu-HU": {
+      "appName": "Feladatok"
+    },
+    "zh-CN": {
+      "appName": "任务列表"
+    }
   },
   "permissions": [],
   "runtime": {
@@ -32,6 +43,7 @@
             "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
+            "page/miband7/TaskEditScreen",
             "page/miband7/DonatePage"
           ]
         },
@@ -96,6 +108,7 @@
             "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
+            "page/miband7/TaskEditScreen",
             "page/miband7/DonatePage"
           ]
         },
@@ -160,6 +173,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -192,6 +206,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -238,6 +253,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -270,6 +286,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -292,6 +309,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -334,6 +352,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -366,6 +385,73 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      }
+    },
+    "cheetah": {
+      "platforms": [
+        {
+          "name": "cheetah",
+          "deviceSource": 8192256
+        },
+        {
+          "name": "cheetah-2",
+          "deviceSource": 8192257
+        }
+      ],
+      "module": {
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      }
+    },
+    "cheetah-pro": {
+      "platforms": [
+        {
+          "name": "cheetah-pro",
+          "deviceSource": 8126720
+        },
+        {
+          "name": "cheetah-pro-2",
+          "deviceSource": 8126721
+        }
+      ],
+      "module": {
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -402,6 +488,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -434,6 +521,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -466,6 +554,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -498,6 +587,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },

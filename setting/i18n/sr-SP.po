@@ -10,7 +10,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Serbian (Cyrillic)\n"
 "Language: sr_SP\n"
-"PO-Revision-Date: 2023-06-11 00:54\n"
+"PO-Revision-Date: 2023-06-30 10:12\n"
+
+msgid "Account"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Like this application? Consider to support their development with a small donation: "
+msgstr ""
+
+msgid "Want to see ZeppTasks into another language? You can help us with translation: "
+msgstr ""
+
+msgid "Log in with Google"
+msgstr ""
+
+msgid "Source code available: "
+msgstr ""
 
 msgid "Please wait..."
 msgstr ""

@@ -40,8 +40,8 @@ AppSettingsPage({
         loginUI,
         LastErrorView(props),
 
-        Headline("Debug"),
-        Toggle({label: "Force offline", settingsKey: "force_offline"}),
+        // Headline("Debug"),
+        // Toggle({label: "Force offline", settingsKey: "force_offline"}),
 
         Headline(gettext("About")),
         Paragraph([

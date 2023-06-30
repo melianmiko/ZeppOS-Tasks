@@ -2,7 +2,7 @@ import {gettext} from 'i18n';
 import {CAPTION_VIEW} from "../styles";
 import {LoginStatusView} from "./LoginStatusView";
 
-export const PRIVACY_POLICY_LINK = "https://melianmiko.ru/en/zepptasks_privacy/";
+export const PRIVACY_POLICY_LINK = "https://mmk.pw/en/legal/zepptasks/";
 
 export function LoginButtonView(props) {
   return View({}, [
@@ -21,7 +21,7 @@ export function LoginButtonView(props) {
       }
     }, [
       Image({
-        src: "https://st.melianmiko.ru/3rd/google_sign_in.png",
+        src: "https://st.mmk.pw/3rd/google_sign_in.png",
         style: {
           maxWidth: "min(60vw,382px)"
         },

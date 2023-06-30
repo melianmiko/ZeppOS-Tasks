@@ -11,7 +11,7 @@ Page({
 
     hmSetting.setBrightScreen(60);
 
-    const image_size = 192;
+    const image_size = 174;
     hmUI.createWidget(hmUI.widget.FILL_RECT, {
       x: 0,
       y: 0,

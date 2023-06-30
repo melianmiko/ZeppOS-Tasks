@@ -48,7 +48,7 @@ mi_band_config = {
 targets = {
   "gts-4-mini": generic_target_big_screen,
   "band-7": {
-    "icon_size": 80,
+    "icon_size": 100,
     "class": "amazfit",
     "icon_s": 24,
     "icon_m": 48,

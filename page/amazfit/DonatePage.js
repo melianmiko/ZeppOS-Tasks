@@ -4,7 +4,8 @@ Page({
   onInit() {
     hmUI.setStatusBarVisible(false);
     hmSetting.setBrightScreen(60);
-    const image_size = IS_LOW_RAM_DEVICE ? 192 : 320;
+
+    const image_size = IS_LOW_RAM_DEVICE ? 174 : 297;
     hmUI.createWidget(hmUI.widget.FILL_RECT, {
       x: 0,
       y: 0,

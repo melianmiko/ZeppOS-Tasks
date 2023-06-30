@@ -11,7 +11,7 @@ export const strings = {
     "Delete": "Delete",
     "Save": "Save",
     "Actions": "Actions",
-    "Deleting...": "Deleting..."
+    "Deleting...": "Deleting...",
     "Saving, wait...": "Saving, wait...",
     "Edit task": "Edit task",
     "User interface:": "User interface",

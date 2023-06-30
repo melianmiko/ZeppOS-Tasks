@@ -1,9 +1,11 @@
+import { gettext } from 'i18n';
 import {LoginButtonView} from "./views/LoginButtonView";
 import {LogoutButtonView} from "./views/LogoutButtonView";
 import {LoginPendingView} from "./views/LoginPendingView";
 import {LoginForm} from "./views/LoginForm";
 import {LastErrorView} from "./views/LastErrorView";
 import {Divider} from "./views/Divider";
+import {Headline} from "./views/Headline";
 
 AppSettingsPage({
   build(props) {
@@ -32,8 +34,9 @@ AppSettingsPage({
         margin: "8px"
       }
     }, [
-      loginUI,
-      LastErrorView(props)
+        Headline(gettext("Account")),
+        loginUI,
+        LastErrorView(props)
     ]);
   },
 })

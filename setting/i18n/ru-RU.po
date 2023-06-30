@@ -10,25 +10,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-06-30 10:12\n"
+"PO-Revision-Date: 2023-06-30 10:17\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Аккаунт"
 
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Нравится это приложение? Рассмотрите возможность поддержать его материально: "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "Хотите видеть ZeppTasks в перевода на ваш язык? Помогите нам с этим: "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Войти через Google"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Исходный код доступен: "
 
 msgid "Please wait..."
 msgstr "Подождите..."

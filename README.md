@@ -7,8 +7,8 @@
 <p>Task list for ZeppOS. In sync with Google Tasks</p>
 </div>
 
-- [📀 Homepage & Download](https://melianmiko.ru/en/zepp/tasks/)
-- [❤️ Make a donation](https://melianmiko.ru/en/donate/)
+- [📀 Homepage & Download](https://mmk.pw/en/zepp/tasks/)
+- [❤️ Make a donation](https://mmk.pw/en/donate/)
 - [🌎 Help with localization](https://crowdin.com/project/zepptasks)
 
 ## Build instructions

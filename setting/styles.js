@@ -7,6 +7,14 @@ export const HEADER_VIEW = {
   }
 };
 
+export const URL_TO_COPY = {
+  style: {
+    userSelect: "text",
+    display: "block",
+    color: "#09F",
+  }
+}
+
 export const CAPTION_VIEW = {
   style: {
     color: "#555",

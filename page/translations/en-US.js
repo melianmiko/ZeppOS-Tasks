@@ -10,6 +10,7 @@ export const strings = {
     "Edit": "Edit",
     "Delete": "Delete",
     "Save": "Save",
+    "Actions": "Actions",
     "Deleting...": "Deleting..."
     "Saving, wait...": "Saving, wait...",
     "Edit task": "Edit task",

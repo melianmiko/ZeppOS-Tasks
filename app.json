@@ -32,6 +32,7 @@
             "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
+            "page/miband7/TaskEditScreen",
             "page/miband7/DonatePage"
           ]
         },
@@ -96,6 +97,7 @@
             "page/miband7/MarkdownReader",
             "page/miband7/AboutScreen",
             "page/miband7/NewNoteScreen",
+            "page/miband7/TaskEditScreen",
             "page/miband7/DonatePage"
           ]
         },
@@ -160,6 +162,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -192,6 +195,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -238,6 +242,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -270,6 +275,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -292,6 +298,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -334,6 +341,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -366,6 +374,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -398,6 +407,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -430,6 +440,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -466,6 +477,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -498,6 +510,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -530,6 +543,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },
@@ -562,6 +576,7 @@
             "page/amazfit/MarkdownReader",
             "page/amazfit/AboutScreen",
             "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
         },

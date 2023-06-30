@@ -117,6 +117,9 @@ export class ZeppTasksSideService {
   async doRequest(ctx, request) {
     let data = null;
 
+    if(settings.settingsStorage.getItem("force_offline") === "true")
+      return;
+
     if(!this.tasks.token) {
       ctx.response({
         data: {error: "login_first"}
@@ -138,6 +141,12 @@ export class ZeppTasksSideService {
         break;
       case "new_task":
         data = await this.tasks.insertTask(request.list, request.text);
+        break;
+      case "set_task_title":
+        data = await this.tasks.changeTitle(request.list, request.id, request.title);
+        break;
+      case "delete_task":
+        data = await this.tasks.deleteTask(request.list, request.id);
         break;
       default:
         data = {error: "Unknown action"};

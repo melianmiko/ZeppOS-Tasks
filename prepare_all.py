@@ -15,6 +15,7 @@ pages = [
   "MarkdownReader",
   "AboutScreen",
   "NewNoteScreen",
+  "TaskEditScreen",
   "DonatePage"
 ]
 

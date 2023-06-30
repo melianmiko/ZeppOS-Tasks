@@ -1,7 +1,7 @@
-import { 
-  ICON_SIZE_MEDIUM, 
-  SCREEN_MARGIN_Y, 
-  SCREEN_WIDTH 
+import {
+  ICON_SIZE_MEDIUM, SCREEN_MARGIN_X,
+  SCREEN_MARGIN_Y,
+  SCREEN_WIDTH, WIDGET_WIDTH
 } from "../../lib/mmk/UiParams";
 
 import { request, createSpinner, getOfflineInfo } from "../Utils";
@@ -239,6 +239,19 @@ export class HomeScreen extends ConfiguredListScreen {
     if(!title) title = "";
     const row = this.row({
       text: title,
+      card: {
+        hiddenButton: t("Edit"),
+        hiddenButtonCallback: () => {
+          hmApp.gotoPage({
+            url: `page/${this.pageClass}/TaskEditScreen`,
+            param: JSON.stringify({
+              task: data,
+              list: this.currentList.id,
+              mode: this.mode
+            })
+          })
+        }
+      },
       callback: () => {
         completed = !completed;
         updateComplete();

@@ -40,6 +40,9 @@ AppSettingsPage({
         loginUI,
         LastErrorView(props),
 
+        Headline("Debug"),
+        Toggle({label: "Force offline", settingsKey: "force_offline"}),
+
         Headline(gettext("About")),
         Paragraph([
             Text({}, `ZeppTasks ${VERSION}`)

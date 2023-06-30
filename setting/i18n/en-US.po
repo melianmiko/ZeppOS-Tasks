@@ -11,6 +11,9 @@ msgstr "Like this application? Consider to support their development with a smal
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
 msgstr "Want to see ZeppTasks into another language? You can help us with translation: "
 
+msgid "Log in with Google"
+msgstr "Log in with Google"
+
 msgid "Source code available: "
 msgstr "Source code available: "
 

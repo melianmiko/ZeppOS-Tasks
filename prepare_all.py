@@ -62,6 +62,8 @@ targets = {
   "gtr-4": generic_target_big_screen,
   "gts-4": generic_target_big_screen,
   "falcon": generic_target_big_screen,
+  "cheetah": generic_target_big_screen,
+  "cheetah-pro": generic_target_big_screen,
   "gtr-3-pro": generic_target_big_screen,
   "gtr-3": generic_target_big_screen,
   "gts-3": generic_target_big_screen,

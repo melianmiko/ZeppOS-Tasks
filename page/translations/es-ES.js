@@ -1,6 +1,6 @@
 export const strings = {
-    'Tasks': 'Tasks',
-    'Help index': 'Help',
+    'Tasks': 'Tareas',
+    'Help index': 'Habilitar',
     'help_file_prefix': 'en',
     'How-to login?': 'How-to login?',
     'Create': 'Create',

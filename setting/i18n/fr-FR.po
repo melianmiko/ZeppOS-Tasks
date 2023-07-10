@@ -10,56 +10,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-06-30 10:12\n"
+"PO-Revision-Date: 2023-07-09 19:47\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Compte"
 
 msgid "About"
-msgstr ""
+msgstr "A propos"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Vous aimez cette application ? Pensez à supporter son développement avec une petite donation : "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "Vous voulez voir ZeppTasks dans une autre langue ? Vous pouvez nous aider dans la traduction : "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Se connecter avec Google"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Code source disponible : "
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Veuillez patienter..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Tutoriel pour la connexion:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 msgid "Login success"
-msgstr ""
+msgstr "Connection réussie"
 
 msgid "Log out"
-msgstr ""
+msgstr "Se déconnecter"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr ""
+msgstr "Se connecter pour synchroniser les tâches avec Google Tasks."
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "Copiez le lien suivant, ouvrez-le dans votre navigateur, et connectez-vous."
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "Après cela, vous allez voir un token d'accès à l'écran. Collez-le dans le champ ci-dessous :"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Attendez quelques secondes jusqu'à ce que l'application se connecte avec Google et valide vos identifiants"
 
 msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr ""
+msgstr "Vos listes Google Tasks seront accessibles depuis votre appareil ZeppOS."
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Politique de Confidentialité"
 

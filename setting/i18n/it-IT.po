@@ -10,13 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
-"PO-Revision-Date: 2023-06-30 10:12\n"
+"PO-Revision-Date: 2023-10-11 19:47\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Profilo"
 
 msgid "About"
-msgstr ""
+msgstr "Circa"
 
 msgid "Like this application? Consider to support their development with a small donation: "
 msgstr ""

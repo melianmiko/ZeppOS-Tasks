@@ -10,13 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2023-10-14 20:04\n"
+"PO-Revision-Date: 2023-10-14 21:00\n"
 
 msgid "Account"
 msgstr "Cuenta"
 
 msgid "About"
-msgstr "About"
+msgstr "Acerca de"
 
 msgid "Like this application? Consider to support their development with a small donation: "
 msgstr "¿Te gusta esta aplicación? Considera apoyar su desarrollo con una pequeña donación: "
@@ -52,14 +52,14 @@ msgid "Copy the following link, open them into your browser, and perform a log i
 msgstr "Copie el siguiente enlace, ábrelo en su navegador y realice un inicio de sesión."
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "Después de eso, tendrás un token de acceso en la pantalla. Pégalos en el campo abajo:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Espere unos segundos hasta que la aplicación se conecte con Google y valide sus credenciales"
 
 msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr ""
+msgstr "Ahora sus listas de tareas de Google serán accesibles desde su dispositivo ZeppOS."
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privacidad"
 

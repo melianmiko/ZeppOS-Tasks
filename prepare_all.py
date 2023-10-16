@@ -1,4 +1,6 @@
 from pathlib import Path
+from PIL import Image
+
 import json
 import shutil
 import os
@@ -29,7 +31,6 @@ module = {
 }
 
 generic_target_big_screen = {
-    "icon_size": 80,
     "class": "amazfit",
     "icon_s": 32,
     "icon_m": 48,
@@ -38,7 +39,6 @@ generic_target_big_screen = {
 }
 
 mi_band_config = {
-    "icon_size": 100,
     "class": "miband7",
     "icon_s": 24,
     "icon_m": 48,
@@ -48,6 +48,8 @@ mi_band_config = {
 
 targets = {
   "gts-4-mini": generic_target_big_screen,
+  "mi-band-7": mi_band_config,
+  "mi-band-7-offline": mi_band_config,
   "band-7": {
     "icon_size": 100,
     "class": "amazfit",
@@ -56,10 +58,9 @@ targets = {
     "low_ram_spinner": True,
     "qr": "small",
   },
-  "mi-band-7": mi_band_config,
-  "mi-band-7-offline": mi_band_config,
   "t-rex-ultra": generic_target_big_screen,
   "gtr-mini": generic_target_big_screen,
+  "balance": generic_target_big_screen,
   "gtr-4": generic_target_big_screen,
   "gts-4": generic_target_big_screen,
   "falcon": generic_target_big_screen,
@@ -71,9 +72,34 @@ targets = {
   "t-rex-2": generic_target_big_screen,
 }
 
+target_icon_size = {
+  "gts-4-mini": 80,
+  "mi-band-7": 100,
+  "mi-band-7-offline": 100,
+  "band-7": 100,
+  "t-rex-ultra": 124,
+  "gtr-mini": 124,
+  "balance": 248,
+  "gtr-4": 248,
+  "gts-4": 124,
+  "falcon": 80,
+  "cheetah": 124,
+  "cheetah-pro": 124,
+  "gtr-3-pro": 92,
+  "gtr-3": 86,
+  "gts-3": 92,
+  "t-rex-2": 86,
+}
+
 with open("app.json", "r") as f:
   app_json = json.load(f)
 
+# Generic icon
+app_icon_src = Image.open(common_assets / "icon.png")
+app_icon = Image.new("RGB", app_icon_src.size, color="#000000")
+app_icon.paste(app_icon_src)
+about_icon = app_icon.copy()
+about_icon.thumbnail((100, 100))
 
 # Prepare assets
 for target_id in targets:
@@ -83,8 +109,14 @@ for target_id in targets:
     shutil.rmtree(assets_dir)
   assets_dir.mkdir()
 
+  # App icon
+  icon_size = target_icon_size[target_id]
+  icon_item = app_icon.copy()
+  icon_item.thumbnail((icon_size, icon_size))
+  icon_item.save(assets_dir / "icon.png")
+
   # Misc files
-  shutil.copy(common_assets / f"icon{data['icon_size']}.png", assets_dir / "icon.png")
+  about_icon.save(assets_dir / "icon_about.png")
   shutil.copy(common_assets / f"qr_{data['qr']}.png", assets_dir / "donate.png")
 
   # Spinner
@@ -92,8 +124,6 @@ for target_id in targets:
     shutil.copy(common_assets / "spinner_lowram.png", assets_dir / "spinner.png")
   else:
     shutil.copytree(common_assets / "spinner", assets_dir / "spinner")
-
-  # Donate QR
 
   # Icons
   for group in ["s", "m"]:

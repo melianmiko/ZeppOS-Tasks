@@ -15,6 +15,9 @@ export class AboutScreen extends BaseAboutScreen {
     this.donateUrl = `page/${params.pageClass}/DonatePage`;
     this.donateText = t("Donate");
 
+    this.iconSize = 100;
+    this.iconFile = "icon_about.png";
+
     this.infoRows = [
       ["melianmiko", "Developer"],
     ];

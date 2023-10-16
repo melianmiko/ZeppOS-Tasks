@@ -52,14 +52,19 @@ export class GoogleTasksManager {
 			report += `\nHeaders: ${JSON.stringify(fetchParams.headers)}`;
 			report += `\nStatus code: ${res.status}`;
 
-			// Add Google-API errors, if present
 			if(data.error)
 				report += `\nGoogle API errors: ${JSON.stringify(data.error)}`;
 
 			// Exclude personal data
 			report = report.replaceAll(this.token, "ACCESS_TOKEN");
+			
+			if(options.method == "PATCH" && data.error && data.error.status == "INVALID_ARGUMENT") {
+				console.log("Got ignored PATCH error");
+				// idk why this happend hand how to fix it. Refer to Google =)
+			} else {
+				onError(report);
+			}
 
-			onError(report);
 			throw new Error(res.status + ": " + (data.error ? data.error.message : "Request failed..."));
 		}
 

@@ -10,43 +10,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2023-06-30 10:12\n"
+"PO-Revision-Date: 2023-10-30 12:25\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Gefällt Ihnen diese Anwendung? Überlegen Sie, ob sie die Entwicklung mit einer kleinen Spende unterstützen wollen: "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "Möchtest du ZeppTasks in anderen Sprache sehen? Du kannst uns helfen mit der Übersetzung: "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Einloggen mit Google"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Quellcode verfügbar bei: "
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Bitte warten..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Anleitung zum Einloggen:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 msgid "Login success"
-msgstr ""
+msgstr "Login erfolgreich"
 
 msgid "Log out"
-msgstr ""
+msgstr "Ausloggen"
 
 msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr ""
+msgstr "Melde dich an um deine Aufgaben mit Google Tasks zu synchronisieren."
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr ""

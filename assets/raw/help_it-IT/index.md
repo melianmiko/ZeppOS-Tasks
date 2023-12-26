@@ -1,2 +1,2 @@
-# Initial setup
-[How-to login with Google?](help_google.md)
+# Configurazione iniziale
+[Come effettuare il login con Google?](help_google.md)

@@ -1,4 +1,4 @@
-import {OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, CALLBACK_URL} from "./Config";
+import {OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET, CALLBACK_URL} from "../Config";
 
 const REQUIRED_SCOPE = "https://www.googleapis.com/auth/tasks";
 
@@ -39,7 +39,11 @@ export class GoogleAuth {
       return ["", ""];
     }
 
-    return [data.access_token, data.refresh_token]
+    return {
+      accessToken: data.access_token,
+      accessTokenExpire: Date.now() + (data.expires_in * 1000),
+      renewToken: data.renew_token,
+    }
   }
 
   async renewToken(refreshToken) {
@@ -48,6 +52,7 @@ export class GoogleAuth {
     body += "&refresh_token=" + encodeURIComponent(refreshToken);
     body += "&grant_type=refresh_token";
 
+    console.log("RENEW", body);
     const res = await fetch({
       method: "POST",
       url: "https://oauth2.googleapis.com/token",
@@ -65,6 +70,9 @@ export class GoogleAuth {
       return false;
     }
 
-    return data.access_token;
+    return {
+      accessToken: data.access_token,
+      accessTokenExpire: Date.now() + (data.expires_in * 1000),
+    }
   }
 }

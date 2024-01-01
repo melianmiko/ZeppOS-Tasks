@@ -1,15 +1,10 @@
-import {
-  ICON_SIZE_MEDIUM, SCREEN_MARGIN_X,
-  SCREEN_MARGIN_Y,
-  SCREEN_WIDTH, WIDGET_WIDTH
-} from "../../lib/mmk/UiParams";
+import {ICON_SIZE_MEDIUM, SCREEN_MARGIN_Y, SCREEN_WIDTH} from "../../lib/mmk/UiParams";
 
-import { request, createSpinner, getOfflineInfo } from "../Utils";
+import { createSpinner, getOfflineInfo } from "../Utils";
 import { ConfiguredListScreen } from "./ConfiguredListScreen";
 import { TouchEventManager } from "../../lib/mmk/TouchEventManager";
-import {deviceName} from "../../lib/mmk/DeviceIdentifier";
 
-const { config, t } = getApp()._options.globalData
+const { config, t, tasksProvider } = getApp()._options.globalData
 
 export class HomeScreen extends ConfiguredListScreen {
   constructor(params, pageClass) {
@@ -31,48 +26,25 @@ export class HomeScreen extends ConfiguredListScreen {
   }
 
   init() {
-    // No sync mode
-    if(config.get("forever_offline", false)) {
-      return this.buildOffline();
-    }
-
     // Loading spinner
     this.hideSpinner = createSpinner();
 
     // Load task lists
-    request({
-      action: "hello",
-      deviceName: deviceName,
-      request_queue: config.get("request_queue", [])
-    }).then((data) => {
-      this.taskLists = data.taskLists;
-      this.currentList = this.findCurrentList();
+    tasksProvider.init().then(() => {
+      return tasksProvider.getTaskLists();
+    }).then((lists) => {
+      this.taskLists = lists;
 
-      // If no list selected, redirect to settings
-      if(!this.currentList) return this.openSettings("setup", true);
+      if(config.get("forever_offline")) {
+        this.currentList = lists[0]
+      } else {
+        this.currentList = this.findCurrentList();
+        if(!this.currentList) return this.openSettings("setup", true);
+      }
 
-      // Clear delivery queue (they are delivered)
-      config.set("request_queue", []);
-
-      // Fetch tasks
-      const body = { 
-        action: "get_tasks", 
-        list: this.currentList.id,
-        withComplete: config.get("withComplete", false),
-      };
-
-      if(this.params.page) body.page = this.params.page;
-      return request(body);
+      return this.currentList.getTasks(config.get("withComplete", false), this.params.page);
     }).then((taskData) => {
       this.taskData = taskData;
-
-      // Save for offline
-      if(!this.params.page && this.mode === "online") {
-        config.update({
-          last_tasks: taskData,
-          last_list: this.currentList,
-        })
-      }
 
       // Build UI
       this.hideSpinner();
@@ -127,44 +99,6 @@ export class HomeScreen extends ConfiguredListScreen {
   }
 
   /**
-   * Build in forever offline mode
-   */
-  buildOffline() {
-    const PAGE_SIZE = 20;
-
-    const withCompleted = config.get("withComplete", false);
-
-    const storage = config.get("tasks", []);
-    const output = [];
-    const position = this.params.page ? this.params.page : 0;
-    for(let i = position; i < storage.length && output.length < PAGE_SIZE; i++) {
-      if(!storage[i].completed || withCompleted)
-        output.push(storage[i]);
-    }
-
-    this.taskData = {
-      nextPageToken: position + output.length < storage.length ? position + output.length : null,
-      items: output
-    };
-    this.mode = "offline";
-    this.taskLists = [{id: "offline", title: t("Offline")}]
-    this.currentList = this.taskLists[0];
-
-    return this.build();
-  }
-
-  /**
-   * Build in temporary offline mode
-   */
-  buildCached(message) {
-    this.mode = "cached";
-    this.currentList = config.get("last_list");
-    this.taskData = config.get("last_tasks");
-    this.offlineInfo = getOfflineInfo(message);
-    return this.build();
-  }
-
-  /**
    * Build main UI
    */
   build() {
@@ -189,12 +123,13 @@ export class HomeScreen extends ConfiguredListScreen {
       }
     ])
 
+    // Tasks
     this.headline(t(this.mode === "cached" ? "Offline tasks:" : "Tasks:"));
-    this.taskData.items.map((data) => {
+    this.taskData.tasks.map((data) => {
       this.taskCard(data);
     });
 
-    if(this.taskData.items.length === 0) {
+    if(this.taskData.tasks.length === 0) {
       this.text({
         text: t("There's no incomplete tasks in that list")
       })
@@ -245,8 +180,8 @@ export class HomeScreen extends ConfiguredListScreen {
           hmApp.gotoPage({
             url: `page/${this.pageClass}/TaskEditScreen`,
             param: JSON.stringify({
-              task: data,
-              list: this.currentList.id,
+              list_id: this.currentList.id,
+              task_id: data.id,
               mode: this.mode
             })
           })
@@ -255,7 +190,7 @@ export class HomeScreen extends ConfiguredListScreen {
       callback: () => {
         completed = !completed;
         updateComplete();
-        this.setTaskCompleted(data, completed);
+        data.setCompleted(completed);
       }
     });
 
@@ -265,38 +200,6 @@ export class HomeScreen extends ConfiguredListScreen {
     }
 
     updateComplete();
-  }
-
-  /**
-   * Modify given task, set status to `completed` boolean
-   */
-  setTaskCompleted(data, completed) {
-    const rq = {
-      action: "set_completed",
-      list: this.currentList.id,
-      task: data.id,
-      value: completed
-    };
-
-    if(this.mode === "offline") {
-      // No sync
-      data.completed = completed;
-      config.save();
-    } else if(this.mode === "cached") {
-      // Stage request for delivering later
-      const queue = config.get("request_queue", []);
-      queue.push(rq);
-
-      data.completed = completed;
-
-      config.update({
-        request_queue: queue,
-        last_tasks: this.taskData
-      })
-    } else {
-      // Send now
-      request(rq);
-    }
   }
 
   /**
@@ -335,7 +238,7 @@ export class HomeScreen extends ConfiguredListScreen {
       callback: () => {
         config.update({
           forever_offline: true,
-          tasks: []
+          tasks: [],
         });
         hmApp.reloadPage({
           url: `page/${this.pageClass}/HomeScreen`,

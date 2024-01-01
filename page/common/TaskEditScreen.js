@@ -1,8 +1,8 @@
 import {ListScreen} from "../../lib/mmk/ListScreen";
 import {ScreenBoard} from "../../lib/mmk/ScreenBoard";
-import {request} from "../Utils";
+import {createSpinner} from "../Utils";
 
-const { config, t } = getApp()._options.globalData
+const { config, t, tasksProvider } = getApp()._options.globalData
 
 export class TaskEditScreen extends ListScreen {
     constructor(param, pageClass) {
@@ -14,12 +14,18 @@ export class TaskEditScreen extends ListScreen {
         this.isSaving = false;
 
         param = JSON.parse(param);
-        this.task = param.task;
-        this.list = param.list;
-        this.mode = param.mode;
+        this.task = tasksProvider.getTaskList(param.list_id).getTask(param.task_id);
     }
 
     init() {
+        const hideSpinner = createSpinner();
+        this.task.sync().then(() => {
+            hideSpinner();
+            this.build();
+        })
+    }
+
+    build() {
         this.text({
             text: this.task.title,
             fontSize: this.fontSize + 2
@@ -56,33 +62,10 @@ export class TaskEditScreen extends ListScreen {
         this.isSaving = true;
         this.deleteRow.setText(t("Deleting..."));
 
-        const rqData = {
-            action: "delete_task",
-            list: this.list,
-            id: this.task.id,
-        };
-
-        if(this.mode === "offline") {
-            let storage = config.get("tasks", []);
-            storage = storage.filter((i) => i.id !== this.task.id);
-
-            config.set("tasks", storage);
+        createSpinner();
+        this.task.delete().then(() => {
             hmApp.goBack();
-        } else if(this.mode === "cached") {
-            const queue = config.get("request_queue", []);
-            queue.push(rqData)
-
-            const lastTasks = config.get("last_tasks");
-            lastTasks.items = lastTasks.items.filter((i) => i.id !== this.task.id);
-
-            config.update({
-                request_queue: queue,
-                last_tasks: lastTasks
-            });
-            hmApp.goBack();
-        } else {
-            request(rqData).then(() => hmApp.goBack());
-        }
+        });
     }
 
     doOverrideTitle(value) {
@@ -90,42 +73,8 @@ export class TaskEditScreen extends ListScreen {
 
         this.isSaving = true;
         this.board.confirmButtonText = t("Saving, wait...");
-
-        const rqData = {
-            action: "set_task_title",
-            list: this.list,
-            id: this.task.id,
-            title: value
-        };
-
-        if(this.mode === "offline") {
-            let storage = config.get("tasks", []);
-            for(let item of storage) {
-                if(item.id !== this.task.id) continue;
-                item.title = value;
-                break;
-            }
-
-            config.set("tasks", storage);
+        this.task.setTitle(value).then(() => {
             hmApp.goBack();
-        } else if(this.mode === "cached") {
-            const queue = config.get("request_queue", []);
-            queue.push(rqData)
-
-            const lastTasks = config.get("last_tasks");
-            for(let item of lastTasks.items) {
-                if(item.id !== this.task.id) continue;
-                item.title = value;
-                break;
-            }
-
-            config.update({
-                request_queue: queue,
-                last_tasks: lastTasks
-            });
-            hmApp.goBack();
-        } else {
-            request(rqData).then(() => hmApp.goBack());
-        }
+        })
     }
 }

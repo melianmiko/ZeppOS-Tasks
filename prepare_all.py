@@ -4,30 +4,35 @@ from PIL import Image
 import json
 import shutil
 import os
+import requests
 
 project = Path(".").resolve()
 common_assets = project / "assets" / "common"
 lib_assets = project / "lib" / "mmk" / "assets"
 
-pages = [
-  "HomeScreen",
-  "FontSizeSetupScreen",
-  "ScreenBoardSetup",
-  "SettingsScreen",
-  "MarkdownReader",
-  "AboutScreen",
-  "NewNoteScreen",
-  "TaskEditScreen",
-  "DonatePage"
-]
+print("Loading zepp devices list...")
+zepp_devices = requests.get("https://raw.githubusercontent.com/melianmiko/ZeppOS-DevicesList/main/zepp_devices.json").json()
 
 module = {
-  "app-side": {
-    "path": "app-side/index"
-  },
-  "setting": {
-    "path": "setting/index"
-  }
+    "app-side": {
+        "path": "app-side/index"
+    },
+    "setting": {
+        "path": "setting/index"
+    },
+    "page": {
+        "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+        ]
+    },
 }
 
 generic_target_big_screen = {
@@ -46,89 +51,46 @@ mi_band_config = {
     "qr": "small",
 }
 
-targets = {
-  "gts-4-mini": generic_target_big_screen,
-  "mi-band-7": mi_band_config,
-  "mi-band-7-offline": mi_band_config,
-  "band-7": {
-    "icon_size": 100,
-    "class": "amazfit",
-    "icon_s": 24,
-    "icon_m": 48,
-    "low_ram_spinner": True,
-    "qr": "small",
-  },
-  "t-rex-ultra": generic_target_big_screen,
-  "gtr-mini": generic_target_big_screen,
-  "balance": generic_target_big_screen,
-  "gtr-4": generic_target_big_screen,
-  "gts-4": generic_target_big_screen,
-  "falcon": generic_target_big_screen,
-  "cheetah": generic_target_big_screen,
-  "cheetah-pro": generic_target_big_screen,
-  "gtr-3-pro": generic_target_big_screen,
-  "gtr-3": generic_target_big_screen,
-  "gts-3": generic_target_big_screen,
-  "t-rex-2": generic_target_big_screen,
-}
-
-target_icon_size = {
-  "gts-4-mini": 80,
-  "mi-band-7": 100,
-  "mi-band-7-offline": 100,
-  "band-7": 100,
-  "t-rex-ultra": 124,
-  "gtr-mini": 124,
-  "balance": 248,
-  "gtr-4": 248,
-  "gts-4": 124,
-  "falcon": 80,
-  "cheetah": 124,
-  "cheetah-pro": 124,
-  "gtr-3-pro": 92,
-  "gtr-3": 86,
-  "gts-3": 92,
-  "t-rex-2": 86,
-}
 
 with open("app.json", "r") as f:
   app_json = json.load(f)
 
 # Generic icon
-app_icon_src = Image.open(common_assets / "icon.png")
-app_icon = Image.new("RGB", app_icon_src.size, color="#000000")
-app_icon.paste(app_icon_src)
-about_icon = app_icon.copy()
+about_icon = Image.open(common_assets / "icon.png")
 about_icon.thumbnail((100, 100))
 
 # Prepare assets
-for target_id in targets:
-  data = targets[target_id]
+for target_data in zepp_devices:
+  target_id = target_data["id"]
+  if target_id not in app_json["targets"]:
+    print("Not supported:", target_id, target_data["deviceSource"])
+    continue
+
   assets_dir = project / "assets" / target_id
   if assets_dir.is_dir():
     shutil.rmtree(assets_dir)
   assets_dir.mkdir()
 
   # App icon
-  icon_size = target_icon_size[target_id]
-  icon_item = app_icon.copy()
-  icon_item.thumbnail((icon_size, icon_size))
-  icon_item.save(assets_dir / "icon.png")
+  i = Image.open(common_assets / "icon.png")
+  i.thumbnail((target_data['iconSize'], target_data['iconSize']))
+  i.save(assets_dir / "icon.png")
 
   # Misc files
   about_icon.save(assets_dir / "icon_about.png")
-  shutil.copy(common_assets / f"qr_{data['qr']}.png", assets_dir / "donate.png")
+  qr_file = "qr_small.png" if target_data["screenShape"] == "band" else "qr_normal.png"
+  shutil.copy(common_assets / qr_file, assets_dir / "donate.png")
 
   # Spinner
-  if data["low_ram_spinner"]:
+  if target_data["screenShape"] == "band":
     shutil.copy(common_assets / "spinner_lowram.png", assets_dir / "spinner.png")
   else:
     shutil.copytree(common_assets / "spinner", assets_dir / "spinner")
 
   # Icons
-  for group in ["s", "m"]:
-    size = data[f"icon_{group}"]
-    shutil.copytree(common_assets / f"icon_{group}_{size}", assets_dir / f"icon_{group}")
+  icons_size = 24 if target_data["screenShape"] == "band" else 32
+  shutil.copytree(common_assets / f"icon_m_48", assets_dir / f"icon_m")
+  shutil.copytree(common_assets / f"icon_s_{icons_size}", assets_dir / f"icon_s")
 
   # ScreenBaord data
   os.mkdir(assets_dir / "screen_board")
@@ -136,19 +98,11 @@ for target_id in targets:
     if f.name.endswith(".png"):
       shutil.copy(f, assets_dir / "screen_board" / f.name)
 
-  shutil.copytree(lib_assets / "screen_board" / str(data["icon_s"]),
-    assets_dir / "screen_board" / str(data["icon_s"]))
+  shutil.copytree(lib_assets / "screen_board" / str(icons_size),
+    assets_dir / "screen_board" / str(icons_size))
 
   # App.json
-  app_json["targets"][target_id]["module"] = {
-    "page": {
-      "pages": [f"page/{data['class']}/{i}" for i in pages]
-    },
-    **module
-  }
-
-  if target_id.endswith("-offline"):
-    app_json["targets"][target_id]["module"]["page"]["pages"][0] = f"page/{data['class']}/HomeScreenOffline"
+  app_json["targets"][target_id]["module"] = module
 
 with open("app.json", "w") as f:
   f.write(json.dumps(app_json, indent=2))

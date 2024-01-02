@@ -1,4 +1,4 @@
-import {MS_APP_ID, MS_SECRET_ID, MS_SECRET, CALLBACK_URL} from "../Config";
+import {CALLBACK_URL, MS_APP_ID, MS_SECRET} from "../Config";
 
 const REQUIRED_SCOPE = "offline_access Tasks.ReadWrite";
 

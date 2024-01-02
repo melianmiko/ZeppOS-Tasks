@@ -2,8 +2,7 @@ import {GoogleAuth} from "./GoogleAuth";
 
 export class LoginProvider {
     _getAuthProviderName() {
-        // return settings.settingsStorage.getItem("login_provider");
-        return "google";
+        return settings.settingsStorage.getItem("login_provider");
     }
 
     _getAuthProvider() {
@@ -31,12 +30,12 @@ export class LoginProvider {
     async settingsBeginLogin() {
         const storage = settings.settingsStorage;
         const [url, needRespond] = await this._getAuthProvider().onLoginRequest((data) => {
-            if(data === null) return settings.settingsStorage.setItem("login_status", "logged_out");
+            if(data === null) return settings.settingsStorage.setItem("login_status", '"logged_out"');
             this.settingsProcessAuthToken(data)
         });
 
         storage.setItem("login_url", url);
-        storage.setItem("login_status", needRespond ? 'login_form_resp' : 'login_form');
+        storage.setItem("login_status", needRespond ? '"login_form_resp"' : '"login_form"');
     }
 
     async settingsProcessAuthToken(data) {
@@ -44,7 +43,7 @@ export class LoginProvider {
         if(data === "") return;
 
         // Set status
-        storage.setItem("login_status", `logging_in`);
+        storage.setItem("login_status", '"logging_in"');
         storage.setItem("auth_token", "");
 
         // Perform login
@@ -52,7 +51,7 @@ export class LoginProvider {
         storage.setItem("access_token", result.accessToken);
         storage.setItem("access_token_expire", result.accessTokenExpire);
         storage.setItem("refresh_token", result.renewToken);
-        storage.setItem("login_status", `logged_in`);
+        storage.setItem("login_status", '"logged_in"');
     }
 
     async _renewToken() {

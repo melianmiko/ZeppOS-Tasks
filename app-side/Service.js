@@ -27,7 +27,7 @@ export class ZeppTasksSideService {
   async handleSettingsChange(e) {
     switch (e.key) {
       case "login_status":
-        if(e.newValue === "login_started")
+        if(e.newValue === "\"login_started\"")
           await this.login.settingsBeginLogin();
         break;
       case "auth_token":

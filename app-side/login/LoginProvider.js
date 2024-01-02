@@ -2,20 +2,25 @@ import {GoogleAuth} from "./GoogleAuth";
 
 export class LoginProvider {
     _getAuthProviderName() {
-        return settings.settingsStorage.getItem("login_provider");
+        return JSON.parse(settings.settingsStorage.getItem("login_provider"));
     }
 
     _getAuthProvider() {
         switch(this._getAuthProviderName()) {
             case "google":
                 return new GoogleAuth();
+            default:
+                return null;
         }
     }
 
-    async appGetAuthData() {
+    async appGetAuthData(request) {
         const storage = settings.settingsStorage;
-        if(storage.getItem("login_status") !== "logged_in")
+        if(storage.getItem("login_status") !== '"logged_in"')
             return {error: "login_first"}
+
+        // noinspection ES6MissingAwait
+        this._getAuthProvider().onAdditionalDataAvailable(request);
 
         const accessTokenLifetime = storage.getItem("access_token_expire");
         if(Date.now() >= accessTokenLifetime)

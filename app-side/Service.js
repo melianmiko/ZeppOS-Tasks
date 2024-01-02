@@ -40,8 +40,14 @@ export class ZeppTasksSideService {
     handleFetchRequest(ctx, request);
 
     if(request.package !== "tasks_login") return;
-    ctx.response({
-      data: await this.login.appGetAuthData(),
-    })
+    switch(request.action) {
+      case "notify_offline":
+        settings.settingsStorage.setItem("is_forever_offline", request.value.toString());
+        return ctx.response({data: {}});
+      case "get_data":
+        return ctx.response({
+          data: await this.login.appGetAuthData(request),
+        })
+    }
   }
 }

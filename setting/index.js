@@ -3,8 +3,9 @@ import {BottomToolbar, SettingsBody} from "../lib/mmk/setting/Layout";
 import {AccountTab} from "./tabs/AccountTab";
 import {AboutTab} from "./tabs/AboutTab";
 import {TabButton} from "../lib/mmk/setting/Tabs";
-import {SETTINGS_32} from "../lib/mmk/setting/Icons";
+import {ABOUT_32} from "../lib/mmk/setting/Icons";
 import {StateManager} from "../lib/mmk/setting/StateManager";
+import {ACCOUNT_32} from "./Icons";
 
 AppSettingsPage({
   build(ctx) {
@@ -21,13 +22,13 @@ AppSettingsPage({
       BottomToolbar([
         TabButton({
           text: t("Account"),
-          icon: SETTINGS_32,
+          icon: ACCOUNT_32,
           active: tab === "account",
           callback: () => setTab("account"),
         }),
         TabButton({
           text: t("About"),
-          icon: SETTINGS_32,
+          icon: ABOUT_32,
           active: tab === "about",
           callback: () => setTab("about"),
         }),

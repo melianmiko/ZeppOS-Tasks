@@ -1,19 +1,10 @@
 import {ICON_SIZE_MEDIUM, SCREEN_MARGIN_Y, SCREEN_WIDTH} from "../../lib/mmk/UiParams";
 
-import { createSpinner, getOfflineInfo } from "../Utils";
-import { ConfiguredListScreen } from "./ConfiguredListScreen";
-import { TouchEventManager } from "../../lib/mmk/TouchEventManager";
+import {createSpinner, getOfflineInfo} from "../Utils";
+import {ConfiguredListScreen} from "./ConfiguredListScreen";
+import {TouchEventManager} from "../../lib/mmk/TouchEventManager";
 
-const appContext = getApp()._options.globalData
-const {t} = appContext;
-/**
- * @type ConfigStorage
- */
-const {config} = appContext;
-/**
- * @type TasksProvider
- */
-const {tasksProvider} = appContext;
+const {t, config, tasksProvider, messageBuilder} = getApp()._options.globalData
 
 export class HomeScreen extends ConfiguredListScreen {
   constructor(params, pageClass) {
@@ -37,6 +28,12 @@ export class HomeScreen extends ConfiguredListScreen {
   init() {
     // Loading spinner
     this.hideSpinner = createSpinner();
+
+    messageBuilder.request({
+      package: "tasks_login",
+      action: "notify_offline",
+      value: config.get("forever_offline", false),
+    }, {})
 
     // Load task lists
     tasksProvider.init().then(() => {
@@ -120,7 +117,7 @@ export class HomeScreen extends ConfiguredListScreen {
     // Header
     this.twoActionBar([
       this.mode === "cached" ? {
-        text: offlineInfo,
+        text: getOfflineInfo(offlineInfo),
         icon: "icon_s/mode_cached.png",
         color: 0xFF9900,
         card: {
@@ -256,10 +253,7 @@ export class HomeScreen extends ConfiguredListScreen {
       text: t("Use application without sync"),
       icon: "icon_s/mode_offline.png",
       callback: () => {
-        config.update({
-          forever_offline: true,
-          tasks: [],
-        });
+        tasksProvider.setupOffline();
         hmApp.reloadPage({
           url: `page/${this.pageClass}/HomeScreen`,
         })

@@ -58,3 +58,9 @@ msgstr "Now Tasks on ZeppOS have access to tasks in your cloud account."
 
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
+
+msgid "App is still in offline mode"
+msgstr "App is still in offline mode"
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr "Open Tasks app on your watch and wipe local data to start seeing synced tasks."

@@ -13,6 +13,10 @@ export class GoogleAuth {
             `&prompt=consent`, true];
   }
 
+  async onAdditionalDataAvailable(request) {
+    // Nothing to do
+  }
+
   async onLoginResponse(response) {
     console.log("Exchanging auth key...");
 

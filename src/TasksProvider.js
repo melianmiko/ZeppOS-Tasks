@@ -28,6 +28,7 @@ export class TasksProvider {
 
         return this.messageBuilder.request({
             package: "tasks_login",
+            action: "get_data",
             deviceName,
         }, {}).then((data) => {
             if(data.error) throw new Error(data.error);
@@ -35,6 +36,15 @@ export class TasksProvider {
             this._handler = this._createHandler(data);
             return true;
         })
+    }
+
+    setupOffline() {
+        this._handler = new OfflineHandler(this.config);
+        this.config.update({
+            forever_offline: true,
+            tasks: [],
+            log: [],
+        });
     }
 
     /**

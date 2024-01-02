@@ -6,7 +6,7 @@ import {BaseListItem, ListItemText} from "../../lib/mmk/setting/ListItem";
 import {LoadingBottomSheet} from "./LoadingBottomSheet";
 import {LoginWithResponseBottomSheet} from "./LoginWithResponseBottomSheet";
 import {LoginAutoBottomSheet} from "./LoginAutoBottomSheet";
-import {BRAND_GOOGLE_32} from "../Icons";
+import {BRAND_GOOGLE_32, BRAND_MICROSOFT_32} from "../Icons";
 
 export function LoginForm(ctx) {
   const state = new StateManager(ctx, "login_form");
@@ -38,6 +38,12 @@ export function LoginForm(ctx) {
         title: t("Use Google account"),
         description: t("Tasks will be in sync with Google tasks"),
         callback: () => useProvider("google"),
+      }),
+      LoginProviderRow({
+        icon: BRAND_MICROSOFT_32,
+        title: t("Use Microsoft account"),
+        description: t("Tasks will be in sync with Microsoft ToDo"),
+        callback: () => useProvider("microsoft"),
       }),
 
       loginStatus === "login_started" || loginStatus === "logging_in" ?

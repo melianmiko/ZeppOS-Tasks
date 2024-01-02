@@ -1,6 +1,7 @@
 import {clientFetch as fetch} from "../../lib/mmk/FetchForward";
-import {reportError} from "../ErrorReportTool";
+import {reportError, reportRequestFailure} from "../ErrorReportTool";
 import {GoogleTaskList} from "./GoogleTaskList";
+import {buildQueryURL} from "../Tools";
 
 const BASE_URL = "https://tasks.googleapis.com/tasks/v1";
 
@@ -51,27 +52,15 @@ export class GoogleHandler {
         }
 
         let status = 0;
-        console.log(url, JSON.stringify(fetchParams));
-        return fetch(url, fetchParams).then((res) => {
+        return fetch(buildQueryURL(BASE_URL + options.url, options.query), fetchParams).then((res) => {
             status = res.status;
             return status === 204 ? {} : res.json()
         }).then((data) => {
             if((status < 200 || status >= 400) && !noCrash) {
                 // noinspection JSCheckFunctionSignatures
-                let report = `Failed to fetch: ${fetchParams.method} ${fetchParams.url}`;
-                report += `\nHeaders: ${JSON.stringify(fetchParams.headers)}`;
-                report += `\nStatus code: ${status}`;
-
-                if(data.error) report += `\nGoogle API errors: ${JSON.stringify(data.error)}`;
-
-                // Exclude personal data
-                report = report.replaceAll(this.token, "ACCESS_TOKEN");
-                reportError(report);
-
+                reportRequestFailure(fetchParams, status, data, this.token);
                 throw new Error(status + ": " + (data.error ? data.error.message : "Request failed..."));
             }
-
-            console.log(status, JSON.stringify(data));
             return data;
         });
     }

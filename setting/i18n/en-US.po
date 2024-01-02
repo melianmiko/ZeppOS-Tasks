@@ -44,6 +44,12 @@ msgstr "Use Google account"
 msgid "Tasks will be in sync with Google tasks"
 msgstr "Tasks will be in sync with Google tasks"
 
+msgid "Use Microsoft account"
+msgstr "Use Microsoft account"
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr "Tasks will be in sync with Microsoft ToDo"
+
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copy the following link, open them into your browser, and perform a log in."
 

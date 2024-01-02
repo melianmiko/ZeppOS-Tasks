@@ -23,5 +23,5 @@ interface TaskListInterface {
 
 interface HandlerInterface {
     getTaskLists(): Promise<TaskListInterface[]>;
-    getTaskList(id: any): TaskInterface;
+    getTaskList(id: any): TaskListInterface;
 }

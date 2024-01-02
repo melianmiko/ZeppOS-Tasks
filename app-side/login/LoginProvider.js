@@ -1,4 +1,5 @@
 import {GoogleAuth} from "./GoogleAuth";
+import {MicrosoftAuth} from "./MicrosoftAuth";
 
 export class LoginProvider {
     _getAuthProviderName() {
@@ -9,8 +10,8 @@ export class LoginProvider {
         switch(this._getAuthProviderName()) {
             case "google":
                 return new GoogleAuth();
-            default:
-                return null;
+            case "microsoft":
+                return new MicrosoftAuth();
         }
     }
 

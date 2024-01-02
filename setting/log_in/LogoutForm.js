@@ -4,18 +4,38 @@ import {CenteredPane, TextRoot} from "../../lib/mmk/setting/Layout";
 import {Paragraph, Title} from "../../lib/mmk/setting/Typography";
 import {PrimaryButton} from "../../lib/mmk/setting/Buttons";
 import {TabOffset} from "../../lib/mmk/setting/Tabs";
+import {APP_ICON_32, BRAND_GOOGLE_32, BRAND_MICROSOFT_32, LINK_32} from "../Icons";
 
 export function LogoutForm(ctx) {
   const state = new StateManager(ctx, "logout_form");
   const [isOffline, _] = state.useSetting("is_forever_offline");
+  const [provider, __] = state.useSetting("login_provider");
+
+  const providerIcon = {
+    google: BRAND_GOOGLE_32,
+    microsoft: BRAND_MICROSOFT_32,
+  }[provider];
 
   return CenteredPane([
     TextRoot([
+      View({
+        style: {
+          marginBottom: "24px",
+        }
+      }, [
+        Icon(providerIcon),
+        Icon(LINK_32),
+        Icon(APP_ICON_32),
+      ]),
       Title(t("Login success")),
       Paragraph([
         t("Now Tasks on ZeppOS have access to tasks in your cloud account."),
       ]),
-      Paragraph([
+      View({
+        style: {
+          marginTop: "24px",
+        }
+      }, [
         PrimaryButton(t("Log out"), () => {
           ctx.settingsStorage.setItem("access_token", "");
           ctx.settingsStorage.setItem("refresh_token", "");
@@ -30,4 +50,16 @@ export function LogoutForm(ctx) {
       ] : []),
     ]),
   ])
+}
+
+function Icon(dataURL) {
+  return View({
+    style: {
+      display: "inline-block",
+      width: 32,
+      height: 32,
+      margin: "0 4px",
+      backgroundImage: dataURL,
+    }
+  }, [])
 }

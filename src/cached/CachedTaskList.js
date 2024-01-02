@@ -11,10 +11,13 @@ export class CachedTaskList {
 
     insertTask(title) {
         const nextIndex = this.config.get("next_id", 0);
-        const tasks = this.config.get("tasks");
-        const log = this.config.get("tasks_log");
+        const log = this.config.get("log", []);
+        let tasks = this.config.get("tasks");
 
-        tasks.push({id: nextIndex, title, completed: false});
+        tasks = [
+            {id: `cached:${nextIndex}`, title, completed: false},
+            ...tasks
+        ];
 
         if(this.withLog) 
             log.push({command: "insert_task", id: nextIndex, title});

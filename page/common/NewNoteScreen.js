@@ -27,7 +27,6 @@ export class NewNoteScreen extends ConfiguredListScreen {
     createSpinner();
     console.log(JSON.stringify(tasksProvider));
     const list = tasksProvider.getTaskList(this.params.list);
-    console.log(2222);
     list.insertTask(text).then(() => {
       hmApp.goBack();
     })

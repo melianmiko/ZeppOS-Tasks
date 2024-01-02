@@ -22,7 +22,7 @@ export class CachedTask {
 
     setCompleted(value) {
         const tasks = this.config.get("tasks");
-        const log = this.config.get("tasks_log");
+        const log = this.config.get("log", []);
 
         const i = this._getSelfIndex(tasks);
         tasks[i].completed = value;
@@ -37,7 +37,7 @@ export class CachedTask {
 
     setTitle(value) {
         const tasks = this.config.get("tasks");
-        const log = this.config.get("tasks_log");
+        const log = this.config.get("log", []);
 
         const i = this._getSelfIndex(tasks);
         tasks[i].title = value;
@@ -51,7 +51,7 @@ export class CachedTask {
     }
 
     delete() {
-        const log = this.config.get("tasks_log");
+        const log = this.config.get("log", []);
         let tasks = this.config.get("tasks");
 
         tasks = tasks.filter((item) => item.id !== this.id);

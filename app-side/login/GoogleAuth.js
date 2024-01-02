@@ -31,6 +31,7 @@ export class GoogleAuth {
       body: body
     });
 
+    // noinspection JSCheckFunctionSignatures
     const data = typeof res.body === 'string' ?  JSON.parse(res.body) : res.body
     console.log(data);
 
@@ -42,7 +43,7 @@ export class GoogleAuth {
     return {
       accessToken: data.access_token,
       accessTokenExpire: Date.now() + (data.expires_in * 1000),
-      renewToken: data.renew_token,
+      renewToken: data.refresh_token,
     }
   }
 

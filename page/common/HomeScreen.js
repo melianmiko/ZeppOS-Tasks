@@ -4,7 +4,16 @@ import { createSpinner, getOfflineInfo } from "../Utils";
 import { ConfiguredListScreen } from "./ConfiguredListScreen";
 import { TouchEventManager } from "../../lib/mmk/TouchEventManager";
 
-const { config, t, tasksProvider } = getApp()._options.globalData
+const appContext = getApp()._options.globalData
+const {t} = appContext;
+/**
+ * @type ConfigStorage
+ */
+const {config} = appContext;
+/**
+ * @type TasksProvider
+ */
+const {tasksProvider} = appContext;
 
 export class HomeScreen extends ConfiguredListScreen {
   constructor(params, pageClass) {
@@ -36,15 +45,21 @@ export class HomeScreen extends ConfiguredListScreen {
       this.taskLists = lists;
 
       if(config.get("forever_offline")) {
-        this.currentList = lists[0]
+        this.currentList = this.taskLists[0]
       } else {
         this.currentList = this.findCurrentList();
         if(!this.currentList) return this.openSettings("setup", true);
       }
 
+      return tasksProvider.execCachedLog();
+    }).then(() => {
       return this.currentList.getTasks(config.get("withComplete", false), this.params.page);
     }).then((taskData) => {
       this.taskData = taskData;
+
+      // If not offline and not on second pages, create cache for offline work
+      if(!config.get("forever_offline") && !this.params.page)
+        tasksProvider.createCacheData(this.currentList.id, this.taskData.tasks);
 
       // Build UI
       this.hideSpinner();
@@ -101,11 +116,11 @@ export class HomeScreen extends ConfiguredListScreen {
   /**
    * Build main UI
    */
-  build() {
+  build(offlineInfo="") {
     // Header
     this.twoActionBar([
       this.mode === "cached" ? {
-        text: this.offlineInfo,
+        text: offlineInfo,
         icon: "icon_s/mode_cached.png",
         color: 0xFF9900,
         card: {
@@ -125,6 +140,7 @@ export class HomeScreen extends ConfiguredListScreen {
 
     // Tasks
     this.headline(t(this.mode === "cached" ? "Offline tasks:" : "Tasks:"));
+    console.log(this.taskData.tasks);
     this.taskData.tasks.map((data) => {
       this.taskCard(data);
     });
@@ -206,10 +222,14 @@ export class HomeScreen extends ConfiguredListScreen {
    * This function will handle init error
    */
   onInitFailure(message) {
-    console.log(message);
-
-    if(config.get("last_tasks", null) != null) {
-      return this.buildCached(message);
+    if(config.get("tasks", false) && !config.get("forever_offline", false)) {
+      this.mode = "cached";
+      this.currentList = tasksProvider.getCachedTasksList();
+      console.log(JSON.stringify(config.get("log")))
+      return this.currentList.getTasks().then((tasks) => {
+        this.taskData = tasks;
+        this.build(message);
+      });
     }
 
     // Show error and option to work without sync

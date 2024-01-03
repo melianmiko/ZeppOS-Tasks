@@ -23,9 +23,12 @@ export class LoginProvider {
         // Save extra data
         settings.settingsStorage.setItem("device_name", request.deviceName);
 
+        const accessToken = storage.getItem("access_token");
         const accessTokenLifetime = storage.getItem("access_token_expire");
-        if(Date.now() >= accessTokenLifetime)
-            await this._renewToken();
+        if(Date.now() >= accessTokenLifetime || !accessToken || !accessTokenLifetime) {
+            const result = await this._renewToken();
+            if(result !== true) return {error: result};
+        }
 
         return {
             provider: this._getAuthProviderName(),
@@ -62,10 +65,20 @@ export class LoginProvider {
 
     async _renewToken() {
         const storage = settings.settingsStorage;
-        const refreshToken = settings.settingsStorage.getItem("refresh_token");
 
-        const result = await this._getAuthProvider().renewToken(refreshToken);
-        storage.setItem("access_token", result.accessToken);
-        storage.setItem("access_token_deadline", result.accessTokenExpire);
+        try {
+            const refreshToken = storage.getItem("refresh_token");
+            if(!refreshToken) return "No refresh token stored, please log-out and login again";
+            const result = await this._getAuthProvider().renewToken(refreshToken);
+            if(result === false) return "Can't authorized, try again later or re-login to cloud account";
+
+            storage.setItem("access_token", result.accessToken);
+            storage.setItem("access_token_deadline", result.accessTokenExpire);
+        } catch(e) {
+            console.log(e);
+            return "Can't authorize due to unknown error.";
+        }
+
+        return true;
     }
 }

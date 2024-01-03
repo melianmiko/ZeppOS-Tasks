@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-06-30 10:17\n"
+"PO-Revision-Date: 2024-01-03 06:41\n"
 
 msgid "Account"
 msgstr "Аккаунт"
@@ -45,8 +45,23 @@ msgstr "Вход выполнен"
 msgid "Log out"
 msgstr "Выйти"
 
-msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr "Войдите в аккаунт, чтобы синхронизировать свои задачи с Google Tasks."
+msgid "Set up sync"
+msgstr "Настроить синхронизацию"
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr "Войдите в аккаунт для синхронизации задач с облаком."
+
+msgid "Use Google account"
+msgstr "Использовать аккаунт Google"
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr "Задачи будут синхронизированы с Google Tasks"
+
+msgid "Use Microsoft account"
+msgstr "Использовать аккаунт Microsoft"
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr "Задачи будут синхронизированы с Microsoft ToDo"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."
@@ -57,9 +72,15 @@ msgstr "После этого, вы получите ключ для автор�
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Подождите пару секунд, пока приложение получит информацию о входе"
 
-msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr "Теперь ваши задачи из Google Tasks доступны на ваших умных часах."
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr "Теперь Tasks на ZeppOS имеет доступ к задачам в вашем аккаунте."
 
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
+
+msgid "App is still in offline mode"
+msgstr "Приложение работает автономно"
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr "Откройте Tasks на часах и выполните сброс локальных данных, чтобы увидеть списки задач из вашего аккаунта."
 

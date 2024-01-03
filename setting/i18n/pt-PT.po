@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Portuguese\n"
 "Language: pt_PT\n"
-"PO-Revision-Date: 2023-06-30 10:12\n"
+"PO-Revision-Date: 2024-01-03 06:27\n"
 
 msgid "Account"
 msgstr ""
@@ -45,7 +45,22 @@ msgstr ""
 msgid "Log out"
 msgstr ""
 
-msgid "Sign in to synchronize your tasks with Google Tasks."
+msgid "Set up sync"
+msgstr ""
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr ""
+
+msgid "Use Google account"
+msgstr ""
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr ""
+
+msgid "Use Microsoft account"
+msgstr ""
+
+msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr ""
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
@@ -57,9 +72,15 @@ msgstr ""
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr ""
 
-msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
 msgstr ""
 
 msgid "Privacy Policy"
+msgstr ""
+
+msgid "App is still in offline mode"
+msgstr ""
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
 msgstr ""
 

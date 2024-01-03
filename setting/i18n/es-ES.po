@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2023-10-14 21:00\n"
+"PO-Revision-Date: 2024-01-03 06:27\n"
 
 msgid "Account"
 msgstr "Cuenta"
@@ -45,8 +45,23 @@ msgstr "Inicio de sesión correcto"
 msgid "Log out"
 msgstr "Cerrar sesión"
 
-msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr "Inicia sesión para sincronizar tus tareas con Google Tasks."
+msgid "Set up sync"
+msgstr ""
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr ""
+
+msgid "Use Google account"
+msgstr ""
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr ""
+
+msgid "Use Microsoft account"
+msgstr ""
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr ""
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copie el siguiente enlace, ábrelo en su navegador y realice un inicio de sesión."
@@ -57,9 +72,15 @@ msgstr "Después de eso, tendrás un token de acceso en la pantalla. Pégalos en
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Espere unos segundos hasta que la aplicación se conecte con Google y valide sus credenciales"
 
-msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr "Ahora sus listas de tareas de Google serán accesibles desde su dispositivo ZeppOS."
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr ""
 
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
+
+msgid "App is still in offline mode"
+msgstr ""
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr ""
 

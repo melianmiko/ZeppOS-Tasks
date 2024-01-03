@@ -1,64 +1,69 @@
-import { gettext } from 'i18n';
-import {LoginButtonView} from "./views/LoginButtonView";
-import {LogoutButtonView} from "./views/LogoutButtonView";
-import {LoginPendingView} from "./views/LoginPendingView";
-import {LoginForm} from "./views/LoginForm";
-import {LastErrorView} from "./views/LastErrorView";
-import {Headline} from "./views/Headline";
-import {Paragraph, Paragraph2} from "./views/Paragraph";
-import {VERSION} from "../version";
-import {URL_TO_COPY} from "./styles";
+import {gettext as t} from 'i18n';
+import {BottomToolbar, SettingsBody} from "../lib/mmk/setting/Layout";
+import {AccountTab} from "./tabs/AccountTab";
+import {AboutTab} from "./tabs/AboutTab";
+import {TabButton} from "../lib/mmk/setting/Tabs";
+import {ABOUT_32, SETTINGS_32} from "../lib/mmk/setting/Icons";
+import {StateManager} from "../lib/mmk/setting/StateManager";
+import {ACCOUNT_32} from "./Icons";
+import {DebugTab} from "./tabs/DebugTab";
 
 AppSettingsPage({
-  build(props) {
-    const status = props.settingsStorage.getItem("login_status");
+  build(ctx) {
+    const state = new StateManager(ctx, "root");
+    const [tab, setTab] = state.useState("account");
+    const [debugCounter, setDebugCounter] = state.useState(10);
 
-    let loginUI = null;
-    switch(status) {
-      case "logged_out":
-        loginUI = LoginButtonView(props);
-        break;
-      case "login_started":
-      case "logging_in":
-        loginUI = LoginPendingView(props);
-        break;
-      case "login_form":
-      case "login_form_resp":
-        loginUI = LoginForm(props, status === "login_form_resp");
-        break;
-      default:
-        loginUI = LogoutButtonView(props);
-        break;
+    // Hidden trigger
+    function setTabDebugTrigger(newTab) {
+      if(tab === newTab && debugCounter > 0) {
+        setDebugCounter(debugCounter - 1);
+      } else if(debugCounter > 0) {
+        setDebugCounter(10);
+        setTab(newTab);
+      } else {
+        setTab(newTab);
+      }
     }
 
-    return View({
-      style: {
-        margin: "8px"
-      }
-    }, [
-        Headline(gettext("Account")),
-        loginUI,
-        LastErrorView(props),
+    // Trigger Side-Service to start
+    const nowTag = (new Date()).toISOString().substring(0, 19);
+    if(ctx.settingsStorage.getItem("now") !== nowTag) ctx.settingsStorage.setItem("now", nowTag);
 
-        // Headline("Debug"),
-        // Toggle({label: "Force offline", settingsKey: "force_offline"}),
-
-        Headline(gettext("About")),
-        Paragraph([
-            Text({}, `ZeppTasks ${VERSION}`)
-        ]),
-        Paragraph2([
-            Text({}, gettext("Like this application? Consider to support their development with a small donation: ")),
-            Text(URL_TO_COPY, "https://mmk.pw/donate")
-        ]),
-        Paragraph2([
-            Text({}, gettext("Want to see ZeppTasks into another language? You can help us with translation: ")),
-            Text(URL_TO_COPY, "https://crowdin.com/project/zepptasks")
-        ]),
-        Paragraph2([
-            Text({}, gettext("Source code available: ")),
-            Text(URL_TO_COPY, "https://github.com/melianmiko/ZeppOS-Tasks")
-        ])
+    // Build UI root
+    return SettingsBody([
+      tab === "account" ? AccountTab(ctx) : null,
+      tab === "about" ? AboutTab(ctx) : null,
+      tab === "debug" ? DebugTab(ctx) : null,
+      // TabOffset(),
+      BottomToolbar([
+        TabButton({
+          text: t("Account"),
+          icon: ACCOUNT_32,
+          active: tab === "account",
+          callback: () => setTab("account"),
+        }),
+        debugCounter === 0 ? TabButton({
+          text: "Debug",
+          icon: SETTINGS_32,
+          active: tab === "debug",
+          callback: () => setTab("debug"),
+        }) : null,
+        TabButton({
+          text: t("About"),
+          icon: ABOUT_32,
+          active: tab === "about",
+          callback: () => setTabDebugTrigger("about"),
+        }),
+      ]),
     ]);
+
+    // return View({
+    //   style: {
+    //     margin: "8px"
+    //   }
+    // }, [
+    //     Headline("Debug"),
+    // ]);
   },
 })

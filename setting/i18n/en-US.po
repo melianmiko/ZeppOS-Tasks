@@ -32,8 +32,23 @@ msgstr "Login success"
 msgid "Log out"
 msgstr "Log out"
 
-msgid "Sign in to synchronize your tasks with Google Tasks."
-msgstr "Sign in to synchronize your tasks with Google Tasks. "
+msgid "Set up sync"
+msgstr "Set up sync"
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr "Sign in to synchronize your tasks with cloud. "
+
+msgid "Use Google account"
+msgstr "Use Google account"
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr "Tasks will be in sync with Google tasks"
+
+msgid "Use Microsoft account"
+msgstr "Use Microsoft account"
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr "Tasks will be in sync with Microsoft ToDo"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copy the following link, open them into your browser, and perform a log in."
@@ -44,8 +59,14 @@ msgstr "After that, you'll got a access token on screen. Paste them into field b
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Wait for a few seconds until app will connect with Google and validate your credentials"
 
-msgid "Now your Google Tasks lists will be accessible from your ZeppOS device."
-msgstr "Now your Google Tasks lists will be accessible from your ZeppOS device."
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr "Now Tasks on ZeppOS have access to tasks in your cloud account."
 
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
+
+msgid "App is still in offline mode"
+msgstr "App is still in offline mode"
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr "Open Tasks app on your watch and wipe local data to start seeing synced tasks."

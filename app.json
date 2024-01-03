@@ -5,8 +5,8 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 5,
-      "name": "1.5"
+      "code": 6,
+      "name": "2.0"
     },
     "icon": "icon.png",
     "vender": "MelianMiko (mmk.pw)",
@@ -38,91 +38,26 @@
     }
   },
   "targets": {
-    "mi-band-7": {
+    "mi_band7": {
       "module": {
-        "page": {
-          "pages": [
-            "page/miband7/HomeScreen",
-            "page/miband7/FontSizeSetupScreen",
-            "page/miband7/ScreenBoardSetup",
-            "page/miband7/SettingsScreen",
-            "page/miband7/MarkdownReader",
-            "page/miband7/AboutScreen",
-            "page/miband7/NewNoteScreen",
-            "page/miband7/TaskEditScreen",
-            "page/miband7/DonatePage"
-          ]
-        },
         "app-side": {
           "path": "app-side/index"
         },
         "setting": {
           "path": "setting/index"
-        }
-      },
-      "platforms": [
-        {
-          "name": "amazfit-band7-nfc",
-          "deviceSource": 252
         },
-        {
-          "name": "amazfit-band7",
-          "deviceSource": 253
-        },
-        {
-          "name": "amazfit-band7-w",
-          "deviceSource": 254
-        },
-        {
-          "name": "l66",
-          "deviceSource": 260
-        },
-        {
-          "name": "l66w",
-          "deviceSource": 261
-        },
-        {
-          "name": "l66_1",
-          "deviceSource": 262
-        },
-        {
-          "name": "l66w_2",
-          "deviceSource": 263
-        },
-        {
-          "name": "l66_3",
-          "deviceSource": 264
-        },
-        {
-          "name": "l66_4",
-          "deviceSource": 265
-        },
-        {
-          "name": "l66_5",
-          "deviceSource": 266
-        }
-      ]
-    },
-    "mi-band-7-offline": {
-      "module": {
         "page": {
           "pages": [
-            "page/miband7/HomeScreenOffline",
-            "page/miband7/FontSizeSetupScreen",
-            "page/miband7/ScreenBoardSetup",
-            "page/miband7/SettingsScreen",
-            "page/miband7/MarkdownReader",
-            "page/miband7/AboutScreen",
-            "page/miband7/NewNoteScreen",
-            "page/miband7/TaskEditScreen",
-            "page/miband7/DonatePage"
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       },
       "platforms": [
@@ -170,6 +105,12 @@
     },
     "balance": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -182,12 +123,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       },
       "platforms": [
@@ -205,8 +140,14 @@
         }
       ]
     },
-    "gts-4-mini": {
+    "active": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -219,12 +160,97 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
+        }
+      },
+      "platforms": [
+        {
+          "name": "a1",
+          "deviceSource": 8323328
+        }
+      ]
+    },
+    "bip5": {
+      "module": {
         "app-side": {
           "path": "app-side/index"
         },
         "setting": {
           "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "bip",
+          "deviceSource": 8454401
+        }
+      ]
+    },
+    "active_edge": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "a1",
+          "deviceSource": 8388864
+        },
+        {
+          "name": "a2",
+          "deviceSource": 8388865
+        }
+      ]
+    },
+    "gts4mini": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
         }
       },
       "platforms": [
@@ -238,8 +264,14 @@
         }
       ]
     },
-    "band-7": {
+    "band7": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -252,12 +284,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       },
       "platforms": [
@@ -275,7 +301,7 @@
         }
       ]
     },
-    "t-rex-ultra": {
+    "trex_ultra": {
       "platforms": [
         {
           "name": "t-rex-ultra",
@@ -287,6 +313,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -299,16 +331,10 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "gtr-mini": {
+    "gtr_mini": {
       "platforms": [
         {
           "name": "gtr-mini",
@@ -320,6 +346,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -332,17 +364,17 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "gtr-4": {
+    "gtr4": {
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -355,12 +387,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       },
       "platforms": [
@@ -374,7 +400,7 @@
         }
       ]
     },
-    "gts-4": {
+    "gts4": {
       "platforms": [
         {
           "name": "gts-4",
@@ -386,6 +412,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -398,12 +430,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
@@ -419,6 +445,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -431,12 +463,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
@@ -452,6 +478,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -464,16 +496,10 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "cheetah-pro": {
+    "cheetah_pro": {
       "platforms": [
         {
           "name": "cheetah-pro",
@@ -485,6 +511,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -497,16 +529,39 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
+        }
+      }
+    },
+    "cheetah_square": {
+      "platforms": [
+        {
+          "name": "cheetah",
+          "deviceSource": 8257793
+        }
+      ],
+      "module": {
         "app-side": {
           "path": "app-side/index"
         },
         "setting": {
           "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
         }
       }
     },
-    "gtr-3-pro": {
+    "gtr3pro": {
       "platforms": [
         {
           "name": "gtr3pro",
@@ -522,6 +577,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -534,16 +595,10 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "gtr-3": {
+    "gtr3": {
       "platforms": [
         {
           "name": "gtr3",
@@ -555,6 +610,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -567,16 +628,10 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "gts-3": {
+    "gts3": {
       "platforms": [
         {
           "name": "gts3",
@@ -588,6 +643,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -600,16 +661,10 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     },
-    "t-rex-2": {
+    "trex2": {
       "platforms": [
         {
           "name": "t-rex-2",
@@ -621,6 +676,12 @@
         }
       ],
       "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
         "page": {
           "pages": [
             "page/amazfit/HomeScreen",
@@ -633,12 +694,6 @@
             "page/amazfit/TaskEditScreen",
             "page/amazfit/DonatePage"
           ]
-        },
-        "app-side": {
-          "path": "app-side/index"
-        },
-        "setting": {
-          "path": "setting/index"
         }
       }
     }

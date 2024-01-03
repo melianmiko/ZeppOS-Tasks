@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2024-01-03 06:27\n"
+"PO-Revision-Date: 2024-01-03 06:41\n"
 
 msgid "Account"
 msgstr "Аккаунт"
@@ -46,22 +46,22 @@ msgid "Log out"
 msgstr "Выйти"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Настроить синхронизацию"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Войдите в аккаунт для синхронизации задач с облаком."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Использовать аккаунт Google"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Задачи будут синхронизированы с Google Tasks"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Использовать аккаунт Microsoft"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "Задачи будут синхронизированы с Microsoft ToDo"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."
@@ -73,14 +73,14 @@ msgid "Wait for a few seconds until app will connect with Google and validate yo
 msgstr "Подождите пару секунд, пока приложение получит информацию о входе"
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "Теперь Tasks на ZeppOS имеет доступ к задачам в вашем аккаунте."
 
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "Приложение работает автономно"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "Откройте Tasks на часах и выполните сброс локальных данных, чтобы увидеть списки задач из вашего аккаунта."
 

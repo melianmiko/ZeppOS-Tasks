@@ -18,56 +18,64 @@ class SettingsScreen extends ConfiguredListScreen {
     if(this.mode !== "setup") this.buildHelpItems();
 
     // Lists picker
-    this.headline(t('Task lists:'));
-    this.lists.forEach(({ id, title }) => this.row({
-      text: title,
-      icon: "icon_s/list.png",
-      callback: () => this.applyList(id)
-    }));
-    if(this.mode === "setup") return;
+    if(this.mode !== "cached") {
+      this.headline(t('Task lists:'));
+      this.lists.forEach(({ id, title }) => this.row({
+        text: title,
+        icon: "icon_s/list.png",
+        callback: () => this.applyList(id)
+      }));
+    }
 
     // UI settings
-    this.headline(t("User interface:"));
-    this.row({
-      text: t("Font size..."),
-      icon: "icon_s/font_size.png",
-      callback: () => hmApp.gotoPage({
-        url: `page/amazfit/FontSizeSetupScreen`
-      })
-    });
-    this.row({
-      text: t("Keyboard..."),
-      icon: "icon_s/keyboard.png",
-      callback: () => hmApp.gotoPage({
-        url: `page/amazfit/ScreenBoardSetup`
-      })
-    });
-    this.row({
-      text: t("Show complete tasks"),
-      icon:  `icon_s/cb_${config.get("withComplete", false)}.png`,
-      callback: () => {
-        config.set("withComplete", !config.get("withComplete", false));
-        hmApp.goBack();
-      }
-    })
+    if(this.mode !== "setup") {
+      this.headline(t("User interface:"));
+      this.row({
+        text: t("Font size..."),
+        icon: "icon_s/font_size.png",
+        callback: () => hmApp.gotoPage({
+          url: `page/amazfit/FontSizeSetupScreen`
+        })
+      });
+      this.row({
+        text: t("Keyboard..."),
+        icon: "icon_s/keyboard.png",
+        callback: () => hmApp.gotoPage({
+          url: `page/amazfit/ScreenBoardSetup`
+        })
+      });
+      if(this.mode !== "cached")
+        this.row({
+          text: t("Show complete tasks"),
+          icon:  `icon_s/cb_${config.get("withComplete", false)}.png`,
+          callback: () => {
+            config.set("withComplete", !config.get("withComplete", false));
+            hmApp.goBack();
+          }
+        })
+    }
 
     // Advanced settings
-    this.headline(t("Advanced:"));
-    if(this.mode === "offline") this.row({
-      text: t("Remove completed tasks"),
-      icon: "icon_s/cleanup.png",
-      callback: () => this.offlineRemoveComplete()
-    })
-    this.row({
-      text: t("Wipe ALL local data"),
-      icon: "icon_s/wipe_all.png",
-      callback: () => this.wipeEverything()
-    });
-    if(this.mode !== "offline") this.text({
-      text: t("Option above didn't delete any data from your Google account."),
-      fontSize: this.fontSize - 2,
-      color: 0x999999
-    });
+    if(this.mode !== "setup") {
+      this.headline(t("Advanced:"));
+      if(config.get("forever_offline", false)) {
+        this.row({
+          text: t("Remove completed tasks"),
+          icon: "icon_s/cleanup.png",
+          callback: () => this.offlineRemoveComplete()
+        })
+      }
+      this.row({
+        text: t("Wipe ALL local data"),
+        icon: "icon_s/wipe_all.png",
+        callback: () => this.wipeEverything()
+      });
+      if(this.mode !== "offline") this.text({
+        text: t("Option above didn't delete any data from your Google account."),
+        fontSize: this.fontSize - 2,
+        color: 0x999999
+      });
+    }
 
     this.offset();
   }

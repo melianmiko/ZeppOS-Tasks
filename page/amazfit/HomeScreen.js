@@ -9,7 +9,7 @@ const {t, config, tasksProvider, messageBuilder} = getApp()._options.globalData
 class HomeScreen extends ConfiguredListScreen {
   constructor(params) {
     super();
-    this.mode = "online";
+    this.cachedMode = false;
     this.currentList = null;
     this.taskData = null;
 
@@ -86,8 +86,7 @@ class HomeScreen extends ConfiguredListScreen {
     hmApp.gotoPage({
       url: `page/amazfit/NewNoteScreen`,
       param: JSON.stringify({
-        list: this.currentList.id,
-        mode: this.mode
+        list: this.currentList.id
       })
     })
   }
@@ -113,17 +112,11 @@ class HomeScreen extends ConfiguredListScreen {
   build(offlineInfo="") {
     // Header
     this.twoActionBar([
-      this.mode === "cached" ? {
-        text: getOfflineInfo(offlineInfo),
-        icon: "icon_s/mode_cached.png",
-        color: 0xFF9900,
-        card: {
-          color: 0x0
-        }
-      } : {
-        text: this.currentList.title,
-        icon: `icon_s/mode_${this.mode}.png`,
-        callback: () => this.openSettings(this.mode)
+      {
+        text: this.cachedMode ? getOfflineInfo(offlineInfo) : this.currentList.title,
+        color: this.cachedMode ? 0xFF9900 : 0xFFFFFF,
+        icon: `icon_s/mode_${this.cachedMode ? "cached" : "online"}.png`,
+        callback: () => this.openSettings(this.cachedMode ? "cached": "online")
       },
       {
         text: t("New..."),
@@ -133,7 +126,7 @@ class HomeScreen extends ConfiguredListScreen {
     ])
 
     // Tasks
-    this.headline(t(this.mode === "cached" ? "Offline tasks:" : "Tasks:"));
+    this.headline(t(this.cachedMode ? "Offline tasks:" : "Tasks:"));
     console.log(this.taskData.tasks);
     this.taskData.tasks.map((data) => {
       this.taskCard(data);
@@ -191,8 +184,7 @@ class HomeScreen extends ConfiguredListScreen {
             url: `page/amazfit/TaskEditScreen`,
             param: JSON.stringify({
               list_id: this.currentList.id,
-              task_id: data.id,
-              mode: this.mode
+              task_id: data.id
             })
           })
         }
@@ -217,7 +209,7 @@ class HomeScreen extends ConfiguredListScreen {
    */
   onInitFailure(message) {
     if(config.get("tasks", false) && !config.get("forever_offline", false)) {
-      this.mode = "cached";
+      this.cachedMode = true;
       this.currentList = tasksProvider.getCachedTasksList();
       console.log(JSON.stringify(config.get("log")))
       return this.currentList.getTasks().then((tasks) => {

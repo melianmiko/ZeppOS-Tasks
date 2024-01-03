@@ -13,10 +13,6 @@ export class MicrosoftAuth {
       `&response_type=code&response_mode=query`, true];
   }
 
-  async onAdditionalDataAvailable(request) {
-    // Nothing to do
-  }
-
   async onLoginResponse(response) {
     console.log("Exchanging auth key...");
 

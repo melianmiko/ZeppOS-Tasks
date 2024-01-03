@@ -20,8 +20,8 @@ export class LoginProvider {
         if(storage.getItem("login_status") !== '"logged_in"')
             return {error: "login_first"}
 
-        // noinspection ES6MissingAwait
-        this._getAuthProvider().onAdditionalDataAvailable(request);
+        // Save extra data
+        settings.settingsStorage.setItem("device_name", request.deviceName);
 
         const accessTokenLifetime = storage.getItem("access_token_expire");
         if(Date.now() >= accessTokenLifetime)

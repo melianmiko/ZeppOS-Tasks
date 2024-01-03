@@ -1,12 +1,12 @@
 import {ICON_SIZE_MEDIUM, SCREEN_MARGIN_Y, SCREEN_WIDTH} from "../../lib/mmk/UiParams";
 
 import {createSpinner, getOfflineInfo} from "../Utils";
-import {ConfiguredListScreen} from "./ConfiguredListScreen";
+import {ConfiguredListScreen} from "../ConfiguredListScreen";
 import {TouchEventManager} from "../../lib/mmk/TouchEventManager";
 
 const {t, config, tasksProvider, messageBuilder} = getApp()._options.globalData
 
-export class HomeScreen extends ConfiguredListScreen {
+class HomeScreen extends ConfiguredListScreen {
   constructor(params) {
     super();
     this.mode = "online";

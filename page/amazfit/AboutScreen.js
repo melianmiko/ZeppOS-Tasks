@@ -3,7 +3,7 @@ import {VERSION} from "../../version";
 
 const { t } = getApp()._options.globalData
 
-export class AboutScreen extends BaseAboutScreen {
+class AboutScreen extends BaseAboutScreen {
   constructor(p) {
     super();
 

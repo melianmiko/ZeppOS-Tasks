@@ -1,4 +1,4 @@
-import { ListScreen } from "../../lib/mmk/ListScreen";
+import { ListScreen } from "../lib/mmk/ListScreen";
 
 const { config } = getApp()._options.globalData
 

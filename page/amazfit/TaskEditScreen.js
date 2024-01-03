@@ -4,7 +4,7 @@ import {createSpinner} from "../Utils";
 
 const { t, tasksProvider } = getApp()._options.globalData
 
-export class TaskEditScreen extends ListScreen {
+class TaskEditScreen extends ListScreen {
   constructor(param) {
     super();
     this.isSaving = false;

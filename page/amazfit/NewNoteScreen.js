@@ -1,11 +1,11 @@
 import {ScreenBoard} from "../../lib/mmk/ScreenBoard";
 
 import {createSpinner} from "../Utils";
-import {ConfiguredListScreen} from "./ConfiguredListScreen";
+import {ConfiguredListScreen} from "../ConfiguredListScreen";
 
 const { t, tasksProvider } = getApp()._options.globalData
 
-export class NewNoteScreen extends ConfiguredListScreen {
+class NewNoteScreen extends ConfiguredListScreen {
   constructor(params) {
     super();
     console.log(params);

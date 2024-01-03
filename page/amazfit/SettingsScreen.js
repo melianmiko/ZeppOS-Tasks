@@ -1,8 +1,8 @@
-import { ConfiguredListScreen } from "./ConfiguredListScreen";
+import { ConfiguredListScreen } from "../ConfiguredListScreen";
 
 const { config, t } = getApp()._options.globalData
 
-export class SettingsScreen extends ConfiguredListScreen {
+class SettingsScreen extends ConfiguredListScreen {
   constructor(params) {
     super();
 

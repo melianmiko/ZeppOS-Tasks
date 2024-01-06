@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2024-01-06 09:13\n"
+"PO-Revision-Date: 2024-01-06 10:33\n"
 
 msgid "Account"
 msgstr "Акаунт"
@@ -43,44 +43,44 @@ msgid "Login success"
 msgstr "Вхід виконано успішно"
 
 msgid "Log out"
-msgstr ""
+msgstr "Вийти"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Налаштувати синхронізацію"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Увійдіть, щоб синхронізувати свої завдання з хмарою."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Використовувати обліковий запис Google"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Завдання будуть синхронізованими з Google tasks"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Використовувати обліковий запис Microsoft"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "Завдання будуть синхронізованими з Microsoft ToDo"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "Скопіюйте наступне посилання, відкрийте його у вашому браузері та виконайте вхід."
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "Після цього на екрані ви отримаєте токен доступу. Вставте його у поле нижче:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Зачекайте кілька секунд, поки додаток з'єднається з Google і підтвердить ваші дані"
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "Зараз Tasks on ZeppOS мають доступ до завдань у вашому обліковому записі."
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Політика конфіденційності"
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "Додаток все ще в режимі офлайн"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "Відкрийте додаток Tasks на годиннику та очистіть локальні дані, щоб відобразилися синхронізовані завдання."
 

@@ -10,37 +10,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2024-01-03 06:27\n"
+"PO-Revision-Date: 2024-01-06 09:13\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Акаунт"
 
 msgid "About"
-msgstr ""
+msgstr "Про додаток"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Подобається цей додаток? Підтримайте розробку невеличким донатом: "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "Хочете побачити ZeppTasks іншою мовою? Ви можете допомогти нам з перекладом: "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Увійти через Google"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Вихідний код доступний: "
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Будь ласка, зачекайте..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Інструкція з авторизації:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 msgid "Login success"
-msgstr ""
+msgstr "Вхід виконано успішно"
 
 msgid "Log out"
 msgstr ""

@@ -1,15 +1,15 @@
-To log into your Google account, use Amazfit Zepp application on your phone.
+Щоб увійти в свій обліковий запис Google, використовуйте додаток Amazfit Zepp на вашому телефоні.
 
-### Step-by-step
+### Крок за кроком
 
-1. Open Zepp application
-2. Go to "Profile" tab
-3. Select your device in list
-4. Click on "More" icon
-5. Select "Tasks"
-6. Perform sign in
+1. Відкрийте додаток Zepp
+2. Перейдіть на вкладку "Профіль"
+3. Виберіть ваш пристрій у списку
+4. Натисніть на значок "Більше"
+5. Оберіть "Tasks"
+6. Виконайте вхід
 
-### If you're in offline mode...
-On your smartwatch, open Tasks app, go to settings and select "Wipe ALL local data".
+### Якщо ви перебуваєте в автономному режимі...
+На годиннику відкрийте додаток Tasks, перейдіть до налаштувань та виберіть "Очистити всі локальні дані".
 
-WARNING: This will delete all offline tasks. Data stored in Google account won't be deleted, only local files.
+ПОПЕРЕДЖЕННЯ: Усі офлайн завдання буде видалено. Дані, збережені в обліковому записі Google, не будуть видалені, лише локальні файли.

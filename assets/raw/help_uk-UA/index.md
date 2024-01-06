@@ -1,2 +1,2 @@
-# Initial setup
-[How-to login with Google?](help_google.md)
+# Початкові налаштування
+[Як увійти через Google?](help_google.md)

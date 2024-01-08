@@ -4,6 +4,7 @@ import { OfflineHandler } from "./cached/OfflineHandler";
 import {CachedTaskList} from "./cached/CachedTaskList";
 import {LogExecutor} from "./cached/LogExecutor";
 import {MicrosoftHandler} from "./microsoft/MicrosoftHandler";
+import {CalDAVHandler} from "./caldav/CalDAVHandler";
 
 export class TasksProvider {
     constructor(config, messageBuilder) {
@@ -18,6 +19,8 @@ export class TasksProvider {
                 return new GoogleHandler(data.token);
             case "microsoft":
                 return new MicrosoftHandler(data.token);
+            case "caldav":
+                return new CalDAVHandler(this.messageBuilder);
         }
     }
 

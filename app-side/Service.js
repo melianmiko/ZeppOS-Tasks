@@ -1,12 +1,14 @@
 import {handleFetchRequest} from "../lib/mmk/FetchForward";
 import {MessageBuilder} from "../lib/zeppos/message";
 import {LoginProvider} from "./login/LoginProvider";
+import {CalDAVProxy} from "./CalDAVProxy";
 
 const messageBuilder = new MessageBuilder();
 
 export class ZeppTasksSideService {
   init() {
     this.login = new LoginProvider();
+    this.caldavProxy = new CalDAVProxy();
 
     settings.settingsStorage.addListener("change", async (e) => {
       await this.handleSettingsChange(e);
@@ -32,12 +34,14 @@ export class ZeppTasksSideService {
         break;
       case "auth_token":
         await this.login.settingsProcessAuthToken(e.newValue);
+        this.caldavProxy.onConfigAvailable();
         break;
     }
   }
 
   async handleRequest(ctx, request) {
     handleFetchRequest(ctx, request);
+    await this.caldavProxy.handleRequest(ctx, request);
 
     if(request.package !== "tasks_login") return;
     switch(request.action) {

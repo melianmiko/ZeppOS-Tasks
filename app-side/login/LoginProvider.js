@@ -1,5 +1,6 @@
 import {GoogleAuth} from "./GoogleAuth";
 import {MicrosoftAuth} from "./MicrosoftAuth";
+import {CalDAVAuth} from "./CalDAVAuth";
 
 export class LoginProvider {
     _getAuthProviderName() {
@@ -12,6 +13,8 @@ export class LoginProvider {
                 return new GoogleAuth();
             case "microsoft":
                 return new MicrosoftAuth();
+            case "caldav":
+                return new CalDAVAuth();
         }
     }
 

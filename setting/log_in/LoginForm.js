@@ -45,6 +45,12 @@ export function LoginForm(ctx) {
         description: t("Tasks will be in sync with Microsoft ToDo"),
         callback: () => useProvider("microsoft"),
       }),
+      LoginProviderRow({
+        icon: BRAND_MICROSOFT_32,
+        title: t("CalDAV (experimental)"),
+        description: t(""),
+        callback: () => useProvider("caldav"),
+      }),
 
       loginStatus === "login_started" || loginStatus === "logging_in" ?
         LoadingBottomSheet(cancelLogin) : null,

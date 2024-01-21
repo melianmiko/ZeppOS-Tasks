@@ -31,6 +31,14 @@ export class CalDAVTaskList {
   }
 
   insertTask(title) {
-    return Promise.resolve(undefined);
+    return this._handler.messageBuilder.request({
+      package: "caldav_proxy",
+      action: "insert_task",
+      listId: this.id,
+      title
+    }, {timeout: 5000}).then((d) => {
+      if(d.error) throw new Error(d.error);
+      return true;
+    })
   }
 }

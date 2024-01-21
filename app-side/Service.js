@@ -51,7 +51,7 @@ export class ZeppTasksSideService {
       case "get_data":
         return ctx.response({
           data: await this.login.appGetAuthData(request),
-        })
+        });
     }
   }
 }

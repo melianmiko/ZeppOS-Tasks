@@ -1,4 +1,5 @@
 import {pjXML} from "../lib/pjxml";
+import {generateUUID} from "./UUID";
 
 const PAYLOAD_GET_CALENDARS = "<x0:propfind xmlns:x0=\"DAV:\"><x0:prop><x0:displayname /><x1:supported-calendar-component-set xmlns:x1=\"urn:ietf:params:xml:ns:caldav\" /></x0:prop></x0:propfind>\n";
 const PAYLOAD_GET_TASKS_COMPLETED = "<x1:calendar-query xmlns:x1=\"urn:ietf:params:xml:ns:caldav\"><x0:prop xmlns:x0=\"DAV:\"><x0:getcontenttype/><x0:getetag/><x0:resourcetype/><x0:displayname/><x0:owner/><x0:resourcetype/><x0:sync-token/><x0:current-user-privilege-set/><x0:getcontenttype/><x0:getetag/><x0:resourcetype/><x1:calendar-data/></x0:prop><x1:filter><x1:comp-filter name=\"VCALENDAR\"><x1:comp-filter name=\"VTODO\"><x1:prop-filter name=\"completed\"/></x1:comp-filter></x1:comp-filter></x1:filter></x1:calendar-query>\n";
@@ -14,6 +15,9 @@ export class CalDAVProxy {
 
     let response = {error: "unknown action"};
     switch(request.action) {
+      case "insert_task":
+        response = await this.insertTask(request.listId, request.title);
+        break;
       case "delete_task":
         response = await this.deleteTask(request.id);
         break;
@@ -55,6 +59,34 @@ export class CalDAVProxy {
 
   async deleteTask(id) {
     const resp = await this.request("DELETE", id);
+    return {result: true};
+  }
+
+  async insertTask(listId, title) {
+    const taskFile = `${Math.round(Math.random() * 10e15)}-${Date.now()}.ics`;
+    const now = this.currentTimeString();
+    const taskBody = this.js2ics({
+      "VCALENDAR": {
+        "VERSION": "2.0",
+        "PRODID": "-//Tasks for ZeppOS v2.1+",
+        "VTODO": {
+          "UID": generateUUID(),
+          "CREATED": now,
+          "LAST-MODIFIED": now,
+          "DTSTAMP": now,
+          "SUMMARY": title,
+        }
+      }
+    });
+
+    const resp = await this.request("PUT",
+      listId + "/" + taskFile,
+      taskBody, {
+        "Depth": "0",
+        "Content-Type": "text/calendar; charset=UTF-8",
+      });
+    if(resp.status !== 201)
+      return {error: "Failed"};
     return {result: true};
   }
 
@@ -132,6 +164,16 @@ export class CalDAVProxy {
     }
 
     return output;
+  }
+
+  currentTimeString() {
+    const date = new Date();
+    return date.getFullYear().toString() +
+      (date.getMonth() + 1).toString().padStart(2, "0") +
+      (date.getDate()).toString().padStart(2, "0") + "T" +
+      (date.getHours()).toString().padStart(2, "0") +
+      (date.getMinutes()).toString().padStart(2, "0") +
+      (date.getSeconds()).toString().padStart(2, "0");
   }
 
   ics2js(ics) {

@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2024-01-03 06:41\n"
+"PO-Revision-Date: 2024-01-21 08:05\n"
 
 msgid "Account"
 msgstr "Аккаунт"
@@ -83,4 +83,37 @@ msgstr "Приложение работает автономно"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
 msgstr "Откройте Tasks на часах и выполните сброс локальных данных, чтобы увидеть списки задач из вашего аккаунта."
+
+msgid "Use Nextcloud server account"
+msgstr ""
+
+msgid "Sync your tasks with personal cloud server"
+msgstr ""
+
+msgid "Checking, is login/password valid..."
+msgstr ""
+
+msgid "Credentials are valid, connection success."
+msgstr ""
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr ""
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr ""
+
+msgid "Save configuration"
+msgstr ""
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr ""
+
+msgid "Checking, is URL valid..."
+msgstr ""
+
+msgid "Nextcloud URL is valid."
+msgstr ""
+
+msgid "Enter valid cloud URL to continue."
+msgstr ""
 

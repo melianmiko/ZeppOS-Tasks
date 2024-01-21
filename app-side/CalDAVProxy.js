@@ -5,6 +5,7 @@ const PAYLOAD_GET_CALENDARS = "<x0:propfind xmlns:x0=\"DAV:\"><x0:prop><x0:displ
 const PAYLOAD_GET_TASKS_COMPLETED = "<x1:calendar-query xmlns:x1=\"urn:ietf:params:xml:ns:caldav\"><x0:prop xmlns:x0=\"DAV:\"><x0:getcontenttype/><x0:getetag/><x0:resourcetype/><x0:displayname/><x0:owner/><x0:resourcetype/><x0:sync-token/><x0:current-user-privilege-set/><x0:getcontenttype/><x0:getetag/><x0:resourcetype/><x1:calendar-data/></x0:prop><x1:filter><x1:comp-filter name=\"VCALENDAR\"><x1:comp-filter name=\"VTODO\"><x1:prop-filter name=\"completed\"/></x1:comp-filter></x1:comp-filter></x1:filter></x1:calendar-query>\n";
 const PAYLOAD_GET_TASKS_NO_COMPLETED = "<x1:calendar-query xmlns:x1=\"urn:ietf:params:xml:ns:caldav\"><x0:prop xmlns:x0=\"DAV:\"><x0:resourcetype /><x1:calendar-data /></x0:prop><x1:filter><x1:comp-filter name=\"VCALENDAR\"><x1:comp-filter name=\"VTODO\"><x1:prop-filter name=\"completed\"><x1:is-not-defined /></x1:prop-filter></x1:comp-filter></x1:comp-filter></x1:filter></x1:calendar-query>\n";
 
+// noinspection HttpUrlsUsage
 export class CalDAVProxy {
   constructor() {
     this.onConfigAvailable();
@@ -229,8 +230,43 @@ export class CalDAVProxy {
       this.authHeader = "Basic " + btoa(`${this.config.user}:${this.config.password}`);
       console.log("Load CalDAV config", this.config);
     } catch(e) {
-      console.log("Can't read config", e)
       this.config = {};
     }
+  }
+
+  async validateNextcloudURL(url) {
+    if(!url.startsWith("http://") && !url.startsWith("https://"))
+      url = "https://" + url;
+    if(!url.endsWith("/"))
+      url += "/";
+    if(!url.endsWith("remote.php/dav/"))
+      url += "remote.php/dav/";
+
+    console.log("Trying", url);
+    const resp = await fetch(url);
+    if(resp.status !== 401 && resp.status !== 400) {
+      console.log("Reject this url", resp.status);
+      settings.settingsStorage.setItem("nextcloud_url_valid", "false");
+      return;
+    }
+
+    console.log("URL check passed");
+    settings.settingsStorage.setItem("nextcloud_url_validate", JSON.stringify(url));
+    settings.settingsStorage.setItem("nextcloud_url_valid", "true");
+  }
+
+  async validateConfig(config) {
+    console.log(config);
+    const authHeader = "Basic " + btoa(`${config.user}:${config.password}`);
+    const resp = await fetch({
+      url: config.host + "calendars/" + config.user,
+      headers: {
+        "Authorization": authHeader,
+        "X-Http-Method": "PROPFIND",
+      }
+    });
+
+    console.log(resp.status);
+    settings.settingsStorage.setItem("caldav_validate_result", JSON.stringify(resp.status < 300));
   }
 }

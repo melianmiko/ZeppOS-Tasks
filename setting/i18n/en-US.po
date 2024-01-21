@@ -70,3 +70,36 @@ msgstr "App is still in offline mode"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
 msgstr "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+
+msgid "Use Nextcloud server account"
+msgstr "Use Nextcloud server account"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Sync your tasks with personal cloud server"
+
+msgid "Checking, is login/password valid..."
+msgstr "Checking, is login/password valid..."
+
+msgid "Credentials are valid, connection success."
+msgstr "Credentials are valid, connection success."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Authorization failed, or server configuration isn't valid."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+
+msgid "Save configuration"
+msgstr "Save configuration"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Enter your Nextcloud installation URL:"
+
+msgid "Checking, is URL valid..."
+msgstr "Checking, is URL valid..."
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL is valid."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Enter valid cloud URL to continue."

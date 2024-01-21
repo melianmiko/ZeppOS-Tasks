@@ -32,6 +32,12 @@ export class ZeppTasksSideService {
         if(e.newValue === "\"login_started\"")
           await this.login.settingsBeginLogin();
         break;
+      case "nextcloud_url_validate":
+        await this.caldavProxy.validateNextcloudURL(JSON.parse(e.newValue));
+        break;
+      case "caldav_validate":
+        await this.caldavProxy.validateConfig(JSON.parse(e.newValue));
+        break;
       case "auth_token":
         await this.login.settingsProcessAuthToken(e.newValue);
         this.caldavProxy.onConfigAvailable();

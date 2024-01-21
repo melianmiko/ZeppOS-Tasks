@@ -6,7 +6,8 @@ import {BaseListItem, ListItemText} from "../../lib/mmk/setting/ListItem";
 import {LoadingBottomSheet} from "./LoadingBottomSheet";
 import {LoginWithResponseBottomSheet} from "./LoginWithResponseBottomSheet";
 import {LoginAutoBottomSheet} from "./LoginAutoBottomSheet";
-import {BRAND_GOOGLE_32, BRAND_MICROSOFT_32} from "../Icons";
+import {BRAND_GOOGLE_32, BRAND_MICROSOFT_32, BRAND_NEXTCLOUD_32} from "../Icons";
+import {LoginNextcloudBottomSheet} from "./LoginNextcloudBottomSheet";
 
 export function LoginForm(ctx) {
   const state = new StateManager(ctx, "login_form");
@@ -46,9 +47,9 @@ export function LoginForm(ctx) {
         callback: () => useProvider("microsoft"),
       }),
       LoginProviderRow({
-        icon: BRAND_MICROSOFT_32,
-        title: t("CalDAV (experimental)"),
-        description: t(""),
+        icon: BRAND_NEXTCLOUD_32,
+        title: t("Use Nextcloud server account") + " (beta)",
+        description: t("Sync your tasks with personal cloud server"),
         callback: () => useProvider("caldav"),
       }),
 
@@ -58,6 +59,8 @@ export function LoginForm(ctx) {
         LoginWithResponseBottomSheet(ctx, cancelLogin) : null,
       loginStatus === "login_form" ?
         LoginAutoBottomSheet(ctx, cancelLogin) : null,
+      loginStatus === "login_form_nextcloud" ?
+        LoginNextcloudBottomSheet(ctx, cancelLogin) : null,
     ])
   ]);
 }
@@ -77,6 +80,8 @@ function Icon(dataURL) {
       marginLeft: 8,
       marginRight: 8,
       backgroundImage: dataURL,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
     }
   }, [])
 }

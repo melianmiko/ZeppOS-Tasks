@@ -1,6 +1,9 @@
 export class CalDAVAuth {
   async onLoginRequest(_) {
-    return ["", true];
+    return {
+      nextStage: "login_form_nextcloud",
+      url: "",
+    };
   }
 
   async onLoginResponse(response) {

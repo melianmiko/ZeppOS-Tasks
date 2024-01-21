@@ -4,13 +4,15 @@ const REQUIRED_SCOPE = "https://www.googleapis.com/auth/tasks";
 
 export class GoogleAuth {
   async onLoginRequest(_) {
-    // [url, require_response]
-    return [`https://accounts.google.com/o/oauth2/v2/auth?client_id=${OAUTH_CLIENT_ID}`+
-            `&redirect_uri=${encodeURIComponent(CALLBACK_URL)}`+
-            `&response_type=code`+
-            `&scope=${encodeURIComponent(REQUIRED_SCOPE)}`+
-            `&access_type=offline`+
-            `&prompt=consent`, true];
+    return {
+      nextStage: "login_form_resp",
+      url: `https://accounts.google.com/o/oauth2/v2/auth?client_id=${OAUTH_CLIENT_ID}`+
+        `&redirect_uri=${encodeURIComponent(CALLBACK_URL)}`+
+        `&response_type=code`+
+        `&scope=${encodeURIComponent(REQUIRED_SCOPE)}`+
+        `&access_type=offline`+
+        `&prompt=consent`,
+    };
   }
 
   async onLoginResponse(response) {

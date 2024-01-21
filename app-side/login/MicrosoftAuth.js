@@ -5,12 +5,14 @@ const REQUIRED_SCOPE = "offline_access Tasks.ReadWrite";
 // noinspection JSUnusedGlobalSymbols
 export class MicrosoftAuth {
   async onLoginRequest(_) {
-    // [url, require_response]
-    return [`https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize`+
-      `?client_id=${MS_APP_ID}`+
-      `&redirect_uri=${encodeURIComponent(CALLBACK_URL)}`+
-      `&scope=${encodeURIComponent(REQUIRED_SCOPE)}`+
-      `&response_type=code&response_mode=query`, true];
+    return {
+      nextStage: "login_form_resp",
+      url: `https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize`+
+        `?client_id=${MS_APP_ID}`+
+        `&redirect_uri=${encodeURIComponent(CALLBACK_URL)}`+
+        `&scope=${encodeURIComponent(REQUIRED_SCOPE)}`+
+        `&response_type=code&response_mode=query`
+    }
   }
 
   async onLoginResponse(response) {

@@ -1,5 +1,6 @@
 import {GoogleAuth} from "./GoogleAuth";
 import {MicrosoftAuth} from "./MicrosoftAuth";
+import {CalDAVAuth} from "./CalDAVAuth";
 
 export class LoginProvider {
     _getAuthProviderName() {
@@ -12,6 +13,8 @@ export class LoginProvider {
                 return new GoogleAuth();
             case "microsoft":
                 return new MicrosoftAuth();
+            case "caldav":
+                return new CalDAVAuth();
         }
     }
 
@@ -38,13 +41,13 @@ export class LoginProvider {
 
     async settingsBeginLogin() {
         const storage = settings.settingsStorage;
-        const [url, needRespond] = await this._getAuthProvider().onLoginRequest((data) => {
+        const {url, nextStage} = await this._getAuthProvider().onLoginRequest((data) => {
             if(data === null) return settings.settingsStorage.setItem("login_status", '"logged_out"');
             this.settingsProcessAuthToken(data)
         });
 
         storage.setItem("login_url", url);
-        storage.setItem("login_status", needRespond ? '"login_form_resp"' : '"login_form"');
+        storage.setItem("login_status", JSON.stringify(nextStage));
     }
 
     async settingsProcessAuthToken(data) {

@@ -10,58 +10,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2024-01-21 08:05\n"
+"PO-Revision-Date: 2024-02-05 06:26\n"
 
 msgid "Account"
-msgstr ""
+msgstr "アカウント"
 
 msgid "About"
-msgstr ""
+msgstr "ZeppTasksについて"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "ZeppTasks のようなものですか?寄付をしてみませんか？ "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "ZeppTask の翻訳を手伝いたいですか?クラウディンでやってみよう！"
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Googleにログインする"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "ZeppTask ソース コード:"
 
 msgid "Please wait..."
-msgstr ""
+msgstr "ちょっと待ってください。"
 
 msgid "How-to login:"
-msgstr ""
+msgstr "ログインの問題?手順については、こちらを参照してください。"
 
 msgid "Cancel"
-msgstr ""
+msgstr "アクションのキャンセル"
 
 msgid "Login success"
-msgstr ""
+msgstr "Google に正常にログインしました。 Googleタスクのタスクは、時計とGoogleタスクアプリの間で同期されます。"
 
 msgid "Log out"
-msgstr ""
+msgstr "ログアウト"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "同期タスク"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "クラウド内のタスクを Google Tasks と同期したいですか? Google にログインして始めましょう。"
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Google アカウントを使用します。"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "タスクは Google タスクと同期されます。"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Googleを使いたくないですか？代わりに Microsoft アカウントを使用できます。"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "タスクはウォッチと Microsoft To-Do の間で同期されます。"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr ""

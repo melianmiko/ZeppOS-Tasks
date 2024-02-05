@@ -1,15 +1,15 @@
-To log into your Google account, use Amazfit Zepp application on your phone.
+Google にログインするには、携帯電話の Zepp アプリを使用してください
 
-### Step-by-step
+### 説明書
 
-1. Open Zepp application
-2. Go to "Profile" tab
-3. Select your device in list
-4. Click on "More" icon
-5. Select "Tasks"
-6. Perform sign in
+1. これを行うには、携帯電話で Zepp アプリを開きます
+2. プロフィールタブに移動します
+3. 時計を選択してください。
+4. 「もっと見る」をクリックしてください。
+5. ZeppTasks またはタスクを選択します
+6. 「Googleでログイン」をクリックします
 
-### If you're in offline mode...
-On your smartwatch, open Tasks app, go to settings and select "Wipe ALL local data".
+### オフラインモードの場合:
+アプリの設定に移動し、[ローカル データをワイプ] を押します。
 
-WARNING: This will delete all offline tasks. Data stored in Google account won't be deleted, only local files.
+注!: これにより、オフライン タスクが削除されます。残しておきたいものがある場合は、Google タスクに割り当ててください ローカルファイルのみが削除されます

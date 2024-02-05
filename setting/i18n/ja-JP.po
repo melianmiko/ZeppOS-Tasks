@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2024-02-05 06:26\n"
+"PO-Revision-Date: 2024-02-05 07:40\n"
 
 msgid "Account"
 msgstr "アカウント"
@@ -64,56 +64,56 @@ msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr "タスクはウォッチと Microsoft To-Do の間で同期されます。"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "ここで、デフォルトのブラウザでログイン ウィンドウを開きます。"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "以下のネジにトークンを貼り付けます。"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Google または Microsoft に接続して本人確認を行うまでお待ちください..."
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "ZeppTasks は、Google Tasks または Microsoft To-Do アプリでタスクを変更、作成、またはチェックオフできるようになりました。"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "プライバシーポリシー "
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "オフラインモードのアプリ。 (注意! Google または Microsoft アカウントにリンクされていない限り、タスクは保存されません。)"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "ウォッチで ZeppTasks を開いてローカル データを消去し、同期されたタスクの表示を開始します。"
 
 msgid "Use Nextcloud server account"
-msgstr ""
+msgstr "NextCloudを利用する"
 
 msgid "Sync your tasks with personal cloud server"
-msgstr ""
+msgstr "タスクをクラウドサーバーと同期する "
 
 msgid "Checking, is login/password valid..."
-msgstr ""
+msgstr "ログイン認証情報が有効かどうかを確認しています。 "
 
 msgid "Credentials are valid, connection success."
-msgstr ""
+msgstr "成功!資格情報は有効です。"
 
 msgid "Authorization failed, or server configuration isn't valid."
-msgstr ""
+msgstr "認証に失敗しました: 資格情報が無効であるか、サーバー構成が無効であるか、アクセスできない可能性があります。"
 
 msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
-msgstr ""
+msgstr "クラウド情報を入力します。クラウド上で 2FA が使用されている場合は、必ず 2FA アプリのコードを使用してログイン プロセスを続行してください。"
 
 msgid "Save configuration"
-msgstr ""
+msgstr "設定の保存オプション"
 
 msgid "Enter your Nextcloud installation URL:"
-msgstr ""
+msgstr "NextCloud インスタ URL:"
 
 msgid "Checking, is URL valid..."
-msgstr ""
+msgstr "URLが有効かどうかを確認しています..."
 
 msgid "Nextcloud URL is valid."
-msgstr ""
+msgstr "NextCloudがインストールされました。 URLは有効です。 "
 
 msgid "Enter valid cloud URL to continue."
-msgstr ""
+msgstr "有効なURLを入力してください。 （例：https://google.jp）"
 

@@ -10,49 +10,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2024-01-21 08:05\n"
+"PO-Revision-Date: 2024-02-18 08:47\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Hesap"
 
 msgid "About"
-msgstr ""
+msgstr "Hakkında"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Bu uygulamayı beğendiniz mi? Küçük bir bağışla uygulamanın gelişimini destekleyin: "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "ZeppTasks'ı başka bir dilde görmek ister misiniz? Çeviri konusunda bize yardımcı olabilirsiniz: "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Google ile Giriş Yap"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Kaynak kodu mevcut: "
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Lütfen bekleyin..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Nasıl giriş yapılır:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal et"
 
 msgid "Login success"
-msgstr ""
+msgstr "Giriş başarılı"
 
 msgid "Log out"
-msgstr ""
+msgstr "Çıkış yap"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Senkronizasyonu ayarla"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Görevlerinizi bulutla senkronize etmek için oturum açın."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Google hesabı kullan"
 
 msgid "Tasks will be in sync with Google tasks"
 msgstr ""

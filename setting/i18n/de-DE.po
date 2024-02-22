@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2024-01-21 08:05\n"
+"PO-Revision-Date: 2024-02-22 05:33\n"
 
 msgid "Account"
 msgstr "Konto"
@@ -46,19 +46,19 @@ msgid "Log out"
 msgstr "Ausloggen"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Synchronisation aufsetzen"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Melde dich an um deine Aufgaben mit der Cloud zu synchronisieren."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Nutze dein Google Konto"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Tasks werden mit Google Tasks synchronisiert"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Microsoft Konto verwenden"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr ""

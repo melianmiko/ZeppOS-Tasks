@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2024-02-22 06:38\n"
+"PO-Revision-Date: 2024-02-24 04:25\n"
 
 msgid "Account"
 msgstr "Konto"
@@ -19,7 +19,7 @@ msgid "About"
 msgstr "Über"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr "Gefällt Ihnen diese Anwendung? Überlegen Sie, ob sie die Entwicklung mit einer kleinen Spende unterstützen wollen: "
+msgstr "Gefällt Ihnen diese App? Unterstützen Sie uns mit einer kleinen Spende für die Entwicklung."
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
 msgstr "Möchtest du ZeppTasks in anderen Sprache sehen? Du kannst uns helfen mit der Übersetzung: "

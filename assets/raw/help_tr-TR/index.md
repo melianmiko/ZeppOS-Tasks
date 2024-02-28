@@ -1,2 +1,2 @@
-# Initial setup
-[How-to login with Google?](help_google.md)
+# İlk Kurulum
+[Google ile nasıl giriş yapılır?](help_google.md)

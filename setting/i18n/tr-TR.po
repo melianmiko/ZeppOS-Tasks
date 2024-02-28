@@ -10,77 +10,110 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2024-01-03 06:27\n"
+"PO-Revision-Date: 2024-02-18 10:45\n"
 
 msgid "Account"
-msgstr ""
+msgstr "Hesap"
 
 msgid "About"
-msgstr ""
+msgstr "Hakkında"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "Bu uygulamayı beğendiniz mi? Küçük bir bağışla uygulamanın gelişimini destekleyin: "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "ZeppTasks'ı başka bir dilde görmek ister misiniz? Çeviri konusunda bize yardımcı olabilirsiniz: "
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Google ile Giriş Yap"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "Kaynak kodu mevcut: "
 
 msgid "Please wait..."
-msgstr ""
+msgstr "Lütfen bekleyin..."
 
 msgid "How-to login:"
-msgstr ""
+msgstr "Nasıl giriş yapılır:"
 
 msgid "Cancel"
-msgstr ""
+msgstr "İptal et"
 
 msgid "Login success"
-msgstr ""
+msgstr "Giriş başarılı"
 
 msgid "Log out"
-msgstr ""
+msgstr "Çıkış yap"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Senkronizasyonu ayarla"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Görevlerinizi bulutla senkronize etmek için oturum açın."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Google hesabı kullan"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Görevler, Google görevleriyle senkronize olur"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Microsoft hesabı kullan"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "Görevler Microsoft ToDo ile eşitlenir"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "Aşağıdaki bağlantıyı kopyalayın, tarayıcınızda açın ve giriş yapın."
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "Bundan sonra, ekranda olan tokene erişiminiz olacak. Bunları aşağıdaki alana yapıştırın:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Uygulama Google'a bağlanana ve kimlik bilgilerinizi doğrulayana kadar birkaç saniye bekleyin"
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "Artık ZeppOS'taki Görevler, bulut hesabınızdaki görevlere erişebilir."
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Gizlilik Politikası"
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "Uygulama hala çevrimdışı"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "Saatinizde Görevler uygulamasını açın ve senkronize edilmiş görevleri görmeye başlamak için yerel verileri silin."
+
+msgid "Use Nextcloud server account"
+msgstr "Nextcloud sunucu hesabını kullan"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Görevlerinizi kişisel bulut sunucusuyla senkronize edin"
+
+msgid "Checking, is login/password valid..."
+msgstr "Giriş/şifre geçerliliği kontrol ediliyor..."
+
+msgid "Credentials are valid, connection success."
+msgstr "Kimlik bilgileri geçerli, bağlantı başarılı."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Yetkilendirme başarısız oldu veya sunucu yapılandırması geçerli değil."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Bulut kimlik bilgilerinizi girin. İki faktörlü kimlik doğrulama etkinse, bir uygulama parolası oluşturmanız ve kullanmanız gerekir."
+
+msgid "Save configuration"
+msgstr "Yapılandırmayı kaydet"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Nextcloud kurulum URL'nizi girin:"
+
+msgid "Checking, is URL valid..."
+msgstr "URL geçerliliği kontrol ediliyor..."
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL'si geçerli."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Devam etmek için geçerli bir bulut URL'si girin."
 

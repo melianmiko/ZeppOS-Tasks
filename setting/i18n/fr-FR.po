@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2024-01-21 08:05\n"
+"PO-Revision-Date: 2024-03-19 03:46\n"
 
 msgid "Account"
 msgstr "Compte"
@@ -49,7 +49,7 @@ msgid "Set up sync"
 msgstr ""
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Connectez-vous pour synchroniser vos tâches avec le nuage."
 
 msgid "Use Google account"
 msgstr ""

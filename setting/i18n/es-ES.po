@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2024-01-21 08:05\n"
+"PO-Revision-Date: 2024-04-25 18:06\n"
 
 msgid "Account"
 msgstr "Cuenta"
@@ -46,7 +46,7 @@ msgid "Log out"
 msgstr "Cerrar sesión"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Configurar sincronización"
 
 msgid "Sign in to synchronize your tasks with cloud."
 msgstr ""

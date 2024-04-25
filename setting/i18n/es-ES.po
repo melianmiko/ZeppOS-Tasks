@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2024-04-25 18:06\n"
+"PO-Revision-Date: 2024-04-25 19:14\n"
 
 msgid "Account"
 msgstr "Cuenta"
@@ -49,13 +49,13 @@ msgid "Set up sync"
 msgstr "Configurar sincronización"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Inicie sesión para sincronizar tus tareas con la nube."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Usar la cuenta de Google"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Las tareas se sincronizaran con Google Tasks"
 
 msgid "Use Microsoft account"
 msgstr ""

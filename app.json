@@ -27,6 +27,9 @@
     },
     "es-ES": {
       "appName": "Tarea"
+    },
+    "de-DE": {
+      "appName": "Aufgaben"
     }
   },
   "permissions": [],

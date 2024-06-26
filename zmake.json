@@ -1,7 +1,0 @@
-{
-	"esbuild": true,
-	"with_zeus_overrides": true,
-	"encode_mode": "dialog",
-	"zeus_target": "mi-band-7-offline",
-	"post_build_script": ""
-} 

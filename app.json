@@ -5,8 +5,8 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 6,
-      "name": "2.0"
+      "code": 7,
+      "name": "2.1"
     },
     "icon": "icon.png",
     "vender": "MelianMiko (mmk.pw)",
@@ -27,6 +27,9 @@
     },
     "es-ES": {
       "appName": "Tarea"
+    },
+    "de-DE": {
+      "appName": "Aufgaben"
     }
   },
   "permissions": [],

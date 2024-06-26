@@ -209,7 +209,7 @@
         }
       ]
     },
-    "bip5u": {
+    "bip5unity": {
       "module": {
         "app-side": {
           "path": "app-side/index"
@@ -414,6 +414,39 @@
           ]
         }
       }
+    },
+    "gtr4le": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "gtr-4le1",
+          "deviceSource": 7864576
+        },
+        {
+          "name": "gtr-4le2",
+          "deviceSource": 7864577
+        }
+      ]
     },
     "gtr4": {
       "module": {

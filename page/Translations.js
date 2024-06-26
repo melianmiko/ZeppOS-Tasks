@@ -8,6 +8,8 @@ import {default as italianStrings} from "./translations/it-IT/device";
 import {default as frenchStrings} from "./translations/fr-FR/device";
 import {default as spanishStrings} from "./translations/es-ES/device";
 import {default as brazilianStrings} from "./translations/pt-BR/device";
+import {default as japanStrings} from "./translations/ja-JP/device";
+import {default as turkeyStrings} from "./translations/tr-TR/device";
 
 /**
  * Locale contents was split into separate files and saved into
@@ -26,3 +28,5 @@ loadLocale("it-IT", italianStrings);
 loadLocale("fr-FR", frenchStrings);
 loadLocale("es-ES", spanishStrings);
 loadLocale("pt-BR", brazilianStrings);
+loadLocale("ja-JA", japanStrings);
+loadLocale("tr-TR", turkeyStrings);

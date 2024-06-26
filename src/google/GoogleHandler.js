@@ -59,7 +59,7 @@ export class GoogleHandler {
             if((status < 200 || status >= 400) && !noCrash) {
                 // noinspection JSCheckFunctionSignatures
                 reportRequestFailure(fetchParams, status, data, this.token);
-                throw new Error(status + ": " + (data.error ? data.error.message : "Request failed..."));
+                throw new Error(status + ": " + (data.error ? data.error.message : "Request failed…"));
             }
             return data;
         });

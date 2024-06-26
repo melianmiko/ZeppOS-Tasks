@@ -47,6 +47,7 @@ export class CalDAVProxy {
         "Content-Type": "application/xml; charset=utf-8",
         "Authorization": this.authHeader,
         "X-Http-Method": method,
+        "Cookie": "",
         ...headers,
       },
       body,

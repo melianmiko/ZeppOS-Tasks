@@ -16,7 +16,7 @@ export class MicrosoftAuth {
   }
 
   async onLoginResponse(response) {
-    console.log("Exchanging auth key...");
+    console.log("Exchanging auth key…");
 
     let body = "client_id=" + encodeURIComponent(MS_APP_ID) +
       "&scope=" + encodeURIComponent(REQUIRED_SCOPE) +

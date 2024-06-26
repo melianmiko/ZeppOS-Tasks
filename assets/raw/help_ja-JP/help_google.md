@@ -9,7 +9,7 @@ To log into your Google account, use Amazfit Zepp application on your phone.
 5. Select "Tasks"
 6. Perform sign in
 
-### If you're in offline mode...
+### If you're in offline mode…
 On your smartwatch, open Tasks app, go to settings and select "Wipe ALL local data".
 
 WARNING: This will delete all offline tasks. Data stored in Google account won't be deleted, only local files.

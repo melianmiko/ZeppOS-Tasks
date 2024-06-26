@@ -11,7 +11,7 @@ export function LoginNextcloudBottomSheet(ctx, onCancel) {
   const [url, setUrl] = state.useSetting("nextcloud_url_validate", "");
   const [urlValid, setUrlValid] = state.useSetting("nextcloud_url_valid", false);
 
-  let urlCheckStatus = "Checking, is URL valid...";
+  let urlCheckStatus = "Checking, is URL valid…";
   switch(urlValid) {
     case true:
       urlCheckStatus = "Nextcloud URL is valid.";
@@ -65,7 +65,7 @@ function NextcloudCredentialsForm(ctx, url) {
     setTestConfig({host: url, user: login, password: password});
   }
 
-  let credCheckStatus = "Checking, is login/password valid...";
+  let credCheckStatus = "Checking, is login/password valid…";
   switch(testResult) {
     case true:
       credCheckStatus = "Credentials are valid, connection success.";

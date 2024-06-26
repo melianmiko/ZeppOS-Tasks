@@ -1,0 +1,16 @@
+{
+  "apiUrl": "https://translate.mmk.pw",
+  "apiKey": "",
+  "files": [
+    {
+      "format": "gettext",
+      "source": "setting/i18n/en-US.*",
+      "target": "%document_path%/%slug%.po"
+    },
+    {
+      "format": "es6_module",
+      "source": "page/translations/en-US/*.js",
+      "target": "page/translations/%slug%/%document_path%.js"
+    }
+  ]
+}

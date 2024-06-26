@@ -9,7 +9,7 @@ Para iniciar sesión en su cuenta de Google, utilice la aplicación de Amazfit Z
 5. Selecciona "Tareas"
 6. Iniciar sesión
 
-### Si estás en modo sin conexión...
+### Si estás en modo sin conexión…
 En su smartwatch, abra la aplicación Tareas, vaya a la configuración y seleccione "Borrar todos los datos locales".
 
 ATENCIÓN: Esto eliminará todas las tareas sin conexión. Los datos almacenados en la cuenta de Google no serán eliminados, solo los archivos locales.

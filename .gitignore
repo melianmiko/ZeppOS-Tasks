@@ -9,6 +9,7 @@ package-lock.json
 selenium-debug.log
 .idea
 .vscode
+/accent.json
 *.suo
 *.ntvs*
 *.njsproj

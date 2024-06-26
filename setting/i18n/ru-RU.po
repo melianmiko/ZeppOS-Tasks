@@ -1,17 +1,3 @@
-msgid ""
-msgstr ""
-"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Crowdin-Project: zepptasks\n"
-"X-Crowdin-Project-ID: 594407\n"
-"X-Crowdin-Language: ru\n"
-"X-Crowdin-File: /main/setting/i18n/en-US.po\n"
-"X-Crowdin-File-ID: 23\n"
-"Project-Id-Version: zepptasks\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language-Team: Russian\n"
-"Language: ru_RU\n"
-"PO-Revision-Date: 2024-01-03 06:41\n"
-
 msgid "Account"
 msgstr "Аккаунт"
 
@@ -19,10 +5,10 @@ msgid "About"
 msgstr "О программе"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr "Нравится это приложение? Рассмотрите возможность поддержать его материально: "
+msgstr "Нравится это приложение? Рассмотрите возможность поддержать его материально:"
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr "Хотите видеть ZeppTasks в перевода на ваш язык? Помогите нам с этим: "
+msgstr "Хотите видеть ZeppTasks в перевода на ваш язык? Помогите нам с этим:"
 
 msgid "Log in with Google"
 msgstr "Войти через Google"
@@ -30,8 +16,8 @@ msgstr "Войти через Google"
 msgid "Source code available: "
 msgstr "Исходный код доступен: "
 
-msgid "Please wait..."
-msgstr "Подождите..."
+msgid "Please wait…"
+msgstr "Подождите…"
 
 msgid "How-to login:"
 msgstr "Как войти в аккаунт:"
@@ -84,3 +70,35 @@ msgstr "Приложение работает автономно"
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
 msgstr "Откройте Tasks на часах и выполните сброс локальных данных, чтобы увидеть списки задач из вашего аккаунта."
 
+msgid "Use Nextcloud server account"
+msgstr "Использовать аккаунт Nextcloud"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Синхронизируйте задачи с личным сервером"
+
+msgid "Checking, is login/password valid…"
+msgstr "Проверяем, верны ли данные для входа…"
+
+msgid "Credentials are valid, connection success."
+msgstr "Данные верны, подключен успешно."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Не удалось войти в аккаунт, либо сервер не верно настроен."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Введите данные для входа. Если у вас включена двухфакторная аутентификация, используйте пароль для приложения."
+
+msgid "Save configuration"
+msgstr "Сохранить настройки"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Введите URL Nextcloud:"
+
+msgid "Checking, is URL valid…"
+msgstr "Проверяем, верен ли URL…"
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL верен."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Введите верный URL для подключения."

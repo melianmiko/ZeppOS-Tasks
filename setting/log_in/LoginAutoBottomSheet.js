@@ -33,7 +33,7 @@ export function LoginAutoBottomSheet(ctx, onCancel) {
         overflowY: "auto",
         whiteSpace: "pre",
         wordBreak: "break-all",
-        userSelect: "text",
+        userSelect: "all",
       })
     ])
   ]);

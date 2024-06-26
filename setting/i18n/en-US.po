@@ -1,4 +1,3 @@
-
 msgid "Account"
 msgstr "Account"
 
@@ -17,8 +16,8 @@ msgstr "Log in with Google"
 msgid "Source code available: "
 msgstr "Source code available: "
 
-msgid "Please wait..."
-msgstr "Please, wait..."
+msgid "Please wait…"
+msgstr "Please, wait…"
 
 msgid "How-to login:"
 msgstr "How-to login:"
@@ -77,8 +76,8 @@ msgstr "Use Nextcloud server account"
 msgid "Sync your tasks with personal cloud server"
 msgstr "Sync your tasks with personal cloud server"
 
-msgid "Checking, is login/password valid..."
-msgstr "Checking, is login/password valid..."
+msgid "Checking, is login/password valid…"
+msgstr "Checking, is login/password valid…"
 
 msgid "Credentials are valid, connection success."
 msgstr "Credentials are valid, connection success."
@@ -95,8 +94,8 @@ msgstr "Save configuration"
 msgid "Enter your Nextcloud installation URL:"
 msgstr "Enter your Nextcloud installation URL:"
 
-msgid "Checking, is URL valid..."
-msgstr "Checking, is URL valid..."
+msgid "Checking, is URL valid…"
+msgstr "Checking, is URL valid…"
 
 msgid "Nextcloud URL is valid."
 msgstr "Nextcloud URL is valid."

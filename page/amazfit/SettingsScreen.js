@@ -31,14 +31,14 @@ class SettingsScreen extends ConfiguredListScreen {
     if(this.mode !== "setup") {
       this.headline(t("User interface:"));
       this.row({
-        text: t("Font size..."),
+        text: t("Font size…"),
         icon: "icon_s/font_size.png",
         callback: () => hmApp.gotoPage({
           url: `page/amazfit/FontSizeSetupScreen`
         })
       });
       this.row({
-        text: t("Keyboard..."),
+        text: t("Keyboard…"),
         icon: "icon_s/keyboard.png",
         callback: () => hmApp.gotoPage({
           url: `page/amazfit/ScreenBoardSetup`
@@ -71,7 +71,7 @@ class SettingsScreen extends ConfiguredListScreen {
         callback: () => this.wipeEverything()
       });
       if(this.mode !== "offline") this.text({
-        text: t("Option above didn't delete any data from your Google account."),
+        text: t("Option above didn't delete any data from your Google account"),
         fontSize: this.fontSize - 2,
         color: 0x999999
       });
@@ -113,7 +113,7 @@ class SettingsScreen extends ConfiguredListScreen {
 
   buildHelpItems() {
     this.row({
-      text: t("About..."),
+      text: t("About…"),
       icon: "icon_s/about.png",
       callback: () => hmApp.gotoPage({
         url: `page/amazfit/AboutScreen`,

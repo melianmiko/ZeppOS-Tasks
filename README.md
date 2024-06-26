@@ -1,15 +1,14 @@
 <div align="center">
 <img src="docs/icon_256.png" alt="" />
 <h1>ZeppTasks</h1>
-<p>
-<a title="Crowdin" target="_blank" href="https://crowdin.com/project/zepptasks"><img src="https://badges.crowdin.net/zepptasks/localized.svg"></a>
-</p>
 <p>Task list for ZeppOS. In sync with Google Tasks or Microsoft To Do</p>
 </div>
 
+[![Strings reviewed status](https://translate.mmk.pw/e3791eb7-bd73-4825-97f6-d384c0de48bb/percentage_reviewed_badge.svg)](https://mmk.pw/en/zepp/tasks/translate)
+
 - [📀 Homepage & Download](https://mmk.pw/en/zepp/tasks/)
 - [❤️ Make a donation](https://mmk.pw/en/donate/)
-- [🌎 Help with localization](https://crowdin.com/project/zepptasks)
+- [🌎 Help with localization](https://mmk.pw/en/zepp/tasks/translate)
 
 ## Build instructions
 

@@ -1,86 +1,104 @@
-msgid ""
-msgstr ""
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: zepptasks\n"
-"X-Crowdin-Project-ID: 594407\n"
-"X-Crowdin-Language: ja\n"
-"X-Crowdin-File: /main/setting/i18n/en-US.po\n"
-"X-Crowdin-File-ID: 23\n"
-"Project-Id-Version: zepptasks\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language-Team: Japanese\n"
-"Language: ja_JP\n"
-"PO-Revision-Date: 2024-01-03 06:27\n"
-
 msgid "Account"
-msgstr ""
+msgstr "アカウント"
 
 msgid "About"
-msgstr ""
+msgstr "ZeppTasksについて"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr ""
+msgstr "ZeppTasks のようなものですか?寄付をしてみませんか？ "
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr ""
+msgstr "ZeppTask の翻訳を手伝いたいですか?クラウディンでやってみよう！"
 
 msgid "Log in with Google"
-msgstr ""
+msgstr "Googleにログインする"
 
 msgid "Source code available: "
-msgstr ""
+msgstr "ZeppTask ソース コード:"
 
-msgid "Please wait..."
-msgstr ""
+msgid "Please wait…"
+msgstr "ちょっと待ってください。"
 
 msgid "How-to login:"
-msgstr ""
+msgstr "ログインの問題?手順については、こちらを参照してください。"
 
 msgid "Cancel"
-msgstr ""
+msgstr "アクションのキャンセル"
 
 msgid "Login success"
-msgstr ""
+msgstr "Google に正常にログインしました。 Googleタスクのタスクは、時計とGoogleタスクアプリの間で同期されます。"
 
 msgid "Log out"
-msgstr ""
+msgstr "ログアウト"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "同期タスク"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "クラウド内のタスクを Google Tasks と同期したいですか? Google にログインして始めましょう。"
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Google アカウントを使用します。"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "タスクは Google タスクと同期されます。"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Googleを使いたくないですか？代わりに Microsoft アカウントを使用できます。"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "タスクはウォッチと Microsoft To-Do の間で同期されます。"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr ""
+msgstr "ここで、デフォルトのブラウザでログイン ウィンドウを開きます。"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr ""
+msgstr "以下のネジにトークンを貼り付けます。"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr ""
+msgstr "Google または Microsoft に接続して本人確認を行うまでお待ちください..."
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "ZeppTasks は、Google Tasks または Microsoft To-Do アプリでタスクを変更、作成、またはチェックオフできるようになりました。"
 
 msgid "Privacy Policy"
-msgstr ""
+msgstr "プライバシーポリシー "
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "オフラインモードのアプリ。 (注意! Google または Microsoft アカウントにリンクされていない限り、タスクは保存されません。)"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "ウォッチで ZeppTasks を開いてローカル データを消去し、同期されたタスクの表示を開始します。"
 
+msgid "Use Nextcloud server account"
+msgstr "NextCloudを利用する"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "タスクをクラウドサーバーと同期する "
+
+msgid "Checking, is login/password valid…"
+msgstr "Checking, is login/password valid…"
+
+msgid "Credentials are valid, connection success."
+msgstr "成功!資格情報は有効です。"
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "認証に失敗しました: 資格情報が無効であるか、サーバー構成が無効であるか、アクセスできない可能性があります。"
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "クラウド情報を入力します。クラウド上で 2FA が使用されている場合は、必ず 2FA アプリのコードを使用してログイン プロセスを続行してください。"
+
+msgid "Save configuration"
+msgstr "設定の保存オプション"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "NextCloud インスタ URL:"
+
+msgid "Checking, is URL valid…"
+msgstr "Checking, is URL valid…"
+
+msgid "Nextcloud URL is valid."
+msgstr "NextCloudがインストールされました。 URLは有効です。 "
+
+msgid "Enter valid cloud URL to continue."
+msgstr "有効なURLを入力してください。 （例：https://google.jp）"

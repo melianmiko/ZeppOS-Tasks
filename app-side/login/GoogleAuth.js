@@ -16,7 +16,7 @@ export class GoogleAuth {
   }
 
   async onLoginResponse(response) {
-    console.log("Exchanging auth key...");
+    console.log("Exchanging auth key…");
 
     let body = "client_id=" +encodeURIComponent(OAUTH_CLIENT_ID);
     body += "&client_secret=" + encodeURIComponent(OAUTH_CLIENT_SECRET);

@@ -1,17 +1,3 @@
-msgid ""
-msgstr ""
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Crowdin-Project: zepptasks\n"
-"X-Crowdin-Project-ID: 594407\n"
-"X-Crowdin-Language: fr\n"
-"X-Crowdin-File: /main/setting/i18n/en-US.po\n"
-"X-Crowdin-File-ID: 23\n"
-"Project-Id-Version: zepptasks\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Language-Team: French\n"
-"Language: fr_FR\n"
-"PO-Revision-Date: 2024-01-03 06:27\n"
-
 msgid "Account"
 msgstr "Compte"
 
@@ -30,8 +16,8 @@ msgstr "Se connecter avec Google"
 msgid "Source code available: "
 msgstr "Code source disponible : "
 
-msgid "Please wait..."
-msgstr "Veuillez patienter..."
+msgid "Please wait…"
+msgstr "Veuillez patienter…"
 
 msgid "How-to login:"
 msgstr "Tutoriel pour la connexion:"
@@ -84,3 +70,35 @@ msgstr ""
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
 msgstr ""
 
+msgid "Use Nextcloud server account"
+msgstr "Use Nextcloud server account"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Sync your tasks with personal cloud server"
+
+msgid "Checking, is login/password valid…"
+msgstr "Checking, is login/password valid…"
+
+msgid "Credentials are valid, connection success."
+msgstr "Credentials are valid, connection success."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Authorization failed, or server configuration isn't valid."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+
+msgid "Save configuration"
+msgstr "Save configuration"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Enter your Nextcloud installation URL:"
+
+msgid "Checking, is URL valid…"
+msgstr "Checking, is URL valid…"
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL is valid."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Enter valid cloud URL to continue."

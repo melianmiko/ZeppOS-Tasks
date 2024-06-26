@@ -9,7 +9,7 @@ A Google-fiókodba való bejelentkezéshez használd az Amazfit Zepp alkalmazás
 5. Válaszd ki a "Feladatok" lehetőséget
 6. Hajtsd végre a bejelentkezést
 
-### Ha offline módban vagy...
+### Ha offline módban vagy…
 Az okosórán nyisd meg a Feladatok alkalmazást, lépj a beállításokhoz, és válaszd az „ÖSSZES helyi adat törlése” lehetőséget.
 
 FIGYELMEZTETÉS: Ezzel törlöd az összes offline feladatot. A Google-fiókodban tárolt adatok nem törlődnek, csak a helyi fájlok.

@@ -14,7 +14,7 @@ export function AboutTab(ctx) {
     ]),
     Paragraph([
       t("Want to see ZeppTasks into another language? You can help us with translation: "),
-      Link("https://crowdin.com/project/zepptasks")
+      Link("https://mmk.pw/en/zepp/tasks/translate")
     ]),
     Paragraph([
       t("Source code available: "),

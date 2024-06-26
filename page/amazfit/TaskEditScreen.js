@@ -56,7 +56,7 @@ class TaskEditScreen extends ListScreen {
     if(this.isSaving) return;
 
     this.isSaving = true;
-    this.deleteRow.setText(t("Deleting..."));
+    this.deleteRow.setText(t("Deleting…"));
 
     createSpinner();
     this.task.delete().then(() => {
@@ -68,7 +68,7 @@ class TaskEditScreen extends ListScreen {
     if(this.isSaving) return;
 
     this.isSaving = true;
-    this.board.confirmButtonText = t("Saving, wait...");
+    this.board.confirmButtonText = t("Saving, wait…");
     this.task.setTitle(value).then(() => {
       hmApp.goBack();
     })

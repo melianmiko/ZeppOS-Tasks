@@ -119,7 +119,7 @@ class HomeScreen extends ConfiguredListScreen {
         callback: () => this.openSettings(this.cachedMode ? "cached": "online")
       },
       {
-        text: t("New..."),
+        text: t("New…"),
         icon: "icon_s/new.png",
         callback: () => this.openNewNoteUI()
       }

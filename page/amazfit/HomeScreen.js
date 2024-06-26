@@ -228,16 +228,16 @@ class HomeScreen extends ConfiguredListScreen {
       }
     });
 
-    this.row({
-      text: t("How-to login?"),
-      icon: "icon_s/help.png",
-      callback: () => {
-        hmApp.gotoPage({
-          url: `page/amazfit/MarkdownReader`,
-          param: "help_google.md"
-        })
-      }
-    });
+    // this.row({
+    //   text: t("How-to login?"),
+    //   icon: "icon_s/help.png",
+    //   callback: () => {
+    //     hmApp.gotoPage({
+    //       url: `page/amazfit/MarkdownReader`,
+    //       param: "help_google.md"
+    //     })
+    //   }
+    // });
     this.row({
       text: t("Use application without sync"),
       icon: "icon_s/mode_offline.png",

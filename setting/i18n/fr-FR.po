@@ -1,0 +1,104 @@
+msgid "Account"
+msgstr "Compte"
+
+msgid "About"
+msgstr "A propos"
+
+msgid "Like this application? Consider to support their development with a small donation: "
+msgstr "Vous aimez cette application ? Pensez à supporter son développement avec une petite donation : "
+
+msgid "Want to see ZeppTasks into another language? You can help us with translation: "
+msgstr "Vous voulez voir ZeppTasks dans une autre langue ? Vous pouvez nous aider dans la traduction : "
+
+msgid "Log in with Google"
+msgstr "Se connecter avec Google"
+
+msgid "Source code available: "
+msgstr "Code source disponible : "
+
+msgid "Please wait…"
+msgstr "Veuillez patienter…"
+
+msgid "How-to login:"
+msgstr "Tutoriel pour la connexion:"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Login success"
+msgstr "Connection réussie"
+
+msgid "Log out"
+msgstr "Se déconnecter"
+
+msgid "Set up sync"
+msgstr ""
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr ""
+
+msgid "Use Google account"
+msgstr ""
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr ""
+
+msgid "Use Microsoft account"
+msgstr ""
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr ""
+
+msgid "Copy the following link, open them into your browser, and perform a log in."
+msgstr "Copiez le lien suivant, ouvrez-le dans votre navigateur, et connectez-vous."
+
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
+msgstr "Après cela, vous allez voir un token d'accès à l'écran. Collez-le dans le champ ci-dessous :"
+
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
+msgstr "Attendez quelques secondes jusqu'à ce que l'application se connecte avec Google et valide vos identifiants"
+
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr ""
+
+msgid "Privacy Policy"
+msgstr "Politique de Confidentialité"
+
+msgid "App is still in offline mode"
+msgstr ""
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr ""
+
+msgid "Use Nextcloud server account"
+msgstr "Use Nextcloud server account"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Sync your tasks with personal cloud server"
+
+msgid "Checking, is login/password valid…"
+msgstr "Checking, is login/password valid…"
+
+msgid "Credentials are valid, connection success."
+msgstr "Credentials are valid, connection success."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Authorization failed, or server configuration isn't valid."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+
+msgid "Save configuration"
+msgstr "Save configuration"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Enter your Nextcloud installation URL:"
+
+msgid "Checking, is URL valid…"
+msgstr "Checking, is URL valid…"
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL is valid."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Enter valid cloud URL to continue."

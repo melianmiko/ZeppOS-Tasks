@@ -166,6 +166,10 @@
         {
           "name": "a1",
           "deviceSource": 8323328
+        },
+        {
+          "name": "a2",
+          "deviceSource": 8323329
         }
       ]
     },
@@ -194,7 +198,48 @@
       "platforms": [
         {
           "name": "bip",
+          "deviceSource": 8454400
+        },
+        {
+          "name": "bip2",
           "deviceSource": 8454401
+        }
+      ]
+    },
+    "bip5u": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "bip5u1",
+          "deviceSource": 8782081
+        },
+        {
+          "name": "bip5u2",
+          "deviceSource": 8782088
+        },
+        {
+          "name": "bip5u3",
+          "deviceSource": 8782089
         }
       ]
     },

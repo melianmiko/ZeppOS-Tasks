@@ -5,16 +5,16 @@ msgid "About"
 msgstr "Circa"
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr "Ti piace questa applicazione? Considera di sostenere il suo sviluppo con una piccola donazione: "
+msgstr "Ti piace questa applicazione? Considera di sostenere il suo sviluppo con una piccola donazione:"
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr "Vuoi vedere ZeppTasks in un'altra lingua? Puoi aiutarci nella traduzione: "
+msgstr "Vuoi vedere ZeppTasks in un'altra lingua? Puoi aiutarci nella traduzione:"
 
 msgid "Log in with Google"
 msgstr "Accedi con Google"
 
 msgid "Source code available: "
-msgstr "Codice sorgente disponibile: "
+msgstr "Codice sorgente disponibile:"
 
 msgid "Please wait…"
 msgstr "Attendere prego…"
@@ -32,25 +32,31 @@ msgid "Log out"
 msgstr "Esci"
 
 msgid "Set up sync"
-msgstr ""
+msgstr "Configura la sincronizzazione"
 
 msgid "Sign in to synchronize your tasks with cloud."
-msgstr ""
+msgstr "Accedi per sincronizzare le tue attività con il cloud."
 
 msgid "Use Google account"
-msgstr ""
+msgstr "Utilizza l'account Google"
 
 msgid "Tasks will be in sync with Google tasks"
-msgstr ""
+msgstr "Le attività saranno sincronizzate con le attività di Google"
 
 msgid "Use Microsoft account"
-msgstr ""
+msgstr "Utilizza l'account Microsoft"
 
 msgid "Tasks will be in sync with Microsoft ToDo"
-msgstr ""
+msgstr "Le attività saranno sincronizzate con Microsoft ToDo"
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copia il seguente link, aprilo nel tuo browser ed esegui un login."
+
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "Dopo di che, avrai un token di accesso sullo schermo. Incollalo nel campo qui sotto:"
@@ -59,16 +65,16 @@ msgid "Wait for a few seconds until app will connect with Google and validate yo
 msgstr "Attendi alcuni secondi fino a quando l'app si connetterà con Google e convalidi le tue credenziali"
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
-msgstr ""
+msgstr "Ora le attività su ZeppOS hanno accesso alle attività nel tuo account cloud."
 
 msgid "Privacy Policy"
 msgstr "Informativa sulla privacy"
 
 msgid "App is still in offline mode"
-msgstr ""
+msgstr "L'app è ancora in modalità offline"
 
 msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
-msgstr ""
+msgstr "Apri l'app Attività sul tuo orologio e cancella i dati locali per iniziare a vedere le attività sincronizzate."
 
 msgid "Use Nextcloud server account"
 msgstr "Use Nextcloud server account"

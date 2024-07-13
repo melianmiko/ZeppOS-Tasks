@@ -1,6 +1,6 @@
 import { ConfiguredListScreen } from "../ConfiguredListScreen";
 
-const { config, t } = getApp()._options.globalData
+const { config, t, tasksProvider } = getApp()._options.globalData
 
 class SettingsScreen extends ConfiguredListScreen {
   constructor(params) {
@@ -44,7 +44,7 @@ class SettingsScreen extends ConfiguredListScreen {
           url: `page/amazfit/ScreenBoardSetup`
         })
       });
-      if(this.mode !== "cached")
+      if(this.mode !== "cached" && tasksProvider && !tasksProvider.cantListCompleted)
         this.row({
           text: t("Show complete tasks"),
           icon:  `icon_s/cb_${config.get("withComplete", false)}.png`,

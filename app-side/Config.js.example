@@ -2,4 +2,6 @@ export const OAUTH_CLIENT_ID = "";
 export const OAUTH_CLIENT_SECRET = "";
 export const MS_APP_ID = "";
 export const MS_SECRET = "";
+export const TICK_TICK_CLIENT_ID = "";
+export const TICK_TICK_CLIENT_SECRET = "";
 export const CALLBACK_URL = "";

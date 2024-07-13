@@ -1,7 +1,6 @@
 export default {
   "Tasks": "Attività",
   "Help index": "Aiuto",
-  "help_file_prefix": "en",
   "How-to login?": "Come effettuare il login?",
   "Create": "Crea",
   "New note:": "Nuova nota:",

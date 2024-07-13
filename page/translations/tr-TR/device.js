@@ -1,7 +1,6 @@
 export default {
   "Tasks": "Görevler",
   "Help index": "Yardım",
-  "help_file_prefix": "en",
   "How-to login?": "Nasıl giriş yapılır?",
   "Create": "Oluştur",
   "New note:": "Yeni not:",

@@ -1,35 +1,35 @@
 msgid "Account"
-msgstr "Cuenta"
+msgstr ""
 
 msgid "About"
-msgstr "Acerca de"
+msgstr ""
 
 msgid "Like this application? Consider to support their development with a small donation: "
-msgstr "¿Te gusta esta aplicación? Considera apoyar su desarrollo con una pequeña donación: "
+msgstr ""
 
 msgid "Want to see ZeppTasks into another language? You can help us with translation: "
-msgstr "¿Quieres ver ZeppTasks en otro idioma? Puedes ayudarnos con la traducción: "
+msgstr ""
 
 msgid "Log in with Google"
-msgstr "Iniciar sesión con Google"
+msgstr ""
 
 msgid "Source code available: "
-msgstr "Código fuente disponible: "
+msgstr ""
 
 msgid "Please wait…"
-msgstr "Espere por favor…"
+msgstr ""
 
 msgid "How-to login:"
-msgstr "Cómo iniciar sesión:"
+msgstr ""
 
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr ""
 
 msgid "Login success"
-msgstr "Inicio de sesión correcto"
+msgstr ""
 
 msgid "Log out"
-msgstr "Cerrar sesión"
+msgstr ""
 
 msgid "Set up sync"
 msgstr ""
@@ -49,26 +49,26 @@ msgstr ""
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr ""
 
+msgid "Copy the following link, open them into your browser, and perform a log in."
+msgstr ""
+
 msgid "Use TickTick account"
 msgstr "Use TickTick account"
-
-msgid "Copy the following link, open them into your browser, and perform a log in."
-msgstr "Copie el siguiente enlace, ábrelo en su navegador y realice un inicio de sesión."
 
 msgid "Tasks will be in sync with TickTick application"
 msgstr "Tasks will be in sync with TickTick application"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr "Después de eso, tendrás un token de acceso en la pantalla. Pégalos en el campo abajo:"
+msgstr ""
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
-msgstr "Espere unos segundos hasta que la aplicación se conecte con Google y valide sus credenciales"
+msgstr ""
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
 msgstr ""
 
 msgid "Privacy Policy"
-msgstr "Política de privacidad"
+msgstr ""
 
 msgid "App is still in offline mode"
 msgstr ""
@@ -77,34 +77,34 @@ msgid "Open Tasks app on your watch and wipe local data to start seeing synced t
 msgstr ""
 
 msgid "Use Nextcloud server account"
-msgstr "Use Nextcloud server account"
+msgstr ""
 
 msgid "Sync your tasks with personal cloud server"
-msgstr "Sync your tasks with personal cloud server"
+msgstr ""
 
 msgid "Checking, is login/password valid…"
-msgstr "Checking, is login/password valid…"
+msgstr ""
 
 msgid "Credentials are valid, connection success."
-msgstr "Credentials are valid, connection success."
+msgstr ""
 
 msgid "Authorization failed, or server configuration isn't valid."
-msgstr "Authorization failed, or server configuration isn't valid."
+msgstr ""
 
 msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
-msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr ""
 
 msgid "Save configuration"
-msgstr "Save configuration"
+msgstr ""
 
 msgid "Enter your Nextcloud installation URL:"
-msgstr "Enter your Nextcloud installation URL:"
+msgstr ""
 
 msgid "Checking, is URL valid…"
-msgstr "Checking, is URL valid…"
+msgstr ""
 
 msgid "Nextcloud URL is valid."
-msgstr "Nextcloud URL is valid."
+msgstr ""
 
 msgid "Enter valid cloud URL to continue."
-msgstr "Enter valid cloud URL to continue."
+msgstr ""

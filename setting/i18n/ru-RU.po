@@ -49,8 +49,14 @@ msgstr "Использовать аккаунт Microsoft"
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr "Задачи будут синхронизированы с Microsoft ToDo"
 
+msgid "Use TickTick account"
+msgstr "Использовать аккаунт TickTick"
+
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Скопируйте ссылку ниже, откройте её в браузере, и выполните вход."
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Задачи будут синхронизированы с приложением TickTick"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "После этого, вы получите ключ для авторизации. Вставьте его в поле ниже:"

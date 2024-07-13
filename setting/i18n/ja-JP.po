@@ -49,8 +49,14 @@ msgstr "Googleを使いたくないですか？代わりに Microsoft アカウ�
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr "タスクはウォッチと Microsoft To-Do の間で同期されます。"
 
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "ここで、デフォルトのブラウザでログイン ウィンドウを開きます。"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "以下のネジにトークンを貼り付けます。"

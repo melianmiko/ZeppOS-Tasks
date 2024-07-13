@@ -191,8 +191,15 @@ class HomeScreen extends ConfiguredListScreen {
       },
       callback: () => {
         completed = !completed;
+
+        try {
+          data.setCompleted(completed)
+        } catch(e) {
+          hmUI.showToast({ text: e.message });
+          return;
+        }
+
         updateComplete();
-        data.setCompleted(completed);
       }
     });
 

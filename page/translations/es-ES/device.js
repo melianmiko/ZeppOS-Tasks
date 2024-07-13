@@ -1,7 +1,6 @@
 export default {
   "Tasks": "Tarea",
   "Help index": "Ayuda",
-  "help_file_prefix": "en",
   "How-to login?": "¿Cómo iniciar sesión?",
   "Create": "Crear",
   "New note:": "Nueva nota:",

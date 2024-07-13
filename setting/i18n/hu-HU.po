@@ -52,6 +52,12 @@ msgstr ""
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Másold ki a következő linket, nyisd meg a böngészőben, és jelentkezz be."
 
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
+
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "Ezt követően megjelenik egy hozzáférési token a képernyőn. Illeszd be az alábbi mezőbe:"
 

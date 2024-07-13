@@ -1,0 +1,104 @@
+msgid "Account"
+msgstr "Konto"
+
+msgid "About"
+msgstr "O aplikacji"
+
+msgid "Like this application? Consider to support their development with a small donation: "
+msgstr "Podana się aplikacja? Wspomóż developera niewielkim podarunkiem: "
+
+msgid "Want to see ZeppTasks into another language? You can help us with translation: "
+msgstr "Czy chcesz zobaczyć aplikacje ZeppTasks w innym języku? możesz pomóc i przetłumaczyć: "
+
+msgid "Log in with Google"
+msgstr "Zaloguj się za pomocą konta Google"
+
+msgid "Source code available: "
+msgstr "Kod źródłowy jest dostępny: "
+
+msgid "Please wait…"
+msgstr "Proszę czekać…"
+
+msgid "How-to login:"
+msgstr "Jak się zalogować:"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Login success"
+msgstr "Logowanie prawidłowe"
+
+msgid "Log out"
+msgstr "Wyloguj się"
+
+msgid "Set up sync"
+msgstr "Ustaw synchronizacje"
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr "Zaloguj się, aby synchronizować zadania z chmurą."
+
+msgid "Use Google account"
+msgstr "Użyj konta Google"
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr "Zadania zostaną synchronizowane z zadaniami z Google tasks"
+
+msgid "Use Microsoft account"
+msgstr "Użyj konta Microsoft"
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr "Zadania będą synchronizowane z Microsoft ToDo"
+
+msgid "Copy the following link, open them into your browser, and perform a log in."
+msgstr "Skopiuj poniższy link. Następnie otwórz go w przeglądarce, i dokończ logowanie."
+
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
+msgstr "Później, otrzymasz klucz dostępu, który wyświetli się na ekranie. Skopiuj go i umieść w polu poniżej:"
+
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
+msgstr "Poczekaj kilka sekund, aż aplikacja połączy się z kontem Google"
+
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr "Nowe zadania w ZeppOS mają dostęp do danych z kanta w chmurze."
+
+msgid "Privacy Policy"
+msgstr "Polityka prywatności"
+
+msgid "App is still in offline mode"
+msgstr "Aplikacja jest wciąż w trybie offline"
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr "Otwórz aplikację Tasks na zegarku i wyczyść dane lokalne, aby zobaczyć synchronizowane zadania."
+
+msgid "Use Nextcloud server account"
+msgstr "Użyj konta Nextcloud"
+
+msgid "Sync your tasks with personal cloud server"
+msgstr "Synchronizuj zadania z osobistym kontem w chmurze"
+
+msgid "Checking, is login/password valid…"
+msgstr "Sprawdzanie poprawności loginu/hasła…"
+
+msgid "Credentials are valid, connection success."
+msgstr "Dane logowania są poprawne i udało się połączyć."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Autoryzacja nie powiodła się, albo konfiguracja serwera jest nieprawidłowa."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Wprowadź dane do chmury. Jeżeli włączona jest dwuetapowa weryfikacji, musisz utworzyć i użyć hasła aplikacji."
+
+msgid "Save configuration"
+msgstr "Zapisz konfiguracje"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Wprowadź swój adres URL do Nextcloud:"
+
+msgid "Checking, is URL valid…"
+msgstr "Sprawdzanie poprawności adresu URL…"
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL jest poprawny."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Wprowadź poprawny adres URL do chmury i kontynuuj."

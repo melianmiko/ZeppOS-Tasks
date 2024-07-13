@@ -1,7 +1,6 @@
 export default {
   "Tasks": "Tasks",
   "Help index": "Help",
-  "help_file_prefix": "en",
   "How-to login?": "How-to login?",
   "Create": "Create",
   "New note:": "New note:",

@@ -42,7 +42,9 @@ export class LogExecutor {
         console.log(`LOG_EXEC: Will set task ${id} to completed=${value}`);
         return this.taskList.getTask(id).setCompleted(value).then(() => {
             return this.start();
-        })
+        }).catch((e) => {
+            console.log(e);
+        });
     }
 
     _log_set_title(record) {

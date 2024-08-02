@@ -52,6 +52,12 @@ msgstr ""
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copiez le lien suivant, ouvrez-le dans votre navigateur, et connectez-vous."
 
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
+
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "Après cela, vous allez voir un token d'accès à l'écran. Collez-le dans le champ ci-dessous :"
 

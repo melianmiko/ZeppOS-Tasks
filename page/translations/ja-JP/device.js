@@ -1,7 +1,6 @@
 export default {
   "Tasks": "タスク",
   "Help index": "ヘルプ",
-  "help_file_prefix": "en",
   "How-to login?": "ログインするにはどうすればよいですか?",
   "Create": "タスクの作成",
   "New note:": "新しいタスクの作成",

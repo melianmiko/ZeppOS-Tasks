@@ -1,7 +1,6 @@
 export default {
   "Tasks": "Aufgaben",
   "Help index": "Hilfe",
-  "help_file_prefix": "en",
   "How-to login?": "Wie meldet man sich an?",
   "Create": "Erstellen",
   "New note:": "Neue Aufgabe:",

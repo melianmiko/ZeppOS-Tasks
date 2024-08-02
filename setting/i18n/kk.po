@@ -1,0 +1,110 @@
+msgid "Account"
+msgstr "Есептік жазба"
+
+msgid "About"
+msgstr "Туралы"
+
+msgid "Like this application? Consider to support their development with a small donation: "
+msgstr "Бұл қолданба ұнай ма? Олардың дамуын шағын қайырымдылықпен қолдауды қарастырыңыз:"
+
+msgid "Want to see ZeppTasks into another language? You can help us with translation: "
+msgstr ""
+
+msgid "Log in with Google"
+msgstr "Google арқылы жүйеге кіріңіз"
+
+msgid "Source code available: "
+msgstr ""
+
+msgid "Please wait…"
+msgstr "Өтінемін күте тұрыңыз…"
+
+msgid "How-to login:"
+msgstr "Жүйеге кіру жолы:"
+
+msgid "Cancel"
+msgstr "Болдырмау"
+
+msgid "Login success"
+msgstr "Кіру сәтті"
+
+msgid "Log out"
+msgstr "Шығу"
+
+msgid "Set up sync"
+msgstr "Синхрондауды орнату"
+
+msgid "Sign in to synchronize your tasks with cloud."
+msgstr ""
+
+msgid "Use Google account"
+msgstr ""
+
+msgid "Tasks will be in sync with Google tasks"
+msgstr ""
+
+msgid "Use Microsoft account"
+msgstr ""
+
+msgid "Tasks will be in sync with Microsoft ToDo"
+msgstr ""
+
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
+msgid "Copy the following link, open them into your browser, and perform a log in."
+msgstr "Келесі сілтемені көшіріп, оларды браузерде ашыңыз және жүйеге кіріңіз."
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
+
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
+msgstr "Осыдан кейін экранда кіру таңбалауышы пайда болады. Оларды төмендегі өріске қойыңыз:"
+
+msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
+msgstr ""
+
+msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
+msgstr "Енді ZeppOS жүйесіндегі тапсырмалар бұлттық тіркелгідегі тапсырмаларға қол жеткізе алады."
+
+msgid "Privacy Policy"
+msgstr "Құпиялылық саясаты"
+
+msgid "App is still in offline mode"
+msgstr "Қолданба әлі де офлайн режимде"
+
+msgid "Open Tasks app on your watch and wipe local data to start seeing synced tasks."
+msgstr "Синхрондалған тапсырмаларды көру үшін сағатыңызда Tasks қолданбасын ашыңыз және жергілікті деректерді өшіріңіз."
+
+msgid "Use Nextcloud server account"
+msgstr ""
+
+msgid "Sync your tasks with personal cloud server"
+msgstr ""
+
+msgid "Checking, is login/password valid…"
+msgstr "Тексерілуде, логин/пароль жарамды ма…"
+
+msgid "Credentials are valid, connection success."
+msgstr "Тіркелгі деректері жарамды, қосылым сәтті."
+
+msgid "Authorization failed, or server configuration isn't valid."
+msgstr "Авторизация сәтсіз аяқталды немесе сервер конфигурациясы жарамсыз."
+
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Бұлттық тіркелгі деректерін енгізіңіз. Екі факторлы аутентификация қосылса, қолданба құпия сөзін жасау және пайдалану керек."
+
+msgid "Save configuration"
+msgstr "Конфигурацияны сақтау"
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "NextCloud орнату URL мекенжайын енгізіңіз:"
+
+msgid "Checking, is URL valid…"
+msgstr "Тексерілуде, URL жарамды ма…"
+
+msgid "Nextcloud URL is valid."
+msgstr "Nextcloud URL мекенжайы жарамды."
+
+msgid "Enter valid cloud URL to continue."
+msgstr "Жалғастыру үшін жарамды бұлттық URL мекенжайын енгізіңіз."

@@ -1,37 +1,35 @@
 import {clientFetch as fetch} from "../../lib/mmk/FetchForward";
-import {reportError, reportRequestFailure} from "../ErrorReportTool";
-import {GoogleTaskList} from "./GoogleTaskList";
+import {reportRequestFailure} from "../ErrorReportTool";
+import {TickTickTaskList} from "./TickTickTaskList";
 import {buildQueryURL} from "../Tools";
 
-const BASE_URL = "https://tasks.googleapis.com/tasks/v1";
+const BASE_URL = "https://ticktick.com/open/v1";
 
-export class GoogleHandler {
+export class TickTickHandler {
     constructor(token) {
         this.token = token;
+        this.cantListCompleted = true; // tick tick api is freaking trash
     }
 
     getTaskList(id) {
-        return new GoogleTaskList({id, title: ""}, this);
+        return new TickTickTaskList({id, title: ""}, this);
     }
 
     getTaskLists() {
         return this.request({
             method: "GET",
-            url: "/users/@me/lists",
-            query: {
-                access_token: this.token,
-            }
+            url: "/project"
         }).then((data) => {
-            return data.items.map((item) => new GoogleTaskList(item, this));
+            return data.map((item) => new TickTickTaskList(item, this));
         })
     }
 
     request(options, noCrash=false) {
         const fetchParams = {
-            method: options.method === "GET" ? "GET" : "POST",
+            method: options.method,
             headers: {
                 'Content-Type': 'application/json',
-                'X-HTTP-Method-Override': options.method
+                'Authorization': `Bearer ${this.token}`,
             },
             timeout: 5000,
         }

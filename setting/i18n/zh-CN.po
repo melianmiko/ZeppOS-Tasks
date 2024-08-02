@@ -49,8 +49,14 @@ msgstr ""
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr ""
 
+msgid "Use TickTick account"
+msgstr "Use TickTick account"
+
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "复制下面的链接，将其打开到您的浏览器并登录。"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "然后你会在屏幕上获得一个访问令牌。请将它们粘贴到下面的字段："

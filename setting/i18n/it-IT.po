@@ -53,7 +53,7 @@ msgid "Copy the following link, open them into your browser, and perform a log i
 msgstr "Copia il seguente link, aprilo nel tuo browser ed esegui un login."
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgstr ""
 
 msgid "Tasks will be in sync with TickTick application"
 msgstr "Tasks will be in sync with TickTick application"
@@ -77,34 +77,34 @@ msgid "Open Tasks app on your watch and wipe local data to start seeing synced t
 msgstr "Apri l'app Attività sul tuo orologio e cancella i dati locali per iniziare a vedere le attività sincronizzate."
 
 msgid "Use Nextcloud server account"
-msgstr "Use Nextcloud server account"
+msgstr ""
 
 msgid "Sync your tasks with personal cloud server"
 msgstr "Sync your tasks with personal cloud server"
 
 msgid "Checking, is login/password valid…"
-msgstr "Checking, is login/password valid…"
+msgstr "Controllo, è corretta la login/password…"
 
 msgid "Credentials are valid, connection success."
-msgstr "Credentials are valid, connection success."
+msgstr "Le credenziali sono corrette, la connessione è in corso."
 
 msgid "Authorization failed, or server configuration isn't valid."
-msgstr "Authorization failed, or server configuration isn't valid."
+msgstr "Autorizzazione non riuscita, o configurazione del server non corretta."
 
 msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
-msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Inserisci le tue credenziali cloud. Se è abilitata l'autenticazione a due fattori, devi creare e utilizzare una password per l'applicazione."
 
 msgid "Save configuration"
 msgstr "Save configuration"
 
 msgid "Enter your Nextcloud installation URL:"
-msgstr "Enter your Nextcloud installation URL:"
+msgstr "Inserisci il tuo URL di istallazione Nextcloud:"
 
 msgid "Checking, is URL valid…"
-msgstr "Checking, is URL valid…"
+msgstr "Controllo, è corretto l'URL…"
 
 msgid "Nextcloud URL is valid."
-msgstr "Nextcloud URL is valid."
+msgstr "L'URL nextcloud è corretto."
 
 msgid "Enter valid cloud URL to continue."
-msgstr "Enter valid cloud URL to continue."
+msgstr "Inserire un URL del Cloud valido per continuare."

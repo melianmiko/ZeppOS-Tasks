@@ -53,7 +53,7 @@ msgid "Copy the following link, open them into your browser, and perform a log i
 msgstr "Másold ki a következő linket, nyisd meg a böngészőben, és jelentkezz be."
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgstr ""
 
 msgid "Tasks will be in sync with TickTick application"
 msgstr "Tasks will be in sync with TickTick application"

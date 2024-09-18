@@ -50,13 +50,13 @@ msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr "Tasks werden mit Microsoft ToDo synchronisiert"
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgstr ""
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Kopiere den folgenden Link, öffne ihn in deinem Internet - Browser und melde dich an."
 
 msgid "Tasks will be in sync with TickTick application"
-msgstr "Tasks will be in sync with TickTick application"
+msgstr ""
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "Danach bekommst du einen Zugangsschlüssel. Füge ihn indem Feld unterhalb ein:"

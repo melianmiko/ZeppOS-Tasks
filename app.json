@@ -5,8 +5,8 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 7,
-      "name": "2.2"
+      "code": 8,
+      "name": "2.3"
     },
     "icon": "icon.png",
     "vender": "MelianMiko (mmk.pw)",
@@ -742,6 +742,43 @@
         {
           "name": "t-rex-2-2",
           "deviceSource": 419
+        }
+      ],
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      }
+    },
+    "trex3": {
+      "platforms": [
+        {
+          "name": "t-rex-3",
+          "deviceSource": 8716544
+        },
+        {
+          "name": "t-rex-3-2",
+          "deviceSource": 8716545
+        },
+        {
+          "name": "t-rex-3-3",
+          "deviceSource": 8716547
         }
       ],
       "module": {

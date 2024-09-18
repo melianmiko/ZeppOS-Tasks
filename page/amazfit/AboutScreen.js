@@ -12,7 +12,7 @@ class AboutScreen extends BaseAboutScreen {
     this.appId = 1023438;
     this.appName = "Tasks";
     this.version = VERSION;
-    this.donateUrl = `page/${params.pageClass}/DonatePage`;
+    this.donateUrl = `page/amazfit/DonatePage`;
     this.donateText = t("Donate");
 
     this.iconSize = 100;

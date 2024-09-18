@@ -765,6 +765,43 @@
           ]
         }
       }
+    },
+    "trex3": {
+      "platforms": [
+        {
+          "name": "t-rex-3",
+          "deviceSource": 8716544
+        },
+        {
+          "name": "t-rex-3-2",
+          "deviceSource": 8716545
+        },
+        {
+          "name": "t-rex-3-3",
+          "deviceSource": 8716547
+        }
+      ],
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      }
     }
   },
   "defaultLanguage": "en-US"

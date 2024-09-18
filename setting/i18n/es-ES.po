@@ -50,7 +50,7 @@ msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr ""
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgstr ""
 
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Copie el siguiente enlace, ábrelo en su navegador y realice un inicio de sesión."

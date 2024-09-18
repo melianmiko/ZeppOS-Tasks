@@ -55,14 +55,14 @@ msgstr "Copy the following link, open them into your browser, and perform a log 
 msgid "Use TickTick account"
 msgstr "Use TickTick account"
 
-msgid "Tasks will be in sync with TickTick application"
-msgstr "Tasks will be in sync with TickTick application"
-
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "After that, you'll got a access token on screen. Paste them into field bellow:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Wait for a few seconds until app will connect with Google and validate your credentials"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
 
 msgid "Now Tasks on ZeppOS have access to tasks in your cloud account."
 msgstr "Now Tasks on ZeppOS have access to tasks in your cloud account."
@@ -79,32 +79,32 @@ msgstr "Open Tasks app on your watch and wipe local data to start seeing synced 
 msgid "Use Nextcloud server account"
 msgstr "Use Nextcloud server account"
 
-msgid "Sync your tasks with personal cloud server"
-msgstr "Sync your tasks with personal cloud server"
-
 msgid "Checking, is login/password valid…"
 msgstr "Checking, is login/password valid…"
 
 msgid "Credentials are valid, connection success."
 msgstr "Credentials are valid, connection success."
 
+msgid "Sync your tasks with personal cloud server"
+msgstr "Sync your tasks with personal cloud server"
+
 msgid "Authorization failed, or server configuration isn't valid."
 msgstr "Authorization failed, or server configuration isn't valid."
-
-msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
-msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
 
 msgid "Save configuration"
 msgstr "Save configuration"
 
-msgid "Enter your Nextcloud installation URL:"
-msgstr "Enter your Nextcloud installation URL:"
+msgid "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
+msgstr "Enter your cloud credentials. If two-factor auth is enabled, you must create and use an application password."
 
 msgid "Checking, is URL valid…"
 msgstr "Checking, is URL valid…"
 
 msgid "Nextcloud URL is valid."
 msgstr "Nextcloud URL is valid."
+
+msgid "Enter your Nextcloud installation URL:"
+msgstr "Enter your Nextcloud installation URL:"
 
 msgid "Enter valid cloud URL to continue."
 msgstr "Enter valid cloud URL to continue."

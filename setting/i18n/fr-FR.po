@@ -53,7 +53,7 @@ msgid "Copy the following link, open them into your browser, and perform a log i
 msgstr "Copiez le lien suivant, ouvrez-le dans votre navigateur, et connectez-vous."
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgstr ""
 
 msgid "Tasks will be in sync with TickTick application"
 msgstr "Tasks will be in sync with TickTick application"

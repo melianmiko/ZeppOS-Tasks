@@ -49,17 +49,17 @@ msgstr "Użyj konta Microsoft"
 msgid "Tasks will be in sync with Microsoft ToDo"
 msgstr "Zadania będą synchronizowane z Microsoft ToDo"
 
+msgid "Use TickTick account"
+msgstr ""
+
 msgid "Copy the following link, open them into your browser, and perform a log in."
 msgstr "Skopiuj poniższy link. Następnie otwórz go w przeglądarce, i dokończ logowanie."
 
-msgid "Use TickTick account"
-msgstr "Use TickTick account"
+msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
+msgstr "Później, otrzymasz klucz dostępu, który wyświetli się na ekranie. Skopiuj go i umieść w polu poniżej:"
 
 msgid "Tasks will be in sync with TickTick application"
 msgstr "Tasks will be in sync with TickTick application"
-
-msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
-msgstr "Później, otrzymasz klucz dostępu, który wyświetli się na ekranie. Skopiuj go i umieść w polu poniżej:"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Poczekaj kilka sekund, aż aplikacja połączy się z kontem Google"

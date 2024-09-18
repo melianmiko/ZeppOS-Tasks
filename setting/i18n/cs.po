@@ -56,7 +56,7 @@ msgid "Use TickTick account"
 msgstr ""
 
 msgid "Tasks will be in sync with TickTick application"
-msgstr "Tasks will be in sync with TickTick application"
+msgstr ""
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr ""

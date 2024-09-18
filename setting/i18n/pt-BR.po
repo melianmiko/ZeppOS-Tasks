@@ -53,13 +53,13 @@ msgid "Copy the following link, open them into your browser, and perform a log i
 msgstr "Copie o link a seguir, abra-os no seu navegador e realize o login."
 
 msgid "Use TickTick account"
-msgstr "Use TickTick account"
-
-msgid "Tasks will be in sync with TickTick application"
-msgstr "Tasks will be in sync with TickTick application"
+msgstr ""
 
 msgid "After that, you'll got a access token on screen. Paste them into field bellow:"
 msgstr "Depois disso, você terá um token de acesso na tela. Cole no campo abaixo:"
+
+msgid "Tasks will be in sync with TickTick application"
+msgstr "Tasks will be in sync with TickTick application"
 
 msgid "Wait for a few seconds until app will connect with Google and validate your credentials"
 msgstr "Aguarde alguns segundos até que o app se conecte com o Google e valide suas credenciais"
@@ -77,7 +77,7 @@ msgid "Open Tasks app on your watch and wipe local data to start seeing synced t
 msgstr ""
 
 msgid "Use Nextcloud server account"
-msgstr "Use Nextcloud server account"
+msgstr ""
 
 msgid "Sync your tasks with personal cloud server"
 msgstr "Sync your tasks with personal cloud server"

@@ -6,7 +6,7 @@
     "appType": "app",
     "version": {
       "code": 8,
-      "name": "2.3"
+      "name": "2.4"
     },
     "icon": "icon.png",
     "vender": "MelianMiko (mmk.pw)",
@@ -164,6 +164,63 @@
         }
       ]
     },
+    "active_2": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "8913152",
+          "deviceSource": 8913152
+        },
+        {
+          "name": "8913153",
+          "deviceSource": 8913153
+        },
+        {
+          "name": "8913155",
+          "deviceSource": 8913155
+        },
+        {
+          "name": "8913159",
+          "deviceSource": 8913159
+        },
+        {
+          "name": "10092800",
+          "deviceSource": 10092800
+        },
+        {
+          "name": "10092801",
+          "deviceSource": 10092801
+        },
+        {
+          "name": "10092803",
+          "deviceSource": 10092803
+        },
+        {
+          "name": "10092807",
+          "deviceSource": 10092807
+        }
+      ]
+    },
     "bip5": {
       "module": {
         "app-side": {
@@ -231,6 +288,43 @@
         {
           "name": "bip5u3",
           "deviceSource": 8782089
+        }
+      ]
+    },
+    "bip6": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "bip6v1",
+          "deviceSource": 9765120
+        },
+        {
+          "name": "bip6v2",
+          "deviceSource": 9765121
+        },
+        {
+          "name": "bip6v3",
+          "deviceSource": 10158337
         }
       ]
     },

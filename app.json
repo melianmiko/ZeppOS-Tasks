@@ -5,8 +5,8 @@
     "appName": "Tasks",
     "appType": "app",
     "version": {
-      "code": 8,
-      "name": "2.4"
+      "code": 9,
+      "name": "2.5"
     },
     "icon": "icon.png",
     "vender": "MelianMiko (mmk.pw)",
@@ -131,6 +131,43 @@
         }
       ]
     },
+    "balance2": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "b1",
+          "deviceSource": 9568512
+        },
+        {
+          "name": "b2",
+          "deviceSource": 9568513
+        },
+        {
+          "name": "b3",
+          "deviceSource": 9568515
+        }
+      ]
+    },
     "active": {
       "module": {
         "app-side": {
@@ -218,6 +255,43 @@
         {
           "name": "10092807",
           "deviceSource": 10092807
+        }
+      ]
+    },
+    "active_2_square": {
+      "module": {
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        },
+        "page": {
+          "pages": [
+            "page/amazfit/HomeScreen",
+            "page/amazfit/FontSizeSetupScreen",
+            "page/amazfit/ScreenBoardSetup",
+            "page/amazfit/SettingsScreen",
+            "page/amazfit/MarkdownReader",
+            "page/amazfit/AboutScreen",
+            "page/amazfit/NewNoteScreen",
+            "page/amazfit/TaskEditScreen",
+            "page/amazfit/DonatePage"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "name": "9830656",
+          "deviceSource": 9830656
+        },
+        {
+          "name": "9830657",
+          "deviceSource": 9830657
+        },
+        {
+          "name": "9830659",
+          "deviceSource": 9830659
         }
       ]
     },
